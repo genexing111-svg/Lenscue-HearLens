@@ -1,0 +1,109 @@
+{
+  "format_version": 1,
+  "binary_format": "IEEE754 float32 little endian, no header",
+  "expected_output_precision": "Reference is byte-exact; ports may compare PCM with absolute tolerance 1e-6",
+  "cases": [
+    {
+      "source_sample_rate_hz": 16000,
+      "source_channels": 1,
+      "input_file": "audio-input-16000.f32le",
+      "input_samples": 32000,
+      "input_sha256": "9923d5248a0900a91602f6c14902acdcaa05aa6de79cdd05af9446f6854d882d",
+      "reference_input_chunk_samples": 128,
+      "expected_windows": [
+        {
+          "file": "audio-output-16000-window0.f32le",
+          "sha256": "3faca0ffdddab5276fda7dfcd4601e1e633da68bbab78e5ca47a714d8592985c",
+          "samples": 15600,
+          "endMs": 975,
+          "rms": 0.14144175265933512,
+          "peak": 0.30000001192092896
+        },
+        {
+          "file": "audio-output-16000-window1.f32le",
+          "sha256": "abfbf98f1e11a75e21f3c1a1d5ad0a9b733c0516957df14874fbdd7aefdfc86e",
+          "samples": 15600,
+          "endMs": 1455,
+          "rms": 0.14144175265933515,
+          "peak": 0.30000001192092896
+        },
+        {
+          "file": "audio-output-16000-window2.f32le",
+          "sha256": "8dbb7e3e5b568e0b7d6b1c08d8bed441322a4440c36324b9091b125894027133",
+          "samples": 15600,
+          "endMs": 1935,
+          "rms": 0.14142135681755003,
+          "peak": 0.20000000298023224
+        }
+      ]
+    },
+    {
+      "source_sample_rate_hz": 44100,
+      "source_channels": 1,
+      "input_file": "audio-input-44100.f32le",
+      "input_samples": 88200,
+      "input_sha256": "7047c9549f0e8d9f1d12515f1d9f02b820561e24490e78bd20fc17fdf1da897a",
+      "reference_input_chunk_samples": 128,
+      "expected_windows": [
+        {
+          "file": "audio-output-44100-window0.f32le",
+          "sha256": "bf18d6f13f2de09b1c5c563e410e22e721f38c98d2dde14727558fb30147ac72",
+          "samples": 15600,
+          "endMs": 975,
+          "rms": 0.14122398248201554,
+          "peak": 0.1997450590133667
+        },
+        {
+          "file": "audio-output-44100-window1.f32le",
+          "sha256": "47849471404fc10443aaa0a5ce7960b273d946060c678e475264f8c86da3bf63",
+          "samples": 15600,
+          "endMs": 1455,
+          "rms": 0.1412240011025623,
+          "peak": 0.1997450590133667
+        },
+        {
+          "file": "audio-output-44100-window2.f32le",
+          "sha256": "2e05c93a119334827b46815326c39623d01a6eb01685cc3f3df37df823082f9b",
+          "samples": 15600,
+          "endMs": 1935,
+          "rms": 0.14122244944251555,
+          "peak": 0.1997450590133667
+        }
+      ]
+    },
+    {
+      "source_sample_rate_hz": 48000,
+      "source_channels": 1,
+      "input_file": "audio-input-48000.f32le",
+      "input_samples": 96000,
+      "input_sha256": "1b2974a891489205602e7b5da25f94ebeba7610d596205e84a099e93f265a891",
+      "reference_input_chunk_samples": 128,
+      "expected_windows": [
+        {
+          "file": "audio-output-48000-window0.f32le",
+          "sha256": "650d779b8d0e252c9bbc7a163b6786904920bb83210b474154c4d43f7ac58885",
+          "samples": 15600,
+          "endMs": 975,
+          "rms": 0.1412678123061301,
+          "peak": 0.19977617263793945
+        },
+        {
+          "file": "audio-output-48000-window1.f32le",
+          "sha256": "64b77237dcc79d0055e988debbc3ef1706c173fb45de6cc6cc3418d7a18afd64",
+          "samples": 15600,
+          "endMs": 1455,
+          "rms": 0.14126781230613009,
+          "peak": 0.19977617263793945
+        },
+        {
+          "file": "audio-output-48000-window2.f32le",
+          "sha256": "9478a25b3fa7cf2e477d904c49d0795856c2adf9140bce34e5349d502bd80983",
+          "samples": 15600,
+          "endMs": 1935,
+          "rms": 0.14126502161232904,
+          "peak": 0.19977617263793945
+        }
+      ]
+    }
+  ]
+}

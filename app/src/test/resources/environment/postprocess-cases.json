@@ -1,0 +1,4748 @@
+{
+  "format_version": 1,
+  "purpose": "Frozen outputs of final reference EventFilter; synthetic classifier outputs, NOT sound-recognition accuracy examples",
+  "numeric_tolerance": 1e-10,
+  "cases": [
+    {
+      "id": "ordinary-single-and-repeated",
+      "reset_before": true,
+      "frames": [
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 57,
+                "name": "Finger snapping",
+                "score": 0.25
+              }
+            ],
+            "rms": 0.0001,
+            "peak": 0.00030000000000000003,
+            "endMs": 975
+          },
+          "expected": {
+            "kind": "possible",
+            "candidates": [
+              {
+                "index": 57,
+                "name": "Finger snapping",
+                "score": 0.25
+              }
+            ],
+            "event": {
+              "index": 57,
+              "name": "Finger snapping",
+              "score": 0.25
+            },
+            "noiseFloor": 0.0025,
+            "calibrationWindows": 0
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 57,
+                "name": "Finger snapping",
+                "score": 0.25
+              }
+            ],
+            "rms": 0.0001,
+            "peak": 0.00030000000000000003,
+            "endMs": 1455
+          },
+          "expected": {
+            "kind": "event",
+            "candidates": [
+              {
+                "index": 57,
+                "name": "Finger snapping",
+                "score": 0.25
+              }
+            ],
+            "event": {
+              "index": 57,
+              "name": "Finger snapping",
+              "score": 0.25
+            },
+            "noiseFloor": 0.0025,
+            "calibrationWindows": 0
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 58,
+                "name": "Clapping",
+                "score": 0.32
+              }
+            ],
+            "rms": 0.0001,
+            "peak": 0.00030000000000000003,
+            "endMs": 1935
+          },
+          "expected": {
+            "kind": "possible",
+            "candidates": [
+              {
+                "index": 58,
+                "name": "Clapping",
+                "score": 0.32
+              }
+            ],
+            "event": {
+              "index": 58,
+              "name": "Clapping",
+              "score": 0.32
+            },
+            "noiseFloor": 0.0025,
+            "calibrationWindows": 0
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 58,
+                "name": "Clapping",
+                "score": 0.7
+              }
+            ],
+            "rms": 0.0001,
+            "peak": 0.00030000000000000003,
+            "endMs": 2415
+          },
+          "expected": {
+            "kind": "event",
+            "candidates": [
+              {
+                "index": 58,
+                "name": "Clapping",
+                "score": 0.7
+              }
+            ],
+            "event": {
+              "index": 58,
+              "name": "Clapping",
+              "score": 0.7
+            },
+            "noiseFloor": 0.0025,
+            "calibrationWindows": 0
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 494,
+                "name": "Silence",
+                "score": 0.9
+              }
+            ],
+            "rms": 0,
+            "peak": 0,
+            "endMs": 2895
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.00075,
+            "calibrationWindows": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "only-eight-cautious-labels",
+      "reset_before": true,
+      "frames": [
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.4
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.008,
+            "peak": 0.024,
+            "endMs": 975
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.008,
+            "calibrationWindows": 1
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.4
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.008,
+            "peak": 0.024,
+            "endMs": 1455
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.008,
+            "calibrationWindows": 2
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.4
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.008,
+            "peak": 0.024,
+            "endMs": 1935
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.008,
+            "calibrationWindows": 3
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.4
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.008,
+            "peak": 0.024,
+            "endMs": 2415
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.008,
+            "calibrationWindows": 4
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.0076085,
+            "peak": 0.0228255,
+            "endMs": 2895
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.00796085,
+            "calibrationWindows": 5
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.414
+              }
+            ],
+            "rms": 0.0076085,
+            "peak": 0.0228255,
+            "endMs": 3375
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.007925615,
+            "calibrationWindows": 6
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.96
+              }
+            ],
+            "rms": 0.0076085,
+            "peak": 0.0228255,
+            "endMs": 3855
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.0078939035,
+            "calibrationWindows": 7
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 122,
+                "name": "Cricket",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.0076085,
+            "peak": 0.0228255,
+            "endMs": 4335
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.00786536315,
+            "calibrationWindows": 8
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 122,
+                "name": "Cricket",
+                "score": 0.414
+              }
+            ],
+            "rms": 0.0076085,
+            "peak": 0.0228255,
+            "endMs": 4815
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.007839676835,
+            "calibrationWindows": 9
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 122,
+                "name": "Cricket",
+                "score": 0.96
+              }
+            ],
+            "rms": 0.0076085,
+            "peak": 0.0228255,
+            "endMs": 5295
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.0078165591515,
+            "calibrationWindows": 10
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 123,
+                "name": "Mosquito",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.0076085,
+            "peak": 0.0228255,
+            "endMs": 5775
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.007795753236350001,
+            "calibrationWindows": 11
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 123,
+                "name": "Mosquito",
+                "score": 0.414
+              }
+            ],
+            "rms": 0.0076085,
+            "peak": 0.0228255,
+            "endMs": 6255
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.007777027912715001,
+            "calibrationWindows": 12
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 123,
+                "name": "Mosquito",
+                "score": 0.96
+              }
+            ],
+            "rms": 0.0076085,
+            "peak": 0.0228255,
+            "endMs": 6735
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.007760175121443502,
+            "calibrationWindows": 13
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 124,
+                "name": "Fly, housefly",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.0076085,
+            "peak": 0.0228255,
+            "endMs": 7215
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.007745007609299153,
+            "calibrationWindows": 14
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 124,
+                "name": "Fly, housefly",
+                "score": 0.414
+              }
+            ],
+            "rms": 0.0076085,
+            "peak": 0.0228255,
+            "endMs": 7695
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.007731356848369238,
+            "calibrationWindows": 15
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 124,
+                "name": "Fly, housefly",
+                "score": 0.96
+              }
+            ],
+            "rms": 0.0076085,
+            "peak": 0.0228255,
+            "endMs": 8175
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.007719071163532314,
+            "calibrationWindows": 16
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 125,
+                "name": "Buzz",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.0076085,
+            "peak": 0.0228255,
+            "endMs": 8655
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.007708014047179083,
+            "calibrationWindows": 17
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 125,
+                "name": "Buzz",
+                "score": 0.414
+              }
+            ],
+            "rms": 0.0076085,
+            "peak": 0.0228255,
+            "endMs": 9135
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.007698062642461175,
+            "calibrationWindows": 18
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 125,
+                "name": "Buzz",
+                "score": 0.96
+              }
+            ],
+            "rms": 0.0076085,
+            "peak": 0.0228255,
+            "endMs": 9615
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.007689106378215058,
+            "calibrationWindows": 19
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 126,
+                "name": "Bee, wasp, etc.",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.0076085,
+            "peak": 0.0228255,
+            "endMs": 10095
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.007681045740393551,
+            "calibrationWindows": 20
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 126,
+                "name": "Bee, wasp, etc.",
+                "score": 0.414
+              }
+            ],
+            "rms": 0.0076085,
+            "peak": 0.0228255,
+            "endMs": 10575
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.007673791166354197,
+            "calibrationWindows": 21
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 126,
+                "name": "Bee, wasp, etc.",
+                "score": 0.96
+              }
+            ],
+            "rms": 0.0076085,
+            "peak": 0.0228255,
+            "endMs": 11055
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.007667262049718777,
+            "calibrationWindows": 22
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 129,
+                "name": "Snake",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.0076085,
+            "peak": 0.0228255,
+            "endMs": 11535
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.007661385844746899,
+            "calibrationWindows": 23
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 129,
+                "name": "Snake",
+                "score": 0.414
+              }
+            ],
+            "rms": 0.0076085,
+            "peak": 0.0228255,
+            "endMs": 12015
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.007656097260272209,
+            "calibrationWindows": 24
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 129,
+                "name": "Snake",
+                "score": 0.96
+              }
+            ],
+            "rms": 0.0076085,
+            "peak": 0.0228255,
+            "endMs": 12495
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.007651337534244988,
+            "calibrationWindows": 25
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 130,
+                "name": "Rattle",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.0076085,
+            "peak": 0.0228255,
+            "endMs": 12975
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.007647053780820489,
+            "calibrationWindows": 26
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 130,
+                "name": "Rattle",
+                "score": 0.414
+              }
+            ],
+            "rms": 0.0076085,
+            "peak": 0.0228255,
+            "endMs": 13455
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.00764319840273844,
+            "calibrationWindows": 27
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 130,
+                "name": "Rattle",
+                "score": 0.96
+              }
+            ],
+            "rms": 0.0076085,
+            "peak": 0.0228255,
+            "endMs": 13935
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.007639728562464596,
+            "calibrationWindows": 28
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.25
+              }
+            ],
+            "rms": 0.0001,
+            "peak": 0.00030000000000000003,
+            "endMs": 14415
+          },
+          "expected": {
+            "kind": "possible",
+            "candidates": [
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.25
+              }
+            ],
+            "event": {
+              "index": 67,
+              "name": "Animal",
+              "score": 0.25
+            },
+            "noiseFloor": 0.007636605706218137,
+            "calibrationWindows": 29
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 82,
+                "name": "Horse",
+                "score": 0.25
+              }
+            ],
+            "rms": 0.0001,
+            "peak": 0.00030000000000000003,
+            "endMs": 14895
+          },
+          "expected": {
+            "kind": "possible",
+            "candidates": [
+              {
+                "index": 82,
+                "name": "Horse",
+                "score": 0.25
+              }
+            ],
+            "event": {
+              "index": 82,
+              "name": "Horse",
+              "score": 0.25
+            },
+            "noiseFloor": 0.007636605706218137,
+            "calibrationWindows": 29
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 103,
+                "name": "Wild animals",
+                "score": 0.25
+              }
+            ],
+            "rms": 0.0001,
+            "peak": 0.00030000000000000003,
+            "endMs": 15375
+          },
+          "expected": {
+            "kind": "possible",
+            "candidates": [
+              {
+                "index": 103,
+                "name": "Wild animals",
+                "score": 0.25
+              }
+            ],
+            "event": {
+              "index": 103,
+              "name": "Wild animals",
+              "score": 0.25
+            },
+            "noiseFloor": 0.007633795135596323,
+            "calibrationWindows": 30
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 107,
+                "name": "Bird vocalization, bird call, bird song",
+                "score": 0.25
+              }
+            ],
+            "rms": 0.0001,
+            "peak": 0.00030000000000000003,
+            "endMs": 15855
+          },
+          "expected": {
+            "kind": "possible",
+            "candidates": [
+              {
+                "index": 107,
+                "name": "Bird vocalization, bird call, bird song",
+                "score": 0.25
+              }
+            ],
+            "event": {
+              "index": 107,
+              "name": "Bird vocalization, bird call, bird song",
+              "score": 0.25
+            },
+            "noiseFloor": 0.007633795135596323,
+            "calibrationWindows": 30
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 127,
+                "name": "Frog",
+                "score": 0.25
+              }
+            ],
+            "rms": 0.0001,
+            "peak": 0.00030000000000000003,
+            "endMs": 16335
+          },
+          "expected": {
+            "kind": "possible",
+            "candidates": [
+              {
+                "index": 127,
+                "name": "Frog",
+                "score": 0.25
+              }
+            ],
+            "event": {
+              "index": 127,
+              "name": "Frog",
+              "score": 0.25
+            },
+            "noiseFloor": 0.007633795135596323,
+            "calibrationWindows": 30
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 128,
+                "name": "Croak",
+                "score": 0.25
+              }
+            ],
+            "rms": 0.0001,
+            "peak": 0.00030000000000000003,
+            "endMs": 16815
+          },
+          "expected": {
+            "kind": "possible",
+            "candidates": [
+              {
+                "index": 128,
+                "name": "Croak",
+                "score": 0.25
+              }
+            ],
+            "event": {
+              "index": 128,
+              "name": "Croak",
+              "score": 0.25
+            },
+            "noiseFloor": 0.007633795135596323,
+            "calibrationWindows": 30
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 349,
+                "name": "Doorbell",
+                "score": 0.25
+              }
+            ],
+            "rms": 0.0001,
+            "peak": 0.00030000000000000003,
+            "endMs": 17295
+          },
+          "expected": {
+            "kind": "possible",
+            "candidates": [
+              {
+                "index": 349,
+                "name": "Doorbell",
+                "score": 0.25
+              }
+            ],
+            "event": {
+              "index": 349,
+              "name": "Doorbell",
+              "score": 0.25
+            },
+            "noiseFloor": 0.007633795135596323,
+            "calibrationWindows": 30
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 350,
+                "name": "Ding-dong",
+                "score": 0.25
+              }
+            ],
+            "rms": 0.0001,
+            "peak": 0.00030000000000000003,
+            "endMs": 17775
+          },
+          "expected": {
+            "kind": "possible",
+            "candidates": [
+              {
+                "index": 350,
+                "name": "Ding-dong",
+                "score": 0.25
+              }
+            ],
+            "event": {
+              "index": 350,
+              "name": "Ding-dong",
+              "score": 0.25
+            },
+            "noiseFloor": 0.007633795135596323,
+            "calibrationWindows": 30
+          }
+        }
+      ]
+    },
+    {
+      "id": "cautious-sustained-and-gap",
+      "reset_before": true,
+      "frames": [
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.4
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.008,
+            "peak": 0.024,
+            "endMs": 975
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.008,
+            "calibrationWindows": 1
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.4
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.008,
+            "peak": 0.024,
+            "endMs": 1455
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.008,
+            "calibrationWindows": 2
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.4
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.008,
+            "peak": 0.024,
+            "endMs": 1935
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.008,
+            "calibrationWindows": 3
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.4
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.008,
+            "peak": 0.024,
+            "endMs": 2415
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.008,
+            "calibrationWindows": 4
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.85
+              }
+            ],
+            "rms": 0.05,
+            "peak": 0.15000000000000002,
+            "endMs": 2895
+          },
+          "expected": {
+            "kind": "confirming",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.008,
+            "calibrationWindows": 4
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.85
+              }
+            ],
+            "rms": 0.05,
+            "peak": 0.15000000000000002,
+            "endMs": 3375
+          },
+          "expected": {
+            "kind": "confirming",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.008,
+            "calibrationWindows": 4
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.85
+              }
+            ],
+            "rms": 0.05,
+            "peak": 0.15000000000000002,
+            "endMs": 3855
+          },
+          "expected": {
+            "kind": "event",
+            "candidates": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.85
+              }
+            ],
+            "event": {
+              "index": 121,
+              "name": "Insect",
+              "score": 0.85
+            },
+            "noiseFloor": 0.008,
+            "calibrationWindows": 4
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 129,
+                "name": "Snake",
+                "score": 0.85
+              }
+            ],
+            "rms": 0.05,
+            "peak": 0.15000000000000002,
+            "endMs": 4335
+          },
+          "expected": {
+            "kind": "confirming",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.008,
+            "calibrationWindows": 4
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 129,
+                "name": "Snake",
+                "score": 0.85
+              }
+            ],
+            "rms": 0.05,
+            "peak": 0.15000000000000002,
+            "endMs": 6335
+          },
+          "expected": {
+            "kind": "confirming",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.008,
+            "calibrationWindows": 4
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 129,
+                "name": "Snake",
+                "score": 0.85
+              }
+            ],
+            "rms": 0.05,
+            "peak": 0.15000000000000002,
+            "endMs": 6815
+          },
+          "expected": {
+            "kind": "confirming",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.008,
+            "calibrationWindows": 4
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 129,
+                "name": "Snake",
+                "score": 0.85
+              }
+            ],
+            "rms": 0.05,
+            "peak": 0.15000000000000002,
+            "endMs": 7295
+          },
+          "expected": {
+            "kind": "event",
+            "candidates": [
+              {
+                "index": 129,
+                "name": "Snake",
+                "score": 0.85
+              }
+            ],
+            "event": {
+              "index": 129,
+              "name": "Snake",
+              "score": 0.85
+            },
+            "noiseFloor": 0.008,
+            "calibrationWindows": 4
+          }
+        }
+      ]
+    },
+    {
+      "id": "cautious-volume-and-score-boundaries",
+      "reset_before": true,
+      "frames": [
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.4
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.008,
+            "peak": 0.024,
+            "endMs": 975
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.008,
+            "calibrationWindows": 1
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.4
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.008,
+            "peak": 0.024,
+            "endMs": 1455
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.008,
+            "calibrationWindows": 2
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.4
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.008,
+            "peak": 0.024,
+            "endMs": 1935
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.008,
+            "calibrationWindows": 3
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.4
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.008,
+            "peak": 0.024,
+            "endMs": 2415
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.008,
+            "calibrationWindows": 4
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.69
+              }
+            ],
+            "rms": 0.05,
+            "peak": 0.15000000000000002,
+            "endMs": 2895
+          },
+          "expected": {
+            "kind": "uncertain",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.008,
+            "calibrationWindows": 5
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.7
+              }
+            ],
+            "rms": 0.02,
+            "peak": 0.06,
+            "endMs": 3375
+          },
+          "expected": {
+            "kind": "uncertain",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.008,
+            "calibrationWindows": 6
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.7
+              }
+            ],
+            "rms": 0.05,
+            "peak": 0.15000000000000002,
+            "endMs": 3855
+          },
+          "expected": {
+            "kind": "confirming",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.008,
+            "calibrationWindows": 6
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.7
+              }
+            ],
+            "rms": 0.05,
+            "peak": 0.15000000000000002,
+            "endMs": 4335
+          },
+          "expected": {
+            "kind": "confirming",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.008,
+            "calibrationWindows": 6
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.7
+              }
+            ],
+            "rms": 0.05,
+            "peak": 0.15000000000000002,
+            "endMs": 4815
+          },
+          "expected": {
+            "kind": "event",
+            "candidates": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.7
+              }
+            ],
+            "event": {
+              "index": 121,
+              "name": "Insect",
+              "score": 0.7
+            },
+            "noiseFloor": 0.008,
+            "calibrationWindows": 6
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.7
+              },
+              {
+                "index": 57,
+                "name": "Finger snapping",
+                "score": 0.35
+              }
+            ],
+            "rms": 0.0001,
+            "peak": 0.00030000000000000003,
+            "endMs": 5295
+          },
+          "expected": {
+            "kind": "possible",
+            "candidates": [
+              {
+                "index": 57,
+                "name": "Finger snapping",
+                "score": 0.35
+              }
+            ],
+            "event": {
+              "index": 57,
+              "name": "Finger snapping",
+              "score": 0.35
+            },
+            "noiseFloor": 0.008,
+            "calibrationWindows": 6
+          }
+        }
+      ]
+    },
+    {
+      "id": "knock-and-tap-thresholds",
+      "reset_before": true,
+      "frames": [
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.4
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.008,
+            "peak": 0.024,
+            "endMs": 975
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.008,
+            "calibrationWindows": 1
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.4
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.008,
+            "peak": 0.024,
+            "endMs": 1455
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.008,
+            "calibrationWindows": 2
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.4
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.008,
+            "peak": 0.024,
+            "endMs": 1935
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.008,
+            "calibrationWindows": 3
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.4
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.008,
+            "peak": 0.024,
+            "endMs": 2415
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.008,
+            "calibrationWindows": 4
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 353,
+                "name": "Knock",
+                "score": 0.119
+              }
+            ],
+            "rms": 0.05,
+            "peak": 0.15000000000000002,
+            "endMs": 2895
+          },
+          "expected": {
+            "kind": "uncertain",
+            "candidates": [
+              {
+                "index": 353,
+                "name": "Knock",
+                "score": 0.119
+              }
+            ],
+            "event": null,
+            "noiseFloor": 0.008,
+            "calibrationWindows": 5
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 353,
+                "name": "Knock",
+                "score": 0.12
+              }
+            ],
+            "rms": 0.0002,
+            "peak": 0.0006000000000000001,
+            "endMs": 3375
+          },
+          "expected": {
+            "kind": "possible",
+            "candidates": [
+              {
+                "index": 353,
+                "name": "Knock",
+                "score": 0.12
+              }
+            ],
+            "event": {
+              "index": 353,
+              "name": "Knock",
+              "score": 0.12
+            },
+            "noiseFloor": 0.008,
+            "calibrationWindows": 5
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 494,
+                "name": "Silence",
+                "score": 0.9
+              }
+            ],
+            "rms": 0,
+            "peak": 0,
+            "endMs": 3855
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.008,
+            "calibrationWindows": 6
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 353,
+                "name": "Knock",
+                "score": 0.44
+              }
+            ],
+            "rms": 0.0002,
+            "peak": 0.0006000000000000001,
+            "endMs": 4335
+          },
+          "expected": {
+            "kind": "possible",
+            "candidates": [
+              {
+                "index": 353,
+                "name": "Knock",
+                "score": 0.44
+              }
+            ],
+            "event": {
+              "index": 353,
+              "name": "Knock",
+              "score": 0.44
+            },
+            "noiseFloor": 0.008,
+            "calibrationWindows": 6
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 494,
+                "name": "Silence",
+                "score": 0.9
+              }
+            ],
+            "rms": 0,
+            "peak": 0,
+            "endMs": 4815
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.007275000000000001,
+            "calibrationWindows": 7
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 353,
+                "name": "Knock",
+                "score": 0.45
+              }
+            ],
+            "rms": 0.0002,
+            "peak": 0.0006000000000000001,
+            "endMs": 5295
+          },
+          "expected": {
+            "kind": "event",
+            "candidates": [
+              {
+                "index": 353,
+                "name": "Knock",
+                "score": 0.45
+              }
+            ],
+            "event": {
+              "index": 353,
+              "name": "Knock",
+              "score": 0.45
+            },
+            "noiseFloor": 0.007275000000000001,
+            "calibrationWindows": 7
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 354,
+                "name": "Tap",
+                "score": 0.119
+              }
+            ],
+            "rms": 0.05,
+            "peak": 0.15000000000000002,
+            "endMs": 5775
+          },
+          "expected": {
+            "kind": "uncertain",
+            "candidates": [
+              {
+                "index": 354,
+                "name": "Tap",
+                "score": 0.119
+              }
+            ],
+            "event": null,
+            "noiseFloor": 0.006622500000000002,
+            "calibrationWindows": 8
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 354,
+                "name": "Tap",
+                "score": 0.12
+              }
+            ],
+            "rms": 0.0002,
+            "peak": 0.0006000000000000001,
+            "endMs": 6255
+          },
+          "expected": {
+            "kind": "possible",
+            "candidates": [
+              {
+                "index": 354,
+                "name": "Tap",
+                "score": 0.12
+              }
+            ],
+            "event": {
+              "index": 354,
+              "name": "Tap",
+              "score": 0.12
+            },
+            "noiseFloor": 0.006622500000000002,
+            "calibrationWindows": 8
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 494,
+                "name": "Silence",
+                "score": 0.9
+              }
+            ],
+            "rms": 0,
+            "peak": 0,
+            "endMs": 6735
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.006035250000000002,
+            "calibrationWindows": 9
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 354,
+                "name": "Tap",
+                "score": 0.44
+              }
+            ],
+            "rms": 0.0002,
+            "peak": 0.0006000000000000001,
+            "endMs": 7215
+          },
+          "expected": {
+            "kind": "possible",
+            "candidates": [
+              {
+                "index": 354,
+                "name": "Tap",
+                "score": 0.44
+              }
+            ],
+            "event": {
+              "index": 354,
+              "name": "Tap",
+              "score": 0.44
+            },
+            "noiseFloor": 0.006035250000000002,
+            "calibrationWindows": 9
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 494,
+                "name": "Silence",
+                "score": 0.9
+              }
+            ],
+            "rms": 0,
+            "peak": 0,
+            "endMs": 7695
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.005506725000000003,
+            "calibrationWindows": 10
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 354,
+                "name": "Tap",
+                "score": 0.45
+              }
+            ],
+            "rms": 0.0002,
+            "peak": 0.0006000000000000001,
+            "endMs": 8175
+          },
+          "expected": {
+            "kind": "event",
+            "candidates": [
+              {
+                "index": 354,
+                "name": "Tap",
+                "score": 0.45
+              }
+            ],
+            "event": {
+              "index": 354,
+              "name": "Tap",
+              "score": 0.45
+            },
+            "noiseFloor": 0.005506725000000003,
+            "calibrationWindows": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "knock-background-priority",
+      "reset_before": true,
+      "frames": [
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 508,
+                "name": "Environmental noise",
+                "score": 0.8
+              },
+              {
+                "index": 500,
+                "name": "Inside, small room",
+                "score": 0.5
+              },
+              {
+                "index": 103,
+                "name": "Wild animals",
+                "score": 0.35
+              },
+              {
+                "index": 353,
+                "name": "Knock",
+                "score": 0.15
+              }
+            ],
+            "rms": 0.0003,
+            "peak": 0.0009,
+            "endMs": 975
+          },
+          "expected": {
+            "kind": "possible",
+            "candidates": [
+              {
+                "index": 508,
+                "name": "Environmental noise",
+                "score": 0.8
+              },
+              {
+                "index": 500,
+                "name": "Inside, small room",
+                "score": 0.5
+              },
+              {
+                "index": 353,
+                "name": "Knock",
+                "score": 0.15
+              }
+            ],
+            "event": {
+              "index": 353,
+              "name": "Knock",
+              "score": 0.15
+            },
+            "noiseFloor": 0.0025,
+            "calibrationWindows": 0
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 0,
+                "name": "Speech",
+                "score": 0.2
+              },
+              {
+                "index": 354,
+                "name": "Tap",
+                "score": 0.15
+              }
+            ],
+            "rms": 0.0003,
+            "peak": 0.0009,
+            "endMs": 1455
+          },
+          "expected": {
+            "kind": "possible",
+            "candidates": [
+              {
+                "index": 0,
+                "name": "Speech",
+                "score": 0.2
+              },
+              {
+                "index": 354,
+                "name": "Tap",
+                "score": 0.15
+              }
+            ],
+            "event": {
+              "index": 354,
+              "name": "Tap",
+              "score": 0.15
+            },
+            "noiseFloor": 0.0025,
+            "calibrationWindows": 0
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 494,
+                "name": "Silence",
+                "score": 0.95
+              },
+              {
+                "index": 0,
+                "name": "Speech",
+                "score": 0.9
+              },
+              {
+                "index": 500,
+                "name": "Inside, small room",
+                "score": 0.4
+              },
+              {
+                "index": 353,
+                "name": "Knock",
+                "score": 0.15
+              }
+            ],
+            "rms": 0.05,
+            "peak": 0.15000000000000002,
+            "endMs": 1935
+          },
+          "expected": {
+            "kind": "event",
+            "candidates": [
+              {
+                "index": 494,
+                "name": "Silence",
+                "score": 0.95
+              },
+              {
+                "index": 0,
+                "name": "Speech",
+                "score": 0.9
+              },
+              {
+                "index": 353,
+                "name": "Knock",
+                "score": 0.15
+              }
+            ],
+            "event": {
+              "index": 0,
+              "name": "Speech",
+              "score": 0.9
+            },
+            "noiseFloor": 0.0025,
+            "calibrationWindows": 0
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 0,
+                "name": "Speech",
+                "score": 0.9
+              },
+              {
+                "index": 353,
+                "name": "Knock",
+                "score": 0.15
+              }
+            ],
+            "rms": 0.05,
+            "peak": 0.15000000000000002,
+            "endMs": 2415
+          },
+          "expected": {
+            "kind": "event",
+            "candidates": [
+              {
+                "index": 0,
+                "name": "Speech",
+                "score": 0.9
+              },
+              {
+                "index": 353,
+                "name": "Knock",
+                "score": 0.15
+              }
+            ],
+            "event": {
+              "index": 0,
+              "name": "Speech",
+              "score": 0.9
+            },
+            "noiseFloor": 0.0025,
+            "calibrationWindows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "knock-candidate-retention",
+      "reset_before": true,
+      "frames": [
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 0,
+                "name": "Speech",
+                "score": 0.9
+              },
+              {
+                "index": 132,
+                "name": "Music",
+                "score": 0.8
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.7
+              },
+              {
+                "index": 500,
+                "name": "Inside, small room",
+                "score": 0.6
+              },
+              {
+                "index": 353,
+                "name": "Knock",
+                "score": 0.15
+              }
+            ],
+            "rms": 0.05,
+            "peak": 0.15000000000000002,
+            "endMs": 975
+          },
+          "expected": {
+            "kind": "event",
+            "candidates": [
+              {
+                "index": 0,
+                "name": "Speech",
+                "score": 0.9
+              },
+              {
+                "index": 132,
+                "name": "Music",
+                "score": 0.8
+              },
+              {
+                "index": 353,
+                "name": "Knock",
+                "score": 0.15
+              }
+            ],
+            "event": {
+              "index": 0,
+              "name": "Speech",
+              "score": 0.9
+            },
+            "noiseFloor": 0.0025,
+            "calibrationWindows": 0
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 508,
+                "name": "Environmental noise",
+                "score": 0.9
+              },
+              {
+                "index": 354,
+                "name": "Tap",
+                "score": 0.2
+              },
+              {
+                "index": 353,
+                "name": "Knock",
+                "score": 0.15
+              }
+            ],
+            "rms": 0.0001,
+            "peak": 0.00030000000000000003,
+            "endMs": 1455
+          },
+          "expected": {
+            "kind": "possible",
+            "candidates": [
+              {
+                "index": 508,
+                "name": "Environmental noise",
+                "score": 0.9
+              },
+              {
+                "index": 354,
+                "name": "Tap",
+                "score": 0.2
+              },
+              {
+                "index": 353,
+                "name": "Knock",
+                "score": 0.15
+              }
+            ],
+            "event": {
+              "index": 354,
+              "name": "Tap",
+              "score": 0.2
+            },
+            "noiseFloor": 0.0025,
+            "calibrationWindows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "no-global-amplitude-gate",
+      "reset_before": true,
+      "frames": [
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.4
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.008,
+            "peak": 0.024,
+            "endMs": 975
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.008,
+            "calibrationWindows": 1
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.4
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.008,
+            "peak": 0.024,
+            "endMs": 1455
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.008,
+            "calibrationWindows": 2
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.4
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.008,
+            "peak": 0.024,
+            "endMs": 1935
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.008,
+            "calibrationWindows": 3
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.4
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.008,
+            "peak": 0.024,
+            "endMs": 2415
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.008,
+            "calibrationWindows": 4
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 0,
+                "name": "Speech",
+                "score": 0.25
+              }
+            ],
+            "rms": 0.0001,
+            "peak": 0.00030000000000000003,
+            "endMs": 2895
+          },
+          "expected": {
+            "kind": "possible",
+            "candidates": [
+              {
+                "index": 0,
+                "name": "Speech",
+                "score": 0.25
+              }
+            ],
+            "event": {
+              "index": 0,
+              "name": "Speech",
+              "score": 0.25
+            },
+            "noiseFloor": 0.008,
+            "calibrationWindows": 4
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 57,
+                "name": "Finger snapping",
+                "score": 0.25
+              }
+            ],
+            "rms": 0.0001,
+            "peak": 0.00030000000000000003,
+            "endMs": 3375
+          },
+          "expected": {
+            "kind": "possible",
+            "candidates": [
+              {
+                "index": 57,
+                "name": "Finger snapping",
+                "score": 0.25
+              }
+            ],
+            "event": {
+              "index": 57,
+              "name": "Finger snapping",
+              "score": 0.25
+            },
+            "noiseFloor": 0.008,
+            "calibrationWindows": 4
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 58,
+                "name": "Clapping",
+                "score": 0.25
+              }
+            ],
+            "rms": 0.0001,
+            "peak": 0.00030000000000000003,
+            "endMs": 3855
+          },
+          "expected": {
+            "kind": "possible",
+            "candidates": [
+              {
+                "index": 58,
+                "name": "Clapping",
+                "score": 0.25
+              }
+            ],
+            "event": {
+              "index": 58,
+              "name": "Clapping",
+              "score": 0.25
+            },
+            "noiseFloor": 0.008,
+            "calibrationWindows": 4
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 107,
+                "name": "Bird vocalization, bird call, bird song",
+                "score": 0.25
+              }
+            ],
+            "rms": 0.0001,
+            "peak": 0.00030000000000000003,
+            "endMs": 4335
+          },
+          "expected": {
+            "kind": "possible",
+            "candidates": [
+              {
+                "index": 107,
+                "name": "Bird vocalization, bird call, bird song",
+                "score": 0.25
+              }
+            ],
+            "event": {
+              "index": 107,
+              "name": "Bird vocalization, bird call, bird song",
+              "score": 0.25
+            },
+            "noiseFloor": 0.008,
+            "calibrationWindows": 4
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 349,
+                "name": "Doorbell",
+                "score": 0.25
+              }
+            ],
+            "rms": 0.0001,
+            "peak": 0.00030000000000000003,
+            "endMs": 4815
+          },
+          "expected": {
+            "kind": "possible",
+            "candidates": [
+              {
+                "index": 349,
+                "name": "Doorbell",
+                "score": 0.25
+              }
+            ],
+            "event": {
+              "index": 349,
+              "name": "Doorbell",
+              "score": 0.25
+            },
+            "noiseFloor": 0.008,
+            "calibrationWindows": 4
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 350,
+                "name": "Ding-dong",
+                "score": 0.25
+              }
+            ],
+            "rms": 0.0001,
+            "peak": 0.00030000000000000003,
+            "endMs": 5295
+          },
+          "expected": {
+            "kind": "possible",
+            "candidates": [
+              {
+                "index": 350,
+                "name": "Ding-dong",
+                "score": 0.25
+              }
+            ],
+            "event": {
+              "index": 350,
+              "name": "Ding-dong",
+              "score": 0.25
+            },
+            "noiseFloor": 0.008,
+            "calibrationWindows": 4
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 443,
+                "name": "Pour",
+                "score": 0.25
+              }
+            ],
+            "rms": 0.0001,
+            "peak": 0.00030000000000000003,
+            "endMs": 5775
+          },
+          "expected": {
+            "kind": "possible",
+            "candidates": [
+              {
+                "index": 443,
+                "name": "Pour",
+                "score": 0.25
+              }
+            ],
+            "event": {
+              "index": 443,
+              "name": "Pour",
+              "score": 0.25
+            },
+            "noiseFloor": 0.008,
+            "calibrationWindows": 4
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 353,
+                "name": "Knock",
+                "score": 0.12
+              }
+            ],
+            "rms": 0.0001,
+            "peak": 0.00030000000000000003,
+            "endMs": 6255
+          },
+          "expected": {
+            "kind": "possible",
+            "candidates": [
+              {
+                "index": 353,
+                "name": "Knock",
+                "score": 0.12
+              }
+            ],
+            "event": {
+              "index": 353,
+              "name": "Knock",
+              "score": 0.12
+            },
+            "noiseFloor": 0.008,
+            "calibrationWindows": 4
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 354,
+                "name": "Tap",
+                "score": 0.12
+              }
+            ],
+            "rms": 0.0001,
+            "peak": 0.00030000000000000003,
+            "endMs": 6735
+          },
+          "expected": {
+            "kind": "possible",
+            "candidates": [
+              {
+                "index": 354,
+                "name": "Tap",
+                "score": 0.12
+              }
+            ],
+            "event": {
+              "index": 354,
+              "name": "Tap",
+              "score": 0.12
+            },
+            "noiseFloor": 0.008,
+            "calibrationWindows": 4
+          }
+        }
+      ]
+    },
+    {
+      "id": "gap-exactness",
+      "reset_before": true,
+      "frames": [
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 443,
+                "name": "Pour",
+                "score": 0.26
+              }
+            ],
+            "rms": 0.01,
+            "peak": 0.03,
+            "endMs": 975
+          },
+          "expected": {
+            "kind": "possible",
+            "candidates": [
+              {
+                "index": 443,
+                "name": "Pour",
+                "score": 0.26
+              }
+            ],
+            "event": {
+              "index": 443,
+              "name": "Pour",
+              "score": 0.26
+            },
+            "noiseFloor": 0.0025,
+            "calibrationWindows": 0
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 443,
+                "name": "Pour",
+                "score": 0.26
+              }
+            ],
+            "rms": 0.01,
+            "peak": 0.03,
+            "endMs": 1775
+          },
+          "expected": {
+            "kind": "event",
+            "candidates": [
+              {
+                "index": 443,
+                "name": "Pour",
+                "score": 0.26
+              }
+            ],
+            "event": {
+              "index": 443,
+              "name": "Pour",
+              "score": 0.26
+            },
+            "noiseFloor": 0.0025,
+            "calibrationWindows": 0
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 443,
+                "name": "Pour",
+                "score": 0.26
+              }
+            ],
+            "rms": 0.01,
+            "peak": 0.03,
+            "endMs": 2576
+          },
+          "expected": {
+            "kind": "possible",
+            "candidates": [
+              {
+                "index": 443,
+                "name": "Pour",
+                "score": 0.26
+              }
+            ],
+            "event": {
+              "index": 443,
+              "name": "Pour",
+              "score": 0.26
+            },
+            "noiseFloor": 0.0025,
+            "calibrationWindows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "stable-ties",
+      "reset_before": true,
+      "frames": [
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 57,
+                "name": "Finger snapping",
+                "score": 0.3
+              },
+              {
+                "index": 58,
+                "name": "Clapping",
+                "score": 0.3
+              }
+            ],
+            "rms": 0.005,
+            "peak": 0.015,
+            "endMs": 975
+          },
+          "expected": {
+            "kind": "possible",
+            "candidates": [
+              {
+                "index": 57,
+                "name": "Finger snapping",
+                "score": 0.3
+              },
+              {
+                "index": 58,
+                "name": "Clapping",
+                "score": 0.3
+              }
+            ],
+            "event": {
+              "index": 57,
+              "name": "Finger snapping",
+              "score": 0.3
+            },
+            "noiseFloor": 0.0025,
+            "calibrationWindows": 0
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 58,
+                "name": "Clapping",
+                "score": 0.3
+              },
+              {
+                "index": 57,
+                "name": "Finger snapping",
+                "score": 0.3
+              }
+            ],
+            "rms": 0.005,
+            "peak": 0.015,
+            "endMs": 1455
+          },
+          "expected": {
+            "kind": "possible",
+            "candidates": [
+              {
+                "index": 58,
+                "name": "Clapping",
+                "score": 0.3
+              },
+              {
+                "index": 57,
+                "name": "Finger snapping",
+                "score": 0.3
+              }
+            ],
+            "event": {
+              "index": 58,
+              "name": "Clapping",
+              "score": 0.3
+            },
+            "noiseFloor": 0.0025,
+            "calibrationWindows": 0
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 353,
+                "name": "Knock",
+                "score": 0.15
+              },
+              {
+                "index": 354,
+                "name": "Tap",
+                "score": 0.15
+              }
+            ],
+            "rms": 0.001,
+            "peak": 0.003,
+            "endMs": 1935
+          },
+          "expected": {
+            "kind": "possible",
+            "candidates": [
+              {
+                "index": 353,
+                "name": "Knock",
+                "score": 0.15
+              },
+              {
+                "index": 354,
+                "name": "Tap",
+                "score": 0.15
+              }
+            ],
+            "event": {
+              "index": 353,
+              "name": "Knock",
+              "score": 0.15
+            },
+            "noiseFloor": 0.0025,
+            "calibrationWindows": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "uncertain-invalid-and-quiet",
+      "reset_before": true,
+      "frames": [
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 0,
+                "name": "Speech",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.1,
+            "peak": 0.30000000000000004,
+            "endMs": 975
+          },
+          "expected": {
+            "kind": "uncertain",
+            "candidates": [
+              {
+                "index": 0,
+                "name": "Speech",
+                "score": 0.2
+              }
+            ],
+            "event": null,
+            "noiseFloor": 0.025,
+            "calibrationWindows": 1
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": -1,
+                "name": "invalid-test-class",
+                "score": 0.99
+              },
+              {
+                "index": 999,
+                "name": "invalid-test-class",
+                "score": 0.99
+              },
+              {
+                "index": 129,
+                "name": "Snake",
+                "score": null
+              }
+            ],
+            "rms": 0.1,
+            "peak": 0.30000000000000004,
+            "endMs": 1455
+          },
+          "expected": {
+            "kind": "uncertain",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.025,
+            "calibrationWindows": 2
+          }
+        },
+        {
+          "input": {
+            "categories": [],
+            "rms": 0,
+            "peak": 0,
+            "endMs": 1935
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.00075,
+            "calibrationWindows": 3
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 494,
+                "name": "Silence",
+                "score": 0.9
+              }
+            ],
+            "rms": 0,
+            "peak": 0,
+            "endMs": 2415
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.00075,
+            "calibrationWindows": 4
+          }
+        }
+      ]
+    },
+    {
+      "id": "background-estimator-long-run",
+      "reset_before": true,
+      "frames": [
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.004,
+            "peak": 0.012,
+            "endMs": 975
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.004,
+            "calibrationWindows": 1
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.005,
+            "peak": 0.015,
+            "endMs": 1455
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.004,
+            "calibrationWindows": 2
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.006,
+            "peak": 0.018000000000000002,
+            "endMs": 1935
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.004,
+            "calibrationWindows": 3
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.007,
+            "peak": 0.021,
+            "endMs": 2415
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.004,
+            "calibrationWindows": 4
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.008,
+            "peak": 0.024,
+            "endMs": 2895
+          },
+          "expected": {
+            "kind": "uncertain",
+            "candidates": [
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "event": null,
+            "noiseFloor": 0.004,
+            "calibrationWindows": 5
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.009000000000000001,
+            "peak": 0.027000000000000003,
+            "endMs": 3375
+          },
+          "expected": {
+            "kind": "uncertain",
+            "candidates": [
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "event": null,
+            "noiseFloor": 0.0041,
+            "calibrationWindows": 6
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.01,
+            "peak": 0.03,
+            "endMs": 3855
+          },
+          "expected": {
+            "kind": "uncertain",
+            "candidates": [
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "event": null,
+            "noiseFloor": 0.004190000000000001,
+            "calibrationWindows": 7
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.011,
+            "peak": 0.033,
+            "endMs": 4335
+          },
+          "expected": {
+            "kind": "uncertain",
+            "candidates": [
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "event": null,
+            "noiseFloor": 0.0042710000000000005,
+            "calibrationWindows": 8
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.012,
+            "peak": 0.036000000000000004,
+            "endMs": 4815
+          },
+          "expected": {
+            "kind": "uncertain",
+            "candidates": [
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "event": null,
+            "noiseFloor": 0.0043439,
+            "calibrationWindows": 9
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.004,
+            "peak": 0.012,
+            "endMs": 5295
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.004309510000000001,
+            "calibrationWindows": 10
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.005,
+            "peak": 0.015,
+            "endMs": 5775
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.004378559000000001,
+            "calibrationWindows": 11
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.006,
+            "peak": 0.018000000000000002,
+            "endMs": 6255
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.0044407031,
+            "calibrationWindows": 12
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.007,
+            "peak": 0.021,
+            "endMs": 6735
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.00449663279,
+            "calibrationWindows": 13
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.008,
+            "peak": 0.024,
+            "endMs": 7215
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.004546969511000001,
+            "calibrationWindows": 14
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.009000000000000001,
+            "peak": 0.027000000000000003,
+            "endMs": 7695
+          },
+          "expected": {
+            "kind": "uncertain",
+            "candidates": [
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "event": null,
+            "noiseFloor": 0.004592272559900001,
+            "calibrationWindows": 15
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.01,
+            "peak": 0.03,
+            "endMs": 8175
+          },
+          "expected": {
+            "kind": "uncertain",
+            "candidates": [
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "event": null,
+            "noiseFloor": 0.004633045303910002,
+            "calibrationWindows": 16
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.011,
+            "peak": 0.033,
+            "endMs": 8655
+          },
+          "expected": {
+            "kind": "uncertain",
+            "candidates": [
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "event": null,
+            "noiseFloor": 0.004669740773519003,
+            "calibrationWindows": 17
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.012,
+            "peak": 0.036000000000000004,
+            "endMs": 9135
+          },
+          "expected": {
+            "kind": "uncertain",
+            "candidates": [
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "event": null,
+            "noiseFloor": 0.004702766696167102,
+            "calibrationWindows": 18
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.004,
+            "peak": 0.012,
+            "endMs": 9615
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.004732490026550393,
+            "calibrationWindows": 19
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.005,
+            "peak": 0.015,
+            "endMs": 10095
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.004759241023895354,
+            "calibrationWindows": 20
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.006,
+            "peak": 0.018000000000000002,
+            "endMs": 10575
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.004783316921505819,
+            "calibrationWindows": 21
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.007,
+            "peak": 0.021,
+            "endMs": 11055
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.004804985229355237,
+            "calibrationWindows": 22
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.008,
+            "peak": 0.024,
+            "endMs": 11535
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.004824486706419714,
+            "calibrationWindows": 23
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.009000000000000001,
+            "peak": 0.027000000000000003,
+            "endMs": 12015
+          },
+          "expected": {
+            "kind": "uncertain",
+            "candidates": [
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "event": null,
+            "noiseFloor": 0.004842038035777742,
+            "calibrationWindows": 24
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.01,
+            "peak": 0.03,
+            "endMs": 12495
+          },
+          "expected": {
+            "kind": "uncertain",
+            "candidates": [
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "event": null,
+            "noiseFloor": 0.004857834232199968,
+            "calibrationWindows": 25
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.011,
+            "peak": 0.033,
+            "endMs": 12975
+          },
+          "expected": {
+            "kind": "uncertain",
+            "candidates": [
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "event": null,
+            "noiseFloor": 0.004872050808979971,
+            "calibrationWindows": 26
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.012,
+            "peak": 0.036000000000000004,
+            "endMs": 13455
+          },
+          "expected": {
+            "kind": "uncertain",
+            "candidates": [
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "event": null,
+            "noiseFloor": 0.004884845728081974,
+            "calibrationWindows": 27
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.004,
+            "peak": 0.012,
+            "endMs": 13935
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.004896361155273777,
+            "calibrationWindows": 28
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.005,
+            "peak": 0.015,
+            "endMs": 14415
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.0049067250397463995,
+            "calibrationWindows": 29
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.006,
+            "peak": 0.018000000000000002,
+            "endMs": 14895
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.004916052535771759,
+            "calibrationWindows": 30
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.007,
+            "peak": 0.021,
+            "endMs": 15375
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.004924447282194584,
+            "calibrationWindows": 31
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.008,
+            "peak": 0.024,
+            "endMs": 15855
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.004932002553975126,
+            "calibrationWindows": 32
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.009000000000000001,
+            "peak": 0.027000000000000003,
+            "endMs": 16335
+          },
+          "expected": {
+            "kind": "uncertain",
+            "candidates": [
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "event": null,
+            "noiseFloor": 0.004938802298577613,
+            "calibrationWindows": 33
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.01,
+            "peak": 0.03,
+            "endMs": 16815
+          },
+          "expected": {
+            "kind": "uncertain",
+            "candidates": [
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "event": null,
+            "noiseFloor": 0.004944922068719852,
+            "calibrationWindows": 34
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.011,
+            "peak": 0.033,
+            "endMs": 17295
+          },
+          "expected": {
+            "kind": "uncertain",
+            "candidates": [
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "event": null,
+            "noiseFloor": 0.004950429861847867,
+            "calibrationWindows": 35
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.012,
+            "peak": 0.036000000000000004,
+            "endMs": 17775
+          },
+          "expected": {
+            "kind": "uncertain",
+            "candidates": [
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "event": null,
+            "noiseFloor": 0.004955386875663079,
+            "calibrationWindows": 36
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.004,
+            "peak": 0.012,
+            "endMs": 18255
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.004959848188096772,
+            "calibrationWindows": 37
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.005,
+            "peak": 0.015,
+            "endMs": 18735
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.004963863369287095,
+            "calibrationWindows": 38
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.006,
+            "peak": 0.018000000000000002,
+            "endMs": 19215
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.004967477032358385,
+            "calibrationWindows": 39
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.007,
+            "peak": 0.021,
+            "endMs": 19695
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.004970729329122547,
+            "calibrationWindows": 40
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.008,
+            "peak": 0.024,
+            "endMs": 20175
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.004973656396210292,
+            "calibrationWindows": 41
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.009000000000000001,
+            "peak": 0.027000000000000003,
+            "endMs": 20655
+          },
+          "expected": {
+            "kind": "uncertain",
+            "candidates": [
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "event": null,
+            "noiseFloor": 0.004976290756589263,
+            "calibrationWindows": 42
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.01,
+            "peak": 0.03,
+            "endMs": 21135
+          },
+          "expected": {
+            "kind": "uncertain",
+            "candidates": [
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "event": null,
+            "noiseFloor": 0.004978661680930337,
+            "calibrationWindows": 43
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.011,
+            "peak": 0.033,
+            "endMs": 21615
+          },
+          "expected": {
+            "kind": "uncertain",
+            "candidates": [
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "event": null,
+            "noiseFloor": 0.0049807955128373035,
+            "calibrationWindows": 44
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.012,
+            "peak": 0.036000000000000004,
+            "endMs": 22095
+          },
+          "expected": {
+            "kind": "uncertain",
+            "candidates": [
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "event": null,
+            "noiseFloor": 0.004982715961553573,
+            "calibrationWindows": 45
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.004,
+            "peak": 0.012,
+            "endMs": 22575
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.004984444365398216,
+            "calibrationWindows": 46
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.005,
+            "peak": 0.015,
+            "endMs": 23055
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.004985999928858394,
+            "calibrationWindows": 47
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.006,
+            "peak": 0.018000000000000002,
+            "endMs": 23535
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.004987399935972555,
+            "calibrationWindows": 48
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.007,
+            "peak": 0.021,
+            "endMs": 24015
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.004988659942375299,
+            "calibrationWindows": 49
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.008,
+            "peak": 0.024,
+            "endMs": 24495
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.004989793948137769,
+            "calibrationWindows": 50
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.009000000000000001,
+            "peak": 0.027000000000000003,
+            "endMs": 24975
+          },
+          "expected": {
+            "kind": "uncertain",
+            "candidates": [
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "event": null,
+            "noiseFloor": 0.004990814553323992,
+            "calibrationWindows": 51
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.01,
+            "peak": 0.03,
+            "endMs": 25455
+          },
+          "expected": {
+            "kind": "uncertain",
+            "candidates": [
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "event": null,
+            "noiseFloor": 0.004991733097991594,
+            "calibrationWindows": 52
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.011,
+            "peak": 0.033,
+            "endMs": 25935
+          },
+          "expected": {
+            "kind": "uncertain",
+            "candidates": [
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "event": null,
+            "noiseFloor": 0.0049925597881924355,
+            "calibrationWindows": 53
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.012,
+            "peak": 0.036000000000000004,
+            "endMs": 26415
+          },
+          "expected": {
+            "kind": "uncertain",
+            "candidates": [
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "event": null,
+            "noiseFloor": 0.004993303809373193,
+            "calibrationWindows": 54
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.3
+              },
+              {
+                "index": 67,
+                "name": "Animal",
+                "score": 0.2
+              }
+            ],
+            "rms": 0.004,
+            "peak": 0.012,
+            "endMs": 26895
+          },
+          "expected": {
+            "kind": "quiet",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.004993973428435874,
+            "calibrationWindows": 55
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 0,
+                "name": "Speech",
+                "score": 0.96
+              }
+            ],
+            "rms": 0.07,
+            "peak": 0.21000000000000002,
+            "endMs": 27375
+          },
+          "expected": {
+            "kind": "event",
+            "candidates": [
+              {
+                "index": 0,
+                "name": "Speech",
+                "score": 0.96
+              }
+            ],
+            "event": {
+              "index": 0,
+              "name": "Speech",
+              "score": 0.96
+            },
+            "noiseFloor": 0.004993973428435874,
+            "calibrationWindows": 55
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 353,
+                "name": "Knock",
+                "score": 0.1484375
+              }
+            ],
+            "rms": 0.0002,
+            "peak": 0.0006000000000000001,
+            "endMs": 27855
+          },
+          "expected": {
+            "kind": "possible",
+            "candidates": [
+              {
+                "index": 353,
+                "name": "Knock",
+                "score": 0.1484375
+              }
+            ],
+            "event": {
+              "index": 353,
+              "name": "Knock",
+              "score": 0.1484375
+            },
+            "noiseFloor": 0.004993973428435874,
+            "calibrationWindows": 55
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.85
+              }
+            ],
+            "rms": 0.06,
+            "peak": 0.18,
+            "endMs": 28335
+          },
+          "expected": {
+            "kind": "confirming",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.004993973428435874,
+            "calibrationWindows": 55
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.85
+              }
+            ],
+            "rms": 0.06,
+            "peak": 0.18,
+            "endMs": 28815
+          },
+          "expected": {
+            "kind": "confirming",
+            "candidates": [],
+            "event": null,
+            "noiseFloor": 0.004993973428435874,
+            "calibrationWindows": 55
+          }
+        },
+        {
+          "input": {
+            "categories": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.85
+              }
+            ],
+            "rms": 0.06,
+            "peak": 0.18,
+            "endMs": 29295
+          },
+          "expected": {
+            "kind": "event",
+            "candidates": [
+              {
+                "index": 121,
+                "name": "Insect",
+                "score": 0.85
+              }
+            ],
+            "event": {
+              "index": 121,
+              "name": "Insect",
+              "score": 0.85
+            },
+            "noiseFloor": 0.004993973428435874,
+            "calibrationWindows": 55
+          }
+        }
+      ]
+    }
+  ]
+}

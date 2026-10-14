@@ -1,0 +1,160 @@
+{
+  "version": 2,
+  "revision": "user-tuned-final-20261003",
+  "referenceDate": "2026-10-03",
+  "status": {
+    "glow": "user-tuned values 85%, 80 reference px, 60 degrees",
+    "label": "user finalized transparency at 80%; tint alpha 0.20; single sound-name line"
+  },
+  "defaults": {
+    "scene": "dark",
+    "bearingDeg": 90,
+    "sound": "bell",
+    "mode": "directional",
+    "intensity": 0.85,
+    "depthReferencePx": 80,
+    "spreadFwhmDegrees": 60,
+    "inspectionHold": true,
+    "maskTransparencyPercent": 80
+  },
+  "mapping": {
+    "angleDegrees": {
+      "0": "front / top edge",
+      "45": "front-right / top-right corner",
+      "90": "right / right edge",
+      "135": "rear-right / bottom-right corner",
+      "180": "rear / bottom edge",
+      "225": "rear-left / bottom-left corner",
+      "270": "left / left edge",
+      "315": "front-left / top-left corner"
+    },
+    "horizontalAzimuthOnly": true,
+    "headRelativeInput": true,
+    "elevationNotRepresented": true
+  },
+  "core": {
+    "edgeAmplitude": 0.65,
+    "edgeFalloffPx": 2.2,
+    "ribbonAmplitude": 0.35,
+    "ribbonFalloffPx": 18,
+    "bloomAmplitude": 0.35,
+    "bloomSigmaPx": "depthReferencePx",
+    "nearColor": [
+      48,
+      200,
+      255
+    ],
+    "haloColor": [
+      0,
+      114,
+      255
+    ],
+    "nearColorFalloffPx": 13,
+    "alphaComposition": "normal source-over"
+  },
+  "timing": {
+    "attackMs": 180,
+    "holdUntilMs": 1200,
+    "endMs": 2800,
+    "curve": "smoothstep",
+    "reducedMotionEndMs": 2600
+  },
+  "labels": {
+    "content": "one line: sound type name only",
+    "textColor": "#FFFFFF",
+    "fontFamily": [
+      "Inter",
+      "Segoe UI",
+      "PingFang SC",
+      "Microsoft YaHei",
+      "sans-serif"
+    ],
+    "fontPx": 15,
+    "fontWeight": 500,
+    "lineHeight": 1.3,
+    "sizing": "intrinsic text width + padding + border; no minimum width",
+    "paddingTopBottomPx": 8,
+    "paddingLeftRightPx": 12,
+    "radiusPx": 12,
+    "backdropBlurSigmaPx": 18,
+    "tintRgba": [
+      72,
+      74,
+      68,
+      0.2
+    ],
+    "transparencyControl": {
+      "defaultPercent": 80,
+      "minPercent": 0,
+      "maxPercent": 100,
+      "stepPercent": 1,
+      "tintAlphaFormula": "1 - transparencyPercent / 100",
+      "affects": "gray tint only; text, blur, sheen, border and shadow remain independently defined"
+    },
+    "topSheenRgba": [
+      255,
+      255,
+      255,
+      0.04
+    ],
+    "bottomSheenRgba": [
+      255,
+      255,
+      255,
+      0.01
+    ],
+    "sheenDirection": "top to bottom",
+    "borderPx": 1,
+    "borderRgba": [
+      255,
+      255,
+      255,
+      0.22
+    ],
+    "insetHighlight": {
+      "offsetPx": [
+        0,
+        1
+      ],
+      "blurPx": 0,
+      "rgba": [
+        255,
+        255,
+        255,
+        0.08
+      ]
+    },
+    "outerShadow": {
+      "offsetPx": [
+        0,
+        3
+      ],
+      "cssBlurRadiusPx": 12,
+      "rgba": [
+        0,
+        0,
+        0,
+        0.12
+      ]
+    },
+    "outerEdgeFeatherPx": 0,
+    "compositionOrder": [
+      "underlying scene and glow",
+      "clip and blur underlying image",
+      "gray tint",
+      "subtle vertical sheen",
+      "inner highlight and border",
+      "white text"
+    ],
+    "edgeClearanceX": 22,
+    "edgeClearanceY": 24,
+    "maxEvents": 3,
+    "eventOpacityAffectsWholeCompositedLabel": true
+  },
+  "soundTypes": {
+    "splash": "泼水声",
+    "steps": "脚步声",
+    "knock": "敲门声",
+    "bell": "门铃声"
+  }
+}

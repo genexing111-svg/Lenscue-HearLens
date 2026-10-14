@@ -1,0 +1,187 @@
+{
+  "params": {
+    "intensity": 0.85,
+    "depthPx": 80,
+    "spreadDeg": 60
+  },
+  "size": [
+    736,
+    430
+  ],
+  "overlayFiles": [
+    {
+      "file": "reference/overlays/bearing-000.png",
+      "bearingDeg": 0,
+      "logicalSize": [
+        736,
+        430
+      ],
+      "rgba": true
+    },
+    {
+      "file": "reference/overlays/bearing-045.png",
+      "bearingDeg": 45,
+      "logicalSize": [
+        736,
+        430
+      ],
+      "rgba": true
+    },
+    {
+      "file": "reference/overlays/bearing-090.png",
+      "bearingDeg": 90,
+      "logicalSize": [
+        736,
+        430
+      ],
+      "rgba": true
+    },
+    {
+      "file": "reference/overlays/bearing-135.png",
+      "bearingDeg": 135,
+      "logicalSize": [
+        736,
+        430
+      ],
+      "rgba": true
+    },
+    {
+      "file": "reference/overlays/bearing-180.png",
+      "bearingDeg": 180,
+      "logicalSize": [
+        736,
+        430
+      ],
+      "rgba": true
+    },
+    {
+      "file": "reference/overlays/bearing-225.png",
+      "bearingDeg": 225,
+      "logicalSize": [
+        736,
+        430
+      ],
+      "rgba": true
+    },
+    {
+      "file": "reference/overlays/bearing-270.png",
+      "bearingDeg": 270,
+      "logicalSize": [
+        736,
+        430
+      ],
+      "rgba": true
+    },
+    {
+      "file": "reference/overlays/bearing-315.png",
+      "bearingDeg": 315,
+      "logicalSize": [
+        736,
+        430
+      ],
+      "rgba": true
+    },
+    {
+      "file": "reference/overlays/all-edges.png",
+      "bearingDeg": "all",
+      "logicalSize": [
+        736,
+        430
+      ],
+      "rgba": true
+    }
+  ],
+  "probes": [
+    {
+      "point": [
+        735.5,
+        429.5
+      ],
+      "bearing": 135,
+      "expectedRgba": [
+        46,
+        197,
+        255,
+        1
+      ]
+    },
+    {
+      "point": [
+        0.5,
+        0.5
+      ],
+      "bearing": 135,
+      "expectedRgba": [
+        46,
+        197,
+        255,
+        1.5003256137640197e-11
+      ]
+    },
+    {
+      "point": [
+        368,
+        215
+      ],
+      "bearing": 135,
+      "expectedRgba": [
+        0,
+        114,
+        255,
+        0.0016896255924886893
+      ]
+    },
+    {
+      "point": [
+        368,
+        0.5
+      ],
+      "bearing": 0,
+      "expectedRgba": [
+        46,
+        197,
+        255,
+        1
+      ]
+    },
+    {
+      "point": [
+        368,
+        429.5
+      ],
+      "bearing": 180,
+      "expectedRgba": [
+        46,
+        197,
+        255,
+        1
+      ]
+    }
+  ],
+  "temporal": [
+    {
+      "elapsedMs": 0,
+      "opacity": 0
+    },
+    {
+      "elapsedMs": 90,
+      "opacity": 0.5
+    },
+    {
+      "elapsedMs": 180,
+      "opacity": 1
+    },
+    {
+      "elapsedMs": 1200,
+      "opacity": 1
+    },
+    {
+      "elapsedMs": 2000,
+      "opacity": 0.5
+    },
+    {
+      "elapsedMs": 2800,
+      "opacity": 0
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.HearLens" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="colorAccent">#9AC2FF</item>
+        <item name="android:windowBackground">#101511</item>
+        <item name="android:colorBackground">#101511</item>
+        <item name="android:statusBarColor">#101511</item>
+        <item name="android:navigationBarColor">#101511</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="alertDialogTheme">@style/ThemeOverlay.HearLens.Settings</item>
+    </style>
+    <style name="ThemeOverlay.HearLens.Settings" parent="ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/settings_dialog_background</item>
+        <item name="android:colorBackground">#7E796C</item>
+        <item name="android:textColorPrimary">#FAF9F4</item>
+        <item name="android:textColorSecondary">#D7D5CB</item>
+        <item name="colorAccent">#9AC2FF</item>
+        <item name="android:backgroundDimAmount">0.12</item>
+    </style>
+</resources>

@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark">
+<title>听见视界 · USB 双眼工作台</title>
+<style>
+:root{color-scheme:dark;--bg:#0a111b;--panel:#131e2c;--edge:#29394b;--muted:#a1b4c9;--text:#f1f7ff;--mint:#76ebce;--amber:#ffda8c}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 85% 0,#153539,transparent 42%),var(--bg);color:var(--text);font-family:"Microsoft YaHei UI","Microsoft YaHei",system-ui,sans-serif}button,input,textarea,select{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px solid var(--mint);outline-offset:3px}.shell{max-width:1680px;margin:auto;padding:24px 30px}header{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:19px}.brand{display:flex;gap:13px;align-items:center}.logo{width:46px;height:46px;border-radius:15px;border:1px solid #417e76;background:#163b34;color:var(--mint);display:grid;place-items:center;font-size:27px;font-weight:700}h1{font-size:23px;margin:0 0 4px;letter-spacing:1px}.subtitle{font-size:12px;color:var(--muted);margin:0}.badge{display:flex;align-items:center;gap:8px;color:var(--amber);font-size:13px}.badge:before{content:"";width:8px;height:8px;border-radius:50%;background:currentColor}.badge[data-tone=live]{color:var(--mint)}.badge[data-tone=error]{color:#ffb0b0}.intro{border:1px solid #345451;background:#102b2a88;border-radius:13px;padding:13px 17px;color:#d2eee5;font-size:13px;line-height:1.8;margin-bottom:18px}.intro strong{color:var(--mint);font-weight:600}.layout{display:grid;grid-template-columns:minmax(0,1fr) 350px;gap:20px;align-items:start}.feeds{min-width:0}.card{border:1px solid var(--edge);background:#111b28d9;border-radius:15px;overflow:hidden;margin-bottom:17px}.card-head{display:flex;justify-content:space-between;align-items:center;gap:15px;padding:13px 16px}.card h2{font-size:14px;margin:0;font-weight:600}.eyebrow{font-size:11px;letter-spacing:1px;color:var(--mint);margin-right:9px}.meta{font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums}.stage{position:relative;background:#000;min-height:210px;height:clamp(230px,34vh,480px);display:grid;place-items:center}.stage canvas{width:100%;height:100%;position:absolute;inset:0;object-fit:contain}.stage[data-live=false] canvas{visibility:hidden}.overlay{z-index:1;text-align:center;padding:20px;max-width:540px}.overlay strong{display:block;font-size:20px;margin-bottom:9px}.overlay p{margin:0;font-size:13px;color:var(--muted);line-height:1.7}.stage[data-live=true] .overlay{display:none}.sbs{height:auto;aspect-ratio:20/9;min-height:180px}.sbs canvas{position:static;display:block;width:100%;height:auto}.sbs .overlay{position:absolute}.eye-labels{display:flex;justify-content:space-around;border-top:1px solid #243346;padding:8px;color:#849db8;font-size:10px;letter-spacing:2px}.note{padding:10px 16px;background:#101925;font-size:11px;line-height:1.7;color:var(--muted)}.metric-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin:0 0 15px}.metric{padding:13px 11px;border:1px solid var(--edge);border-radius:11px;background:#121d2b}.metric span{display:block;font-size:10px;color:var(--muted);margin-bottom:7px}.metric strong{font-size:21px;font-weight:600;font-variant-numeric:tabular-nums}.metric small{font-size:10px;color:var(--muted);margin-left:3px}.toolbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px}button{padding:10px 15px;border:1px solid #3d546a;border-radius:9px;background:#1b2a3a;color:var(--text);font-size:13px}button:hover{background:#2a4053}button.primary{background:#22604f;border-color:#479f86;color:#d5fff1;font-weight:600}button.primary:hover{background:#307960}button[disabled]{opacity:.5;cursor:wait}.check{display:flex;align-items:center;gap:7px;font-size:12px;color:#bdd0df;margin-left:4px}input[type=checkbox]{accent-color:#65dbb9;width:16px;height:16px}.notice{font-size:12px;color:var(--amber);line-height:1.8;min-height:23px}.controls{border:1px solid var(--edge);border-radius:15px;background:#131f2eee;padding:18px;position:sticky;top:15px}.controls h2{font-size:15px;margin:0 0 17px}.section-title{font-size:11px;color:var(--mint);margin:20px 0 13px;padding-top:17px;border-top:1px solid var(--edge);letter-spacing:1px}.field{margin-bottom:15px}.field label{font-size:12px;display:flex;justify-content:space-between;gap:10px;margin-bottom:8px;color:#d6e1ee}.field output{color:var(--mint);font-size:11px;font-variant-numeric:tabular-nums}textarea,select{border:1px solid #3a4a60;background:#0b1522;border-radius:8px;color:#e8f1fa;width:100%;padding:9px 10px;font-size:12px}textarea{resize:vertical;min-height:82px;line-height:1.7}input[type=range]{width:100%;accent-color:#71dfc2;margin:4px 0}.small{color:var(--muted);font-size:11px;line-height:1.75;margin:6px 0 0}.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}.wide{width:100%}.secondary{font-size:12px;padding:8px 12px}.actions{display:flex;gap:8px}.actions button{flex:1}footer{margin-top:21px;padding-top:15px;border-top:1px solid var(--edge);font-size:11px;color:#8ba1b8;line-height:1.8;display:flex;justify-content:space-between;gap:20px}.stage:fullscreen{width:100vw;height:100vh;border:0;background:#000}.stage:fullscreen canvas{position:absolute;width:100%;height:100%;object-fit:contain}.fullscreen{padding:4px 9px;font-size:11px}.flow{color:#b0c3d6;font-size:12px;margin:0 0 12px;letter-spacing:.4px}@media(max-width:1100px){.layout{grid-template-columns:minmax(0,1fr) 305px}.metric-grid{grid-template-columns:repeat(3,1fr)}.shell{padding:20px}.metric strong{font-size:19px}}@media(max-width:760px){.shell{padding:18px 13px}.layout{grid-template-columns:1fr}.controls{position:static}h1{font-size:19px}.badge{font-size:11px}.intro{font-size:12px}.stage{height:32vh}.sbs{height:auto}.metric-grid{grid-template-columns:repeat(3,1fr)}footer{flex-direction:column;gap:4px}.card-head{padding:12px}.meta{font-size:10px}.toolbar{gap:7px}.check{width:100%;margin-top:4px}}
+.controls{max-height:calc(100vh - 30px);overflow:auto;scrollbar-width:thin}.controls details{border-top:1px solid var(--edge);padding-top:13px;margin-top:14px}.controls summary{cursor:pointer;color:#cce9e2;font-size:12px;font-weight:600;margin-bottom:14px;list-style-position:inside}.controls details:not([open]) summary{margin-bottom:0}.controls .section-title{margin-top:12px;padding-top:11px}.presets{display:flex;gap:7px;margin-bottom:14px}.presets select{flex:1}.field input[type=color]{width:100%;height:36px;padding:3px;border:1px solid #3a4a60;background:#0b1522;border-radius:7px}input:disabled,select:disabled{opacity:.45;cursor:not-allowed}.controls .check{margin:8px 0 12px}.config-actions{display:grid;grid-template-columns:1fr 1fr;gap:7px}.controls .actual{color:#80d9bf;border-left:2px solid #376658;padding-left:8px}.controls .compact{margin-bottom:9px}.controls .eye-controls{padding:10px;border:1px solid var(--edge);border-radius:9px}.warning-note{color:#d2c29a;font-size:11px;line-height:1.7;margin-top:14px}@media(max-width:760px){.controls{max-height:none;overflow:visible}}
+</style>
+</head>
+<body><main class="shell">
+<header><div class="brand"><div class="logo" aria-hidden="true">◉</div><div><h1>听见视界 · 双眼工作台</h1><p class="subtitle">USB 全幅摄像头 → 电脑叠字 → 手机双眼显示</p></div></div><div id="badge" class="badge" data-tone="waiting" role="status"><span id="statusText">正在连接手机</span></div></header>
+<div class="intro"><strong>开始体验：</strong>保持手机通过 USB 连接并打开「听见视界」，在右侧输入文字。电脑将完整摄像头画面复制到左右眼，叠加你输入的文字，再通过 USB 传回手机。</div>
+<div class="layout"><section class="feeds">
+<div class="toolbar"><button id="toggleReturn" class="primary" type="button">停止双眼回传</button><button id="reconnect" type="button">重新连接</button><label class="check"><input id="phoneDisplay" type="checkbox" checked>手机横屏双眼显示</label></div>
+<p id="notice" class="notice" role="status">正在等待手机。画面就绪后自动开始双眼回传。</p>
+<div class="metric-grid">
+<div class="metric"><span>相机采集</span><strong id="cameraFps">—</strong><small>fps</small></div><div class="metric"><span>USB 上行</span><strong id="uplinkFps">—</strong><small>fps</small></div><div class="metric"><span>PC 合成</span><strong id="composeFps">0</strong><small>fps</small></div><div class="metric"><span>手机收到回传</span><strong id="returnFps">—</strong><small>fps</small></div><div class="metric"><span>手机实际显示</span><strong id="displayFps">—</strong><small>fps</small></div><div class="metric"><span>回传帧龄</span><strong id="returnAge">—</strong><small>ms</small></div>
+</div>
+<div class="card"><div class="card-head"><h2><span class="eyebrow">01 / SOURCE</span>全幅原图</h2><span id="sourceMeta" class="meta">等待完整摄像头画面</span></div><div id="sourceStage" class="stage" data-live="false"><canvas id="sourceCanvas" width="1280" height="720" aria-label="完整手机摄像头原图"></canvas><div class="overlay"><strong id="emptyTitle">正在连接手机</strong><p id="emptyMessage">请保持手机解锁，允许相机权限并开启 USB 传输。</p></div></div><div class="note">完整保留源图边缘，按比例显示；黑边是适配画幅产生的留白。</div></div>
+<div class="card"><div class="card-head"><h2><span class="eyebrow">02 / RETURN</span>双眼文字合成</h2><button id="fullscreen" class="fullscreen" type="button">全屏查看</button></div><div id="sbsStage" class="stage sbs" data-live="false"><canvas id="sbsCanvas" width="1280" height="576" aria-label="传回手机的左右眼画面"></canvas><div class="overlay"><strong>等待合成画面</strong><p>左右眼显示同一幅完整原图和同样的手动文字。</p></div></div><div class="eye-labels"><span>左眼 · 全幅原图 + 手动文字</span><span>右眼 · 全幅原图 + 手动文字</span></div><div class="note" id="geometryNote">双眼 2D 显示，不包含真实立体深度。手机收到的画面不含网页按钮和标签。</div></div>
+<p class="small">各段帧率按实际运行测量。选择 60 / 120 fps 仅代表请求值，实际表现取决于相机模式、JPEG 编解码、USB 和浏览器。</p>
+</section><aside class="controls"><h2>镜头与双眼自定义</h2>
+<div class="presets"><select id="preset" aria-label="显示预设"><option value="comfortable">舒适 · 留白与大字</option><option value="smooth">流畅 · 较小回传画布</option><option value="clear">清晰 · 较大回传画布</option></select><button id="applyPreset" class="secondary" type="button">应用预设</button></div>
+<div class="field"><label for="caption">手动文字 <span>两眼一致</span></label><textarea id="caption" maxlength="120" placeholder="在这里输入要显示的文字…"></textarea><p class="small">此版本显示你输入的真实文字，暂未接入 AI 语音识别。</p></div>
+<details open><summary>镜头与硬件控制</summary>
+<div class="field"><label for="cameraId">手机可用镜头</label><select id="cameraId" disabled><option value="">正在读取真实镜头列表</option></select><p id="actualCamera" class="small actual">等待手机报告实际绑定的镜头。</p></div>
+<div class="field"><label for="zoomRatio">相机变焦 <output id="zoomRatioValue">—</output></label><input id="zoomRatio" type="range" min="1" max="1" step="0.05" value="1" disabled><p class="small">此倍率由相机提供，可能包含数码裁切，不等同于光学焦距。</p></div>
+<div class="field"><label for="exposureIndex">曝光补偿 <output id="exposureIndexValue">—</output></label><input id="exposureIndex" type="range" min="0" max="0" step="1" value="0" disabled></div>
+<label class="check"><input id="torch" type="checkbox" disabled>常亮补光（镜头支持时）</label>
+<div class="actions"><button id="applyCamera" class="primary" type="button" disabled>应用镜头控制</button><button id="focus" type="button" disabled>中心对焦</button></div><p id="cameraControlInfo" class="small">硬件参数需点击应用；镜头切换会暂时停流。</p>
+</details>
+<details><summary>文字样式</summary>
+<div class="two"><div class="field"><label for="fontSize">文字字号 <output id="fontSizeValue">32 px</output></label><input id="fontSize" type="range" min="18" max="64" value="32"></div><div class="field"><label for="textY">文字高度 <output id="textYValue">78%</output></label><input id="textY" type="range" min="10" max="90" value="78"></div></div>
+<div class="two"><div class="field"><label for="textColor">文字颜色</label><input id="textColor" type="color" value="#ffffff"></div><div class="field"><label for="textAlign">文字对齐</label><select id="textAlign"><option value="center">居中</option><option value="left">左对齐</option><option value="right">右对齐</option></select></div></div>
+<div class="two"><div class="field"><label for="backgroundOpacity">背景不透明度 <output id="backgroundOpacityValue">76%</output></label><input id="backgroundOpacity" type="range" min="0" max="100" value="76"></div><div class="field"><label for="textStroke">黑色描边 <output id="textStrokeValue">0 px</output></label><input id="textStroke" type="range" min="0" max="6" value="0"></div></div>
+</details>
+<details><summary>双眼布局与独立微调</summary>
+<div class="field"><label for="returnWidth">回传画布宽度</label><select id="returnWidth"><option value="960">960 像素</option><option value="1280" selected>1280 像素 · 默认</option><option value="1600">1600 像素</option><option value="1920">1920 像素</option><option value="2560">2560 像素</option></select><p class="small" id="canvasSize">高度将按手机横屏比例自动适配。</p></div>
+<div class="field"><label for="imageScale">图像缩放 <output id="imageScaleValue">100%</output></label><input id="imageScale" type="range" min="50" max="100" value="100"></div>
+<div class="field"><label for="eyeSpacing">两眼中心间距 <output id="eyeSpacingValue">居中</output></label><input id="eyeSpacing" type="range" min="-100" max="100" value="0"><p class="small">间距限制在留白范围内，确保每只眼都看见整幅图。缩小图像后可获得更大的调节范围。</p></div>
+<div class="two"><div class="eye-controls"><div class="field"><label for="leftSize">左眼大小 <output id="leftSizeValue">0%</output></label><input id="leftSize" type="range" min="-10" max="10" value="0"></div><div class="field compact"><label for="leftY">左眼上下 <output id="leftYValue">0%</output></label><input id="leftY" type="range" min="-10" max="10" value="0"></div></div><div class="eye-controls"><div class="field"><label for="rightSize">右眼大小 <output id="rightSizeValue">0%</output></label><input id="rightSize" type="range" min="-10" max="10" value="0"></div><div class="field compact"><label for="rightY">右眼上下 <output id="rightYValue">0%</output></label><input id="rightY" type="range" min="-10" max="10" value="0"></div></div></div><p class="small">独立微调受留白边界限制，整幅图始终保留，不以裁切换取放大。</p>
+</details>
+<details><summary>软件图像调整</summary>
+<div class="field"><label for="brightness">软件亮度 <output id="brightnessValue">100%</output></label><input id="brightness" type="range" min="50" max="150" value="100"></div><div class="field"><label for="contrast">软件对比度 <output id="contrastValue">100%</output></label><input id="contrast" type="range" min="50" max="150" value="100"></div><div class="field"><label for="saturation">软件饱和度 <output id="saturationValue">100%</output></label><input id="saturation" type="range" min="0" max="200" value="100"></div>
+<div class="field"><label for="rotation">双眼同向旋转</label><select id="rotation"><option value="0">0° · 原方向</option><option value="90">顺时针 90°</option><option value="180">180°</option><option value="270">顺时针 270°</option></select></div><label class="check"><input id="mirror" type="checkbox">双眼水平镜像</label><p class="small">只改变电脑合成的回传图像；上方原图保持相机输出。</p>
+</details>
+<details><summary>对位辅助</summary>
+<div class="field"><label for="eyeMode">单眼检查显示</label><select id="eyeMode"><option value="both">左右眼同时显示</option><option value="left">仅左眼 · 右眼黑屏</option><option value="right">仅右眼 · 左眼黑屏</option></select></div><div class="field"><label for="calibration">辅助图案</label><select id="calibration"><option value="off">关闭</option><option value="cross">中心十字</option><option value="grid">对位网格</option></select></div><p class="small">辅助图案仅用于布局对位，不是视力检查或屈光度测量。</p>
+</details>
+<details><summary>相机帧率与 USB 传输</summary>
+<div class="field"><label for="fps">请求帧率</label><select id="fps"><option value="0">自动 · 不额外限速</option><option value="15">15 fps</option><option value="24">24 fps</option><option value="30">30 fps</option><option value="60">60 fps</option><option value="120">120 fps</option></select><p class="small" id="capabilities">正在读取手机相机帧率范围。</p></div>
+<div class="two"><div class="field"><label for="maxWidth">相机图像宽度</label><select id="maxWidth"><option value="640">640</option><option value="960" selected>960</option><option value="1280">1280</option><option value="1920">1920</option></select></div><div class="field"><label for="quality">JPEG 质量 <output id="qualityValue">75</output></label><input id="quality" type="range" min="45" max="95" value="75"></div></div>
+<button id="applySettings" class="primary wide" type="button">应用传输设置</button><p id="actualSettings" class="small">正在读取手机实际生效的设置。</p></details>
+<details><summary>保存与导入显示配置</summary><div class="config-actions"><button id="saveLayout" type="button">保存到本机</button><button id="loadLayout" type="button">加载本机配置</button><button id="exportLayout" type="button">导出 JSON</button><button id="importLayout" type="button">导入 JSON</button></div><input id="layoutFile" type="file" accept="application/json,.json" hidden><button id="reset" class="wide secondary" type="button" style="margin-top:9px">重置显示参数</button><p id="layoutMessage" class="small" role="status">仅保存布局、软件图像和字体；不保存输入文字，也不保存或自动应用镜头硬件设置。</p></details>
+<p class="warning-note">软件显示调整无法矫正近视屈光度。清晰对焦仍需合适的眼镜、镜片或设备光学调节。G05 Pro 镜片畸变尚未校准。</p>
+</aside></div><footer><span>摄像头画面与合成结果均经 USB 传输 · 电脑本地合成 · 不上传云端 · 不自动保存</span><span>听见视界 0.4 · 多镜头与双眼自定义</span></footer>
+</main>
+<script>
+(() => {
+  'use strict';
+  const $ = id => document.getElementById(id);
+  const source = $('sourceCanvas'), canvas = $('sbsCanvas');
+  const sourceContext = source.getContext('2d', { alpha: false });
+  const context = canvas.getContext('2d', { alpha: false });
+  const activeStates = new Set(['waiting', 'streaming', 'active', 'live', 'previewing']);
+  let disposed = false, connected = false, streamOpen = false, streamEpoch = 0, pipelineEpoch = 0;
+  let streamController = null, returnController = null, statusController = null, statusTimer = null;
+  let pending = null, processing = false, outbound = null, sending = false, activeSession = '', lastQueuedId = 0;
+  const retiredSessions = new Set();
+  let lastImageAt = 0, streamStartedAt = 0, receivedFrames = 0, composedFrames = 0, previousComposed = 0, fpsAt = Date.now();
+  let lastStatus = null, returnEnabled = true, settingsInitialized = false, displayInitialized = false, controlBusy = false;
+  let requestedDisplay = true, returnMessage = '', displayFlight = false, displayCommandAt = 0;
+  const clientId = globalThis.crypto && typeof crypto.randomUUID === 'function' ? crypto.randomUUID() : 'viewer-' + Date.now() + '-' + Math.random().toString(36).slice(2);
+  let ownerConfirmed = false, everOwned = false, ownerConflict = false, actualOwnerId = '', requestedTakeover = false, displayRevision = 0;
+  const controlControllers = new Set();
+  const layoutDefaults = { fontSize: 32, textY: 78, returnWidth: 1280, imageScale: 100, eyeSpacing: 0, leftSize: 0, rightSize: 0, leftY: 0, rightY: 0, brightness: 100, contrast: 100, saturation: 100, rotation: 0, mirror: false, textColor: '#ffffff', textAlign: 'center', backgroundOpacity: 76, textStroke: 0, eyeMode: 'both', calibration: 'off' };
+  const defaults = { ...layoutDefaults, fps: 0, maxWidth: 960, quality: 75 };
+  const ranges = { fontSize: [18,64], textY: [10,90], imageScale: [50,100], eyeSpacing: [-100,100], leftSize: [-10,10], rightSize: [-10,10], leftY: [-10,10], rightY: [-10,10], brightness: [50,150], contrast: [50,150], saturation: [0,200], backgroundOpacity: [0,100], textStroke: [0,6] };
+  const choices = { returnWidth: [960,1280,1600,1920,2560], rotation: [0,90,180,270], textAlign: ['left','center','right'], eyeMode: ['both','left','right'], calibration: ['off','cross','grid'] };
+  const layoutKey = 'hearlens.display.v1';
+  let hardwareDirty = false, catalogSignature = '', boundCameraId = '', pendingCameraId = '', pendingCameraAt = 0;
+  const value = id => Number($(id).value);
+  const geometry = (sw, sh, width, height, scale = 1, spacing = 0, options = {}) => {
+    const eyeWidth = width / 2;
+    const rotation = [0,90,180,270].includes(options.rotation) ? options.rotation : 0;
+    const rotated = rotation % 180 !== 0, rw = rotated ? sh : sw, rh = rotated ? sw : sh;
+    return [0, 1].map(eye => {
+      const size = Number(options[eye ? 'rightSize' : 'leftSize']) || 0;
+      const offset = Number(options[eye ? 'rightY' : 'leftY']) || 0;
+      const fit = Math.min(eyeWidth / rw, height / rh) * Math.max(.4, Math.min(1, scale * (1 + Math.max(-10, Math.min(10, size)) / 100)));
+      const w = rw * fit, h = rh * fit;
+      const shift = Math.max(-1, Math.min(1, spacing)) * Math.min((eyeWidth - w) / 2, eyeWidth * .2);
+      const yShift = Math.max(-(height - h) / 2, Math.min((height - h) / 2, Math.max(-10, Math.min(10, offset)) / 100 * height));
+      const cx = eye * eyeWidth + eyeWidth / 2 + (eye ? shift : -shift), cy = height / 2 + yShift;
+      return { x: cx - w / 2, y: cy - h / 2, w, h, cx, cy, eyeWidth, fit, rotation, eye };
+    });
+  };
+  function validateLayout(document) {
+    if (!document || typeof document !== 'object' || Array.isArray(document) || Object.keys(document).sort().join(',') !== 'kind,settings,version' || document.kind !== 'hearlens-display-settings' || document.version !== 1) throw new Error('配置类型或版本不支持。');
+    const input = document.settings;
+    if (!input || typeof input !== 'object' || Array.isArray(input) || Object.keys(input).sort().join(',') !== Object.keys(layoutDefaults).sort().join(',')) throw new Error('配置字段不完整，或包含不允许的字段。');
+    const output = {};
+    for (const key of Object.keys(layoutDefaults)) {
+      const item = input[key];
+      if (ranges[key] && (typeof item !== 'number' || !Number.isInteger(item) || item < ranges[key][0] || item > ranges[key][1])) throw new Error(key + ' 超出允许范围。');
+      if (choices[key] && !choices[key].includes(item)) throw new Error(key + ' 不是有效选项。');
+      if (key === 'mirror' && typeof item !== 'boolean') throw new Error('镜像设置必须为布尔值。');
+      if (key === 'textColor' && (typeof item !== 'string' || !/^#[0-9a-f]{6}$/i.test(item))) throw new Error('文字颜色格式无效。');
+      output[key] = item;
+    }
+    return output;
+  }
+  function layoutDocument() {
+    const settings = {};
+    for (const [key, initial] of Object.entries(layoutDefaults)) settings[key] = typeof initial === 'boolean' ? $(key).checked : typeof initial === 'number' ? value(key) : $(key).value;
+    return { kind: 'hearlens-display-settings', version: 1, settings: validateLayout({ kind: 'hearlens-display-settings', version: 1, settings }) };
+  }
+  function applyLayout(settings) {
+    const validated = validateLayout({ kind: 'hearlens-display-settings', version: 1, settings });
+    for (const [key, item] of Object.entries(validated)) { if (typeof item === 'boolean') $(key).checked = item; else $(key).value = item; }
+    updateControls();
+  }
+  const wrapText = (ctx, text, maxWidth) => {
+    const lines = [];
+    for (const paragraph of text.split('\n')) {
+      let line = '';
+      for (const char of Array.from(paragraph)) {
+        if (line && ctx.measureText(line + char).width > maxWidth) { lines.push(line); line = char; }
+        else line += char;
+      }
+      lines.push(line);
+    }
+    if (lines.length > 4) { lines.length = 4; let end = lines[3]; while (end && ctx.measureText(end + '…').width > maxWidth) end = end.slice(0, -1); lines[3] = end + '…'; }
+    return lines;
+  };
+  // Pure geometry is exposed for deterministic tests and future optical calibration work.
+  window.HearLensGeometry = { geometry, wrapText, validateLayout };
+  function setState(title, message, tone = 'waiting') {
+    $('statusText').textContent = title; $('badge').dataset.tone = tone;
+    $('emptyTitle').textContent = title; $('emptyMessage').textContent = message;
+  }
+  function clearImages() {
+    sourceContext.fillStyle = '#000'; sourceContext.fillRect(0, 0, source.width, source.height);
+    context.fillStyle = '#000'; context.fillRect(0, 0, canvas.width, canvas.height);
+    $('sourceStage').dataset.live = 'false'; $('sbsStage').dataset.live = 'false';
+    lastImageAt = 0;
+  }
+  function clearReturnWork() {
+    pipelineEpoch++; pending = null; outbound = null;
+    if (returnController) returnController.abort();
+    returnController = null;
+  }
+  function invalidatePipeline() {
+    clearReturnWork(); clearImages();
+  }
+  function acceptSession(session) {
+    if (!session || retiredSessions.has(session)) return false;
+    if (session !== activeSession) {
+      if (activeSession) retiredSessions.add(activeSession);
+      if (retiredSessions.size > 32) retiredSessions.delete(retiredSessions.values().next().value);
+      activeSession = session; lastQueuedId = 0; invalidatePipeline();
+    }
+    return true;
+  }
+  function closeStream() {
+    streamEpoch++; streamOpen = false;
+    if (streamController) streamController.abort(); streamController = null;
+    invalidatePipeline();
+  }
+  function fitCanvas() {
+    const dw = Number(lastStatus && lastStatus.displayWidth), dh = Number(lastStatus && lastStatus.displayHeight);
+    const ratio = dw > 0 && dh > 0 ? Math.max(dw, dh) / Math.min(dw, dh) : 20 / 9;
+    const width = value('returnWidth');
+    const height = Math.max(2, Math.round(width / ratio / 2) * 2);
+    if (canvas.width !== width || canvas.height !== height) { canvas.width = width; canvas.height = height; }
+    $('sbsStage').style.aspectRatio = width + ' / ' + height;
+    $('canvasSize').textContent = width + ' × ' + height + ' · ' + (dw > 0 && dh > 0 ? '依据手机横屏比例' : '等待手机比例，暂用 20:9');
+  }
+  function drawComposite(bitmap) {
+    fitCanvas();
+    context.filter = 'none';
+    context.fillStyle = '#000'; context.fillRect(0, 0, canvas.width, canvas.height);
+    const eyes = geometry(bitmap.width, bitmap.height, canvas.width, canvas.height, value('imageScale') / 100, value('eyeSpacing') / 100, { rotation: value('rotation'), leftSize: value('leftSize'), rightSize: value('rightSize'), leftY: value('leftY'), rightY: value('rightY') });
+    const font = value('fontSize') * canvas.width / 1280;
+    context.font = '600 ' + font + 'px "Microsoft YaHei", sans-serif';
+    context.textAlign = $('textAlign').value; context.textBaseline = 'middle';
+    const text = $('caption').value.trim(), maxTextWidth = canvas.width / 2 - font * 1.2;
+    const lines = text ? wrapText(context, text, maxTextWidth) : [];
+    const lineHeight = font * 1.45, blockHeight = lines.length * lineHeight;
+    const textTop = Math.max(font, Math.min(canvas.height - blockHeight - font * .3, canvas.height * value('textY') / 100 - blockHeight / 2));
+    for (const eye of eyes) {
+      if (($('eyeMode').value === 'left' && eye.eye === 1) || ($('eyeMode').value === 'right' && eye.eye === 0)) continue;
+      // Transform a complete source rectangle; rotated bounds are fitted inside this eye.
+      context.save();
+      context.filter = value('brightness') === 100 && value('contrast') === 100 && value('saturation') === 100 ? 'none' : 'brightness(' + value('brightness') + '%) contrast(' + value('contrast') + '%) saturate(' + value('saturation') + '%)';
+      context.translate(eye.cx, eye.cy); context.scale($('mirror').checked ? -1 : 1, 1); context.rotate(eye.rotation * Math.PI / 180);
+      context.drawImage(bitmap, 0, 0, bitmap.width, bitmap.height, -bitmap.width * eye.fit / 2, -bitmap.height * eye.fit / 2, bitmap.width * eye.fit, bitmap.height * eye.fit);
+      context.restore();
+      drawCalibration(eye);
+      lines.forEach((line, index) => {
+        const textWidth = context.measureText(line).width;
+        const halfBox = (textWidth + font * .7) / 2;
+        const eyeLeft = eye.eye * canvas.width / 2, align = $('textAlign').value;
+        const cx = align === 'left' ? eyeLeft + font * .6 : align === 'right' ? eyeLeft + canvas.width / 2 - font * .6 : Math.max(eyeLeft + halfBox, Math.min(eyeLeft + canvas.width / 2 - halfBox, eye.cx));
+        const boxLeft = align === 'left' ? cx - font * .35 : align === 'right' ? cx - textWidth - font * .35 : cx - halfBox;
+        const y = textTop + index * lineHeight + lineHeight / 2;
+        context.fillStyle = 'rgba(0,0,0,' + value('backgroundOpacity') / 100 + ')'; context.fillRect(boxLeft, y - lineHeight / 2, halfBox * 2, lineHeight);
+        if (value('textStroke') > 0) { context.lineWidth = value('textStroke') * canvas.width / 1280; context.strokeStyle = '#000'; context.lineJoin = 'round'; context.strokeText(line, cx, y); }
+        context.fillStyle = $('textColor').value; context.fillText(line, cx, y);
+      });
+    }
+    const distance = (eyes[1].cx - eyes[0].cx) / canvas.width * 100;
+    $('eyeSpacingValue').textContent = distance.toFixed(1) + '% 画布宽';
+    $('geometryNote').textContent = '双眼 2D · 完整源图 ' + bitmap.width + ' × ' + bitmap.height + ' · 两眼中心间距 ' + distance.toFixed(1) + '% · 无真实立体深度';
+    $('sbsStage').dataset.live = 'true'; composedFrames++;
+  }
+  function drawCalibration(eye) {
+    const mode = $('calibration').value; if (mode === 'off') return;
+    const left = eye.eye * eye.eyeWidth, cx = left + eye.eyeWidth / 2, cy = canvas.height / 2;
+    context.save(); context.filter = 'none'; context.strokeStyle = 'rgba(118,235,206,.75)'; context.lineWidth = Math.max(1, canvas.width / 1280); context.beginPath();
+    if (mode === 'grid') {
+      for (let part = 1; part < 8; part++) { const x = left + part * eye.eyeWidth / 8, y = part * canvas.height / 8; context.moveTo(x, 0); context.lineTo(x, canvas.height); context.moveTo(left, y); context.lineTo(left + eye.eyeWidth, y); }
+    } else { const size = Math.min(eye.eyeWidth, canvas.height) * .1; context.moveTo(cx - size, cy); context.lineTo(cx + size, cy); context.moveTo(cx, cy - size); context.lineTo(cx, cy + size); }
+    context.stroke(); context.restore();
+  }
+  const frameIsCurrent = (frame, epoch) => !disposed && connected && streamOpen && epoch === pipelineEpoch && frame.stream === streamEpoch && frame.session === activeSession;
+  async function processNewest() {
+    if (processing) return;
+    processing = true;
+    try {
+      while (pending && !disposed) {
+        const frame = pending; pending = null; const epoch = pipelineEpoch;
+        let bitmap = null;
+        try {
+          bitmap = await createImageBitmap(new Blob([frame.bytes], { type: 'image/jpeg' }));
+          if (!frameIsCurrent(frame, epoch)) continue;
+          if (source.width !== bitmap.width || source.height !== bitmap.height) { source.width = bitmap.width; source.height = bitmap.height; }
+          sourceContext.drawImage(bitmap, 0, 0);
+          lastImageAt = Date.now(); $('sourceStage').dataset.live = 'true';
+          $('sourceMeta').textContent = bitmap.width + ' × ' + bitmap.height + ' · 已接收 ' + receivedFrames + ' 帧';
+          setState('USB 正在传输', '', 'live');
+          drawComposite(bitmap);
+          if (!returnEnabled || !ownerConfirmed) continue;
+          const blob = await new Promise(resolve => canvas.toBlob(resolve, 'image/jpeg', value('quality') / 100));
+          if (!frameIsCurrent(frame, epoch) || !returnEnabled || !ownerConfirmed) continue;
+          if (!blob || blob.size > 4 * 1024 * 1024) { returnMessage = '回传图像过大，请降低回传宽度或 JPEG 质量。'; updateNotice(); continue; }
+          // One encoded slot only: USB sending overlaps the next decode/composite/encode.
+          // A slow sender replaces its waiting frame with the latest complete JPEG.
+          outbound = { blob, frame, epoch };
+          sendNewest();
+        } catch (_) { if (frameIsCurrent(frame, epoch)) { returnMessage = '当前帧未完成，正在等待下一帧。'; updateNotice(); } }
+        finally { if (bitmap) bitmap.close(); }
+      }
+    } finally { processing = false; if (pending && !disposed) processNewest(); }
+  }
+  async function sendNewest() {
+    if (sending) return;
+    sending = true;
+    try {
+      while (outbound && !disposed) {
+        const packet = outbound; outbound = null;
+        const { blob, frame, epoch } = packet;
+        if (!returnEnabled || !ownerConfirmed || !frameIsCurrent(frame, epoch)) continue;
+        const controller = new AbortController(); returnController = controller;
+        const timeout = setTimeout(() => controller.abort(), 2000);
+        try {
+          const response = await fetch('/return-frame?session=' + encodeURIComponent(frame.session) + '&source=' + frame.id + '&client=' + encodeURIComponent(clientId), { method: 'POST', headers: { 'Content-Type': 'image/jpeg' }, body: blob, signal: controller.signal });
+          if (!returnEnabled || !ownerConfirmed || !frameIsCurrent(frame, epoch)) continue;
+          if (response.status === 204 || response.ok) returnMessage = '';
+          else if (response.status === 409 || response.status === 429) returnMessage = '正在丢弃过期或繁忙时的回传帧，继续使用最新画面。';
+          else returnMessage = '回传暂未成功（HTTP ' + response.status + '），请降低画布分辨率后重试。';
+          updateNotice();
+        } catch (_) {
+          if (returnEnabled && ownerConfirmed && frameIsCurrent(frame, epoch)) { returnMessage = '当前回传帧未完成，继续发送最新画面。'; updateNotice(); }
+        } finally { clearTimeout(timeout); if (returnController === controller) returnController = null; }
+      }
+    } finally { sending = false; if (outbound && !disposed) sendNewest(); }
+  }
+  function enqueue(frame) {
+    if (!acceptSession(frame.session) || frame.id <= lastQueuedId) return;
+    lastQueuedId = frame.id; receivedFrames++; pending = frame; processNewest();
+  }
+  function ensureStream(force = false) {
+    if (force) closeStream();
+    if (streamOpen || disposed) return;
+    streamOpen = true; streamStartedAt = Date.now();
+    const epoch = ++streamEpoch; streamController = new AbortController();
+    readStream(epoch, streamController.signal);
+  }
+  async function readStream(epoch, signal) {
+    let reader = null;
+    try {
+      const response = await fetch('/stream?t=' + Date.now() + '&client=' + encodeURIComponent(clientId), { cache: 'no-store', signal });
+      if (!response.ok || !response.body) throw new Error('stream unavailable');
+      reader = response.body.getReader();
+      let buffer = new Uint8Array(0), metadata = null;
+      while (!disposed && epoch === streamEpoch) {
+        const chunk = await reader.read(); if (chunk.done) throw new Error('stream ended');
+        if (epoch !== streamEpoch) return;
+        if (buffer.length + chunk.value.length > 8 * 1024 * 1024 + 8192) throw new Error('buffer too large');
+        const combined = new Uint8Array(buffer.length + chunk.value.length); combined.set(buffer); combined.set(chunk.value, buffer.length); buffer = combined;
+        while (buffer.length) {
+          if (!metadata) {
+            let end = -1;
+            for (let i = 0; i + 3 < Math.min(buffer.length, 8196); i++) { if (buffer[i] === 13 && buffer[i + 1] === 10 && buffer[i + 2] === 13 && buffer[i + 3] === 10) { end = i; break; } }
+            if (end < 0) { if (buffer.length > 8192) throw new Error('header too large'); break; }
+            const header = new TextDecoder('ascii').decode(buffer.subarray(0, end));
+            const get = name => { const match = new RegExp('(?:^|\\r\\n)' + name + ':\\s*([^\\r\\n]+)', 'i').exec(header); return match ? match[1].trim() : ''; };
+            const length = Number(get('Content-Length')), id = Number(get('X-Frame-Id')), session = get('X-Session-Id');
+            if (!header.includes('--frame') || !Number.isSafeInteger(length) || length < 1 || length > 8 * 1024 * 1024 || !Number.isSafeInteger(id) || id < 1 || !/^[A-Za-z0-9-]{1,80}$/.test(session)) throw new Error('invalid frame metadata');
+            metadata = { length, id, session, stream: epoch }; buffer = buffer.slice(end + 4);
+          }
+          if (buffer.length < metadata.length) break;
+          const bytes = buffer.slice(0, metadata.length); buffer = buffer.slice(metadata.length);
+          enqueue({ ...metadata, bytes }); metadata = null;
+        }
+      }
+    } catch (_) {
+      if (!disposed && epoch === streamEpoch) { closeStream(); setState('画面连接已中断', '正在自动重新连接，请保持手机应用在前台。'); }
+    } finally { if (reader) { try { await reader.cancel(); } catch (_) {} } }
+  }
+  function updateNotice() {
+    $('toggleReturn').textContent = ownerConflict ? '接管双眼回传' : returnEnabled && ownerConfirmed ? '停止双眼回传' : '开始双眼回传';
+    $('phoneDisplay').disabled = ownerConflict || !connected;
+    $('notice').textContent = ownerConflict ? '其他网页正在控制手机回传。本页仅预览；点击「接管双眼回传」可明确切换到本页。' : returnMessage || (!connected ? '正在等待 USB 连接。' : !returnEnabled ? '双眼回传已停止；电脑仍可查看原图和合成预览。' : !ownerConfirmed ? '正在等待手机确认本页的回传控制权。' : requestedDisplay ? '双眼画面正在由电脑合成并传回手机。文字来自右侧输入框。' : '手机双眼显示已关闭。');
+  }
+  function updateControls() {
+    $('fontSizeValue').textContent = value('fontSize') + ' px'; $('textYValue').textContent = value('textY') + '%';
+    $('imageScaleValue').textContent = value('imageScale') + '%'; $('qualityValue').textContent = value('quality'); fitCanvas();
+    for (const key of ['leftSize','rightSize','leftY','rightY','brightness','contrast','saturation','backgroundOpacity']) $(key + 'Value').textContent = value(key) + '%';
+    $('textStrokeValue').textContent = value('textStroke') + ' px';
+  }
+  function updateCameraControls(status) {
+    const catalog = Array.isArray(status.cameras) ? status.cameras.filter(camera => camera && typeof camera.id === 'string' && typeof camera.label === 'string') : [];
+    const signature = JSON.stringify(catalog);
+    if (catalogSignature !== signature) {
+      const selected = $('cameraId').value;
+      const options = catalog.map(camera => { const option = document.createElement('option'); option.value = camera.id; option.textContent = camera.label + (Number.isFinite(camera.focalLengthMm) ? ' · ' + camera.focalLengthMm.toFixed(2) + ' mm' : ''); option.disabled = camera.available === false; return option; });
+      $('cameraId').replaceChildren(...options); catalogSignature = signature;
+      if (catalog.some(camera => camera.id === selected)) $('cameraId').value = selected;
+    }
+    const actual = typeof status.selectedCameraId === 'string' ? status.selectedCameraId : '';
+    const controls = status.cameraControls || {};
+    const zoomKnown = Number.isFinite(controls.zoomMin) && Number.isFinite(controls.zoomMax) && controls.zoomMin > 0 && controls.zoomMax > controls.zoomMin;
+    const exposureKnown = Number.isInteger(controls.exposureMin) && Number.isInteger(controls.exposureMax) && controls.exposureMax > controls.exposureMin && Number.isFinite(controls.exposureStep) && controls.exposureStep > 0;
+    if (zoomKnown) { $('zoomRatio').min = controls.zoomMin; $('zoomRatio').max = controls.zoomMax; }
+    if (exposureKnown) { $('exposureIndex').min = controls.exposureMin; $('exposureIndex').max = controls.exposureMax; }
+    if (pendingCameraId && (actual === pendingCameraId || controls.controlsError || Date.now() - pendingCameraAt > 10000)) { pendingCameraId = ''; hardwareDirty = false; }
+    if (!pendingCameraId && (actual !== boundCameraId || !hardwareDirty)) {
+      $('cameraId').value = actual;
+      if (Number.isFinite(controls.zoomRatio)) $('zoomRatio').value = controls.zoomRatio;
+      if (Number.isInteger(controls.exposureIndex)) $('exposureIndex').value = controls.exposureIndex;
+      $('torch').checked = controls.torchEnabled === true;
+      if (actual !== boundCameraId) hardwareDirty = false;
+    }
+    boundCameraId = actual;
+    const selected = catalog.find(camera => camera.id === actual);
+    $('actualCamera').textContent = '实际镜头：' + (selected ? selected.label : '尚未绑定') + (Number.isFinite(controls.zoomRatio) ? ' · ' + controls.zoomRatio.toFixed(2) + '×' : '') + (Number.isFinite(controls.exposureIndex) && Number.isFinite(controls.exposureStep) ? ' · 曝光 ' + (controls.exposureIndex * controls.exposureStep).toFixed(2) + ' EV' : '') + (controls.torchSupported ? ' · 补光' + (controls.torchEnabled ? '开' : '关') : '');
+    const sameCamera = $('cameraId').value === actual && !!actual && !pendingCameraId;
+    $('cameraId').disabled = !connected || !catalog.length;
+    $('applyCamera').disabled = !connected || !catalog.some(camera => camera.id === $('cameraId').value && camera.available !== false) || controlBusy;
+    $('zoomRatio').disabled = !connected || !sameCamera || !zoomKnown;
+    $('exposureIndex').disabled = !connected || !sameCamera || !exposureKnown;
+    $('torch').disabled = !connected || !sameCamera || controls.torchSupported !== true;
+    $('focus').disabled = !connected || !sameCamera || controls.focusSupported !== true || controlBusy;
+    $('zoomRatioValue').textContent = zoomKnown && sameCamera ? value('zoomRatio').toFixed(2) + '×' : '不可用';
+    $('exposureIndexValue').textContent = exposureKnown && sameCamera ? (value('exposureIndex') * controls.exposureStep).toFixed(2) + ' EV' : '不可用';
+    $('cameraControlInfo').textContent = [pendingCameraId ? '镜头切换中，实际绑定确认前不应用其他硬件控制。' : !sameCamera ? '请选择镜头并点击应用；切换会短暂停流。' : '硬件参数编辑后需点击应用。', status.cameraAvailabilityNote || '', controls.controlsError || ''].filter(Boolean).join(' ');
+  }
+  async function applyCamera() {
+    if (controlBusy || !connected || $('applyCamera').disabled) return;
+    const cameraId = $('cameraId').value;
+    const switching = cameraId !== boundCameraId;
+    const body = { cameraId };
+    if (!switching) {
+      if (!$('zoomRatio').disabled) body.zoomRatio = value('zoomRatio');
+      if (!$('exposureIndex').disabled) body.exposureIndex = value('exposureIndex');
+      if (!$('torch').disabled) body.torch = $('torch').checked;
+    } else { pendingCameraId = cameraId; pendingCameraAt = Date.now(); }
+    controlBusy = true; updateCameraControls(lastStatus || {});
+    try {
+      const response = await api('/settings', body);
+      hardwareDirty = false;
+      if (response.status !== 204) acceptStatus(await response.json());
+      returnMessage = switching ? '已请求切换镜头，切换期间会清除旧画面；以上方实际镜头为准。' : '已提交硬件控制，实际状态由手机确认。';
+    } catch (_) { pendingCameraId = ''; returnMessage = '镜头控制未应用，请查看实际镜头及手机报告的错误。'; }
+    finally { controlBusy = false; if (lastStatus) updateCameraControls(lastStatus); updateNotice(); }
+  }
+  async function api(path, body) {
+    if (disposed) throw new Error('page closed');
+    const controller = new AbortController(), timeout = setTimeout(() => controller.abort(), 5000);
+    controlControllers.add(controller);
+    try {
+      const response = await fetch(path, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body), signal: controller.signal });
+      if (!response.ok) { const error = new Error('HTTP ' + response.status); error.status = response.status; throw error; }
+      return response;
+    } finally { clearTimeout(timeout); controlControllers.delete(controller); }
+  }
+  async function setPhoneDisplay(enabled, takeover = false) {
+    requestedDisplay = enabled; requestedTakeover = takeover; displayCommandAt = Date.now(); displayRevision++; $('phoneDisplay').checked = enabled;
+    if (!enabled) { returnEnabled = false; clearReturnWork(); }
+    updateNotice();
+    if (displayFlight || disposed) return;
+    if (!enabled && !ownerConfirmed) return;
+    displayFlight = true;
+    try {
+      let sent, sentTakeover;
+      do {
+        sent = requestedDisplay; sentTakeover = requestedTakeover;
+        await api('/display', { enabled: sent, clientId, takeover: sent && sentTakeover });
+        if (disposed) return;
+        ownerConfirmed = sent; ownerConflict = false; if (sent) { everOwned = true; actualOwnerId = clientId; } else actualOwnerId = '';
+        if (sent && sentTakeover && connected && !streamOpen) ensureStream();
+        returnMessage = '';
+      } while (!disposed && (sent !== requestedDisplay || sentTakeover !== requestedTakeover));
+    } catch (error) { if (!disposed) { if (error.status === 409) { ownerConfirmed = false; ownerConflict = true; returnEnabled = false; clearReturnWork(); } else returnMessage = '无法切换手机显示，请检查 USB 连接后重试。'; } }
+    finally { displayFlight = false; updateNotice(); }
+  }
+  function updateOwnership(status) {
+    const owner = typeof status.returnOwnerId === 'string' ? status.returnOwnerId : '';
+    const previouslyOwned = ownerConfirmed; actualOwnerId = owner;
+    ownerConfirmed = owner === clientId;
+    if (ownerConfirmed) { everOwned = true; ownerConflict = false; }
+    else if (owner) { ownerConflict = true; returnEnabled = false; }
+    else {
+      ownerConflict = false;
+      if (displayInitialized && !displayFlight && Date.now() - displayCommandAt > 1500 && status.vrEnabled === false) { returnEnabled = false; requestedDisplay = false; $('phoneDisplay').checked = false; }
+    }
+    if (previouslyOwned && !ownerConfirmed) clearReturnWork();
+  }
+  function acceptStatus(status) {
+    lastStatus = status; connected = true;
+    if (status.sessionId && !acceptSession(status.sessionId)) return;
+    updateOwnership(status); updateCameraControls(status);
+    for (const key of ['cameraFps', 'uplinkFps', 'returnFps', 'displayFps']) $(key).textContent = Number.isFinite(status[key]) ? Math.max(0, status[key]).toFixed(1) : '—';
+    $('returnAge').textContent = Number.isFinite(status.returnAgeMs) && status.returnAgeMs >= 0 && Number(status.returnFrameId) > 0 ? Math.round(status.returnAgeMs) : '—';
+    const caps = status.capabilities || {}, ranges = Array.isArray(caps.fpsRanges) ? caps.fpsRanges : [];
+    const maximum = Number(caps.maxFps) || Math.max(0, ...ranges.map(range => Number(range[1]) || 0));
+    Array.from($('fps').options).forEach(option => { option.hidden = option.disabled = Number(option.value) > 0 && (maximum <= 0 || Number(option.value) > maximum); });
+    const selected = Array.isArray(caps.selectedFpsRange) ? caps.selectedFpsRange.join('–') : '未知';
+    $('capabilities').textContent = '相机报告：' + (ranges.length ? ranges.map(range => range.join('–')).join(' / ') + ' fps' : '读取中') + '；当前范围 ' + selected + '。';
+    if (!settingsInitialized && status.settings) { for (const key of ['fps', 'quality', 'maxWidth']) { if (Number.isFinite(status.settings[key])) $(key).value = status.settings[key]; } settingsInitialized = true; updateControls(); }
+    if (status.settings) $('actualSettings').textContent = '手机当前生效：' + (status.settings.fps ? status.settings.fps + ' fps 请求' : '自动，不额外限速') + ' · 宽度 ' + status.settings.maxWidth + ' · JPEG ' + status.settings.quality + '。上方编辑后点击应用。';
+    if (displayInitialized && !displayFlight && Date.now() - displayCommandAt > 1500 && typeof status.vrEnabled === 'boolean') { requestedDisplay = status.vrEnabled; $('phoneDisplay').checked = requestedDisplay; }
+    fitCanvas();
+    const state = String(status.state || '').toLowerCase();
+    if (activeStates.has(state)) {
+      ensureStream();
+      if (!lastImageAt) setState('正在等待全幅画面', status.message || '请保持手机应用在前台。');
+      if (!displayInitialized) { displayInitialized = true; if (!ownerConflict && returnEnabled) setPhoneDisplay(requestedDisplay); }
+      else if (!actualOwnerId && everOwned && returnEnabled && requestedDisplay && status.vrEnabled === true && !displayFlight) setPhoneDisplay(true);
+    } else {
+      closeStream();
+      if (state === 'paused') setState('手机已暂停', '请在手机继续预览，电脑会自动恢复。');
+      else setState('手机预览未开启', status.message || '请在手机打开应用、相机权限和 USB 传输。');
+    }
+    updateNotice();
+  }
+  async function poll() {
+    if (disposed) return;
+    const revision = displayRevision;
+    const controller = new AbortController(); statusController = controller;
+    const timeout = setTimeout(() => controller.abort(), 2200);
+    try {
+      const response = await fetch('/status', { cache: 'no-store', signal: controller.signal });
+      if (!response.ok) throw new Error('status unavailable');
+      const status = await response.json(); if (statusController !== controller || disposed || revision !== displayRevision) return;
+      acceptStatus(status);
+    } catch (_) {
+      if (statusController !== controller || disposed) return;
+      connected = false; closeStream(); setState('USB 连接已断开', '检查数据线和调试授权，必要时重新运行「启动USB双眼回传」。', 'error'); updateNotice();
+      for (const key of ['cameraFps', 'uplinkFps', 'returnFps', 'displayFps']) $(key).textContent = '—';
+      $('returnAge').textContent = '—';
+      for (const key of ['cameraId','zoomRatio','exposureIndex','torch','applyCamera','focus']) $(key).disabled = true;
+    } finally { clearTimeout(timeout); if (statusController === controller && !disposed) { statusController = null; statusTimer = setTimeout(poll, 1000); } }
+  }
+  function reconnect() {
+    if (statusController) statusController.abort(); statusController = null;
+    clearTimeout(statusTimer); closeStream(); setState('正在重新连接', '等待手机 USB 服务。'); poll();
+  }
+  async function applySettings() {
+    if (controlBusy) return; controlBusy = true; $('applySettings').disabled = true;
+    try {
+      const response = await api('/settings', { fps: value('fps'), quality: value('quality'), maxWidth: value('maxWidth') });
+      if (response.status !== 204) { const status = await response.json(); acceptStatus(status); }
+      returnMessage = '传输设置已应用；相机重新配置时会短暂清屏。'; updateNotice();
+    } catch (_) { returnMessage = '设置未应用，请检查连接或选择当前相机支持的参数。'; updateNotice(); }
+    finally { controlBusy = false; $('applySettings').disabled = false; }
+  }
+  $('toggleReturn').addEventListener('click', () => {
+    const start = !(returnEnabled && ownerConfirmed);
+    returnEnabled = start; clearReturnWork();
+    setPhoneDisplay(start, start); updateNotice();
+  });
+  $('phoneDisplay').addEventListener('change', () => { const enabled = $('phoneDisplay').checked; if (enabled) returnEnabled = true; setPhoneDisplay(enabled, enabled); });
+  $('reconnect').addEventListener('click', reconnect);
+  $('applySettings').addEventListener('click', applySettings);
+  $('reset').addEventListener('click', () => { applyLayout({ ...layoutDefaults }); $('layoutMessage').textContent = '显示参数已重置；输入文字与镜头硬件设置保留。'; });
+  $('applyPreset').addEventListener('click', () => {
+    const presets = { comfortable: { imageScale: 85, fontSize: 44, backgroundOpacity: 82 }, smooth: { returnWidth: 960, fontSize: 36 }, clear: { returnWidth: 1920, fontSize: 44, contrast: 110, textStroke: 1 } };
+    applyLayout({ ...layoutDefaults, ...presets[$('preset').value] }); $('layoutMessage').textContent = '显示预设已应用；未修改镜头、帧率或输入文字。';
+  });
+  $('applyCamera').addEventListener('click', applyCamera);
+  for (const key of ['cameraId','zoomRatio','exposureIndex','torch']) $(key).addEventListener('input', () => { hardwareDirty = true; if (lastStatus) updateCameraControls(lastStatus); });
+  $('focus').addEventListener('click', async () => {
+    if ($('focus').disabled) return;
+    try { await api('/focus', { action: 'center' }); returnMessage = '已请求中心对焦，结果以实际画面为准。'; }
+    catch (_) { returnMessage = '中心对焦未完成，请查看手机相机状态。'; }
+    updateNotice();
+  });
+  $('saveLayout').addEventListener('click', () => { try { localStorage.setItem(layoutKey, JSON.stringify(layoutDocument())); $('layoutMessage').textContent = '显示配置已保存在本机浏览器，不含输入文字或硬件参数。'; } catch (_) { $('layoutMessage').textContent = '无法保存配置，请检查浏览器存储权限。'; } });
+  $('loadLayout').addEventListener('click', () => { try { const saved = localStorage.getItem(layoutKey); if (!saved) throw new Error('尚未保存本机配置。'); applyLayout(validateLayout(JSON.parse(saved))); $('layoutMessage').textContent = '本机显示配置已加载；输入文字和镜头硬件设置保留。'; } catch (error) { $('layoutMessage').textContent = '未加载：' + error.message; } });
+  $('exportLayout').addEventListener('click', () => {
+    try {
+      const blob = new Blob([JSON.stringify(layoutDocument(), null, 2)], { type: 'application/json' }), url = URL.createObjectURL(blob);
+      const link = document.createElement('a'); link.href = url; link.download = 'HearLens-display-v1.json'; link.click(); setTimeout(() => URL.revokeObjectURL(url), 0);
+      $('layoutMessage').textContent = '已导出显示配置 JSON，不包含输入文字或硬件参数。';
+    } catch (_) { $('layoutMessage').textContent = '导出失败，请检查浏览器下载权限。'; }
+  });
+  $('importLayout').addEventListener('click', () => $('layoutFile').click());
+  $('layoutFile').addEventListener('change', async () => {
+    try {
+      const file = $('layoutFile').files && $('layoutFile').files[0]; if (!file) return;
+      if (file.size > 16384) throw new Error('文件超过 16 KB。');
+      const text = await file.text(); if (disposed) return;
+      if (text.length > 16384) throw new Error('配置内容过长。');
+      applyLayout(validateLayout(JSON.parse(text))); $('layoutMessage').textContent = 'JSON 显示配置已导入；未应用任何镜头硬件参数。';
+    } catch (error) { $('layoutMessage').textContent = '未导入：' + error.message; }
+    finally { $('layoutFile').value = ''; }
+  });
+  for (const key of Object.keys(defaults)) $(key).addEventListener('input', updateControls);
+  $('fullscreen').addEventListener('click', async () => { try { if (document.fullscreenElement) await document.exitFullscreen(); else await $('sbsStage').requestFullscreen(); } catch (_) { returnMessage = '当前浏览器无法全屏，可使用 F11。'; updateNotice(); } });
+  const freshnessTimer = setInterval(() => {
+    if (disposed) return;
+    const now = Date.now(), elapsed = now - fpsAt;
+    if (elapsed >= 1000) { $('composeFps').textContent = ((composedFrames - previousComposed) * 1000 / elapsed).toFixed(1); previousComposed = composedFrames; fpsAt = now; }
+    if (!streamOpen) return;
+    if (lastImageAt && now - lastImageAt > 3000) { invalidatePipeline(); setState('画面暂时中断', '已清除旧画面，正在等待最新帧。'); }
+    if (now - (lastImageAt || streamStartedAt) > 5000) ensureStream(true);
+  }, 500);
+  window.addEventListener('pagehide', () => { disposed = true; clearInterval(freshnessTimer); clearTimeout(statusTimer); if (statusController) statusController.abort(); statusController = null; for (const controller of controlControllers) controller.abort(); closeStream(); });
+  window.addEventListener('pageshow', event => { if (event.persisted) location.reload(); });
+  updateControls(); updateNotice();
+  if (['127.0.0.1', 'localhost', '[::1]'].includes(location.hostname)) poll();
+  else setState('请从电脑启动器打开', '双击「启动USB双眼回传.cmd」，使用本机 USB 地址打开工作台。', 'error');
+})();
+</script></body></html>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Only the user's identified CH340 direction board, never arbitrary peripherals. -->
+    <usb-device vendor-id="6790" product-id="29987" />
+</resources>

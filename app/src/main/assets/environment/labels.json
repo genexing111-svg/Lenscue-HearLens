@@ -1,0 +1,3128 @@
+[
+  {
+    "index": 0,
+    "en": "Speech",
+    "zh-Hans": "语音",
+    "zh-Hant": "語音"
+  },
+  {
+    "index": 1,
+    "en": "Child speech, kid speaking",
+    "zh-Hans": "儿童说话声",
+    "zh-Hant": "兒童説話聲"
+  },
+  {
+    "index": 2,
+    "en": "Conversation",
+    "zh-Hans": "交谈声",
+    "zh-Hant": "交談聲"
+  },
+  {
+    "index": 3,
+    "en": "Narration, monologue",
+    "zh-Hans": "旁白／独白",
+    "zh-Hant": "旁白／獨白"
+  },
+  {
+    "index": 4,
+    "en": "Babbling",
+    "zh-Hans": "咿呀声",
+    "zh-Hant": "咿呀聲"
+  },
+  {
+    "index": 5,
+    "en": "Speech synthesizer",
+    "zh-Hans": "合成语音",
+    "zh-Hant": "合成語音"
+  },
+  {
+    "index": 6,
+    "en": "Shout",
+    "zh-Hans": "喊叫声",
+    "zh-Hant": "喊叫聲"
+  },
+  {
+    "index": 7,
+    "en": "Bellow",
+    "zh-Hans": "大声吼叫",
+    "zh-Hant": "大聲吼叫"
+  },
+  {
+    "index": 8,
+    "en": "Whoop",
+    "zh-Hans": "欢呼喊声",
+    "zh-Hant": "歡呼喊聲"
+  },
+  {
+    "index": 9,
+    "en": "Yell",
+    "zh-Hans": "高声叫喊",
+    "zh-Hant": "高聲叫喊"
+  },
+  {
+    "index": 10,
+    "en": "Children shouting",
+    "zh-Hans": "儿童喊叫声",
+    "zh-Hant": "兒童喊叫聲"
+  },
+  {
+    "index": 11,
+    "en": "Screaming",
+    "zh-Hans": "尖叫声",
+    "zh-Hant": "尖叫聲"
+  },
+  {
+    "index": 12,
+    "en": "Whispering",
+    "zh-Hans": "耳语声",
+    "zh-Hant": "耳語聲"
+  },
+  {
+    "index": 13,
+    "en": "Laughter",
+    "zh-Hans": "笑声",
+    "zh-Hant": "笑聲"
+  },
+  {
+    "index": 14,
+    "en": "Baby laughter",
+    "zh-Hans": "婴儿笑声",
+    "zh-Hant": "嬰兒笑聲"
+  },
+  {
+    "index": 15,
+    "en": "Giggle",
+    "zh-Hans": "咯咯笑声",
+    "zh-Hant": "咯咯笑聲"
+  },
+  {
+    "index": 16,
+    "en": "Snicker",
+    "zh-Hans": "窃笑声",
+    "zh-Hant": "竊笑聲"
+  },
+  {
+    "index": 17,
+    "en": "Belly laugh",
+    "zh-Hans": "开怀大笑",
+    "zh-Hant": "開懷大笑"
+  },
+  {
+    "index": 18,
+    "en": "Chuckle, chortle",
+    "zh-Hans": "轻笑声",
+    "zh-Hant": "輕笑聲"
+  },
+  {
+    "index": 19,
+    "en": "Crying, sobbing",
+    "zh-Hans": "哭泣／抽泣声",
+    "zh-Hant": "哭泣／抽泣聲"
+  },
+  {
+    "index": 20,
+    "en": "Baby cry, infant cry",
+    "zh-Hans": "婴儿啼哭声",
+    "zh-Hant": "嬰兒啼哭聲"
+  },
+  {
+    "index": 21,
+    "en": "Whimper",
+    "zh-Hans": "呜咽声",
+    "zh-Hant": "嗚咽聲"
+  },
+  {
+    "index": 22,
+    "en": "Wail, moan",
+    "zh-Hans": "哀号／呻吟声",
+    "zh-Hant": "哀號／呻吟聲"
+  },
+  {
+    "index": 23,
+    "en": "Sigh",
+    "zh-Hans": "叹气声",
+    "zh-Hant": "嘆氣聲"
+  },
+  {
+    "index": 24,
+    "en": "Singing",
+    "zh-Hans": "歌声",
+    "zh-Hant": "歌聲"
+  },
+  {
+    "index": 25,
+    "en": "Choir",
+    "zh-Hans": "合唱",
+    "zh-Hant": "合唱"
+  },
+  {
+    "index": 26,
+    "en": "Yodeling",
+    "zh-Hans": "约德尔唱法",
+    "zh-Hant": "約德爾唱法"
+  },
+  {
+    "index": 27,
+    "en": "Chant",
+    "zh-Hans": "吟唱",
+    "zh-Hant": "吟唱"
+  },
+  {
+    "index": 28,
+    "en": "Mantra",
+    "zh-Hans": "诵咒声",
+    "zh-Hant": "誦咒聲"
+  },
+  {
+    "index": 29,
+    "en": "Child singing",
+    "zh-Hans": "儿童歌声",
+    "zh-Hant": "兒童歌聲"
+  },
+  {
+    "index": 30,
+    "en": "Synthetic singing",
+    "zh-Hans": "合成歌声",
+    "zh-Hant": "合成歌聲"
+  },
+  {
+    "index": 31,
+    "en": "Rapping",
+    "zh-Hans": "说唱",
+    "zh-Hant": "説唱"
+  },
+  {
+    "index": 32,
+    "en": "Humming",
+    "zh-Hans": "哼唱声",
+    "zh-Hant": "哼唱聲"
+  },
+  {
+    "index": 33,
+    "en": "Groan",
+    "zh-Hans": "低沉呻吟声",
+    "zh-Hant": "低沉呻吟聲"
+  },
+  {
+    "index": 34,
+    "en": "Grunt",
+    "zh-Hans": "哼哧声",
+    "zh-Hant": "哼哧聲"
+  },
+  {
+    "index": 35,
+    "en": "Whistling",
+    "zh-Hans": "口哨声",
+    "zh-Hant": "口哨聲"
+  },
+  {
+    "index": 36,
+    "en": "Breathing",
+    "zh-Hans": "呼吸声",
+    "zh-Hant": "呼吸聲"
+  },
+  {
+    "index": 37,
+    "en": "Wheeze",
+    "zh-Hans": "喘鸣声",
+    "zh-Hant": "喘鳴聲"
+  },
+  {
+    "index": 38,
+    "en": "Snoring",
+    "zh-Hans": "鼾声",
+    "zh-Hant": "鼾聲"
+  },
+  {
+    "index": 39,
+    "en": "Gasp",
+    "zh-Hans": "倒吸气声",
+    "zh-Hant": "倒吸氣聲"
+  },
+  {
+    "index": 40,
+    "en": "Pant",
+    "zh-Hans": "喘气声",
+    "zh-Hant": "喘氣聲"
+  },
+  {
+    "index": 41,
+    "en": "Snort",
+    "zh-Hans": "喷鼻息声",
+    "zh-Hant": "噴鼻息聲"
+  },
+  {
+    "index": 42,
+    "en": "Cough",
+    "zh-Hans": "咳嗽声",
+    "zh-Hant": "咳嗽聲"
+  },
+  {
+    "index": 43,
+    "en": "Throat clearing",
+    "zh-Hans": "清嗓声",
+    "zh-Hant": "清嗓聲"
+  },
+  {
+    "index": 44,
+    "en": "Sneeze",
+    "zh-Hans": "喷嚏声",
+    "zh-Hant": "噴嚏聲"
+  },
+  {
+    "index": 45,
+    "en": "Sniff",
+    "zh-Hans": "吸鼻声",
+    "zh-Hant": "吸鼻聲"
+  },
+  {
+    "index": 46,
+    "en": "Run",
+    "zh-Hans": "跑步声",
+    "zh-Hant": "跑步聲"
+  },
+  {
+    "index": 47,
+    "en": "Shuffle",
+    "zh-Hans": "拖步声",
+    "zh-Hant": "拖步聲"
+  },
+  {
+    "index": 48,
+    "en": "Walk, footsteps",
+    "zh-Hans": "脚步声",
+    "zh-Hant": "腳步聲"
+  },
+  {
+    "index": 49,
+    "en": "Chewing, mastication",
+    "zh-Hans": "咀嚼声",
+    "zh-Hant": "咀嚼聲"
+  },
+  {
+    "index": 50,
+    "en": "Biting",
+    "zh-Hans": "咬东西声",
+    "zh-Hant": "咬東西聲"
+  },
+  {
+    "index": 51,
+    "en": "Gargling",
+    "zh-Hans": "漱口声",
+    "zh-Hant": "漱口聲"
+  },
+  {
+    "index": 52,
+    "en": "Stomach rumble",
+    "zh-Hans": "肚子咕噜声",
+    "zh-Hant": "肚子咕嚕聲"
+  },
+  {
+    "index": 53,
+    "en": "Burping, eructation",
+    "zh-Hans": "嗳气声",
+    "zh-Hant": "噯氣聲"
+  },
+  {
+    "index": 54,
+    "en": "Hiccup",
+    "zh-Hans": "打嗝声",
+    "zh-Hant": "打嗝聲"
+  },
+  {
+    "index": 55,
+    "en": "Fart",
+    "zh-Hans": "放屁声",
+    "zh-Hant": "放屁聲"
+  },
+  {
+    "index": 56,
+    "en": "Hands",
+    "zh-Hans": "手部动作声",
+    "zh-Hant": "手部動作聲"
+  },
+  {
+    "index": 57,
+    "en": "Finger snapping",
+    "zh-Hans": "响指声",
+    "zh-Hant": "響指聲"
+  },
+  {
+    "index": 58,
+    "en": "Clapping",
+    "zh-Hans": "拍手声",
+    "zh-Hant": "拍手聲"
+  },
+  {
+    "index": 59,
+    "en": "Heart sounds, heartbeat",
+    "zh-Hans": "心跳声",
+    "zh-Hant": "心跳聲"
+  },
+  {
+    "index": 60,
+    "en": "Heart murmur",
+    "zh-Hans": "心脏杂音",
+    "zh-Hant": "心臟雜音"
+  },
+  {
+    "index": 61,
+    "en": "Cheering",
+    "zh-Hans": "欢呼声",
+    "zh-Hant": "歡呼聲"
+  },
+  {
+    "index": 62,
+    "en": "Applause",
+    "zh-Hans": "掌声",
+    "zh-Hant": "掌聲"
+  },
+  {
+    "index": 63,
+    "en": "Chatter",
+    "zh-Hans": "嘈杂交谈声",
+    "zh-Hant": "嘈雜交談聲"
+  },
+  {
+    "index": 64,
+    "en": "Crowd",
+    "zh-Hans": "人群声",
+    "zh-Hant": "人羣聲"
+  },
+  {
+    "index": 65,
+    "en": "Hubbub, speech noise, speech babble",
+    "zh-Hans": "人声喧哗",
+    "zh-Hant": "人聲喧譁"
+  },
+  {
+    "index": 66,
+    "en": "Children playing",
+    "zh-Hans": "儿童玩耍声",
+    "zh-Hant": "兒童玩耍聲"
+  },
+  {
+    "index": 67,
+    "en": "Animal",
+    "zh-Hans": "动物声",
+    "zh-Hant": "動物聲"
+  },
+  {
+    "index": 68,
+    "en": "Domestic animals, pets",
+    "zh-Hans": "宠物声",
+    "zh-Hant": "寵物聲"
+  },
+  {
+    "index": 69,
+    "en": "Dog",
+    "zh-Hans": "狗的声音",
+    "zh-Hant": "狗的聲音"
+  },
+  {
+    "index": 70,
+    "en": "Bark",
+    "zh-Hans": "狗吠声",
+    "zh-Hant": "狗吠聲"
+  },
+  {
+    "index": 71,
+    "en": "Yip",
+    "zh-Hans": "短促犬吠",
+    "zh-Hant": "短促犬吠"
+  },
+  {
+    "index": 72,
+    "en": "Howl",
+    "zh-Hans": "嚎叫声",
+    "zh-Hant": "嚎叫聲"
+  },
+  {
+    "index": 73,
+    "en": "Bow-wow",
+    "zh-Hans": "汪汪声",
+    "zh-Hant": "汪汪聲"
+  },
+  {
+    "index": 74,
+    "en": "Growling",
+    "zh-Hans": "低吼声",
+    "zh-Hant": "低吼聲"
+  },
+  {
+    "index": 75,
+    "en": "Whimper (dog)",
+    "zh-Hans": "狗呜咽声",
+    "zh-Hant": "狗嗚咽聲"
+  },
+  {
+    "index": 76,
+    "en": "Cat",
+    "zh-Hans": "猫的声音",
+    "zh-Hant": "貓的聲音"
+  },
+  {
+    "index": 77,
+    "en": "Purr",
+    "zh-Hans": "猫呼噜声",
+    "zh-Hant": "貓呼嚕聲"
+  },
+  {
+    "index": 78,
+    "en": "Meow",
+    "zh-Hans": "猫叫声",
+    "zh-Hant": "貓叫聲"
+  },
+  {
+    "index": 79,
+    "en": "Hiss",
+    "zh-Hans": "嘶嘶声",
+    "zh-Hant": "嘶嘶聲"
+  },
+  {
+    "index": 80,
+    "en": "Caterwaul",
+    "zh-Hans": "猫嚎叫声",
+    "zh-Hant": "貓嚎叫聲"
+  },
+  {
+    "index": 81,
+    "en": "Livestock, farm animals, working animals",
+    "zh-Hans": "牲畜声",
+    "zh-Hant": "牲畜聲"
+  },
+  {
+    "index": 82,
+    "en": "Horse",
+    "zh-Hans": "马的声音",
+    "zh-Hant": "馬的聲音"
+  },
+  {
+    "index": 83,
+    "en": "Clip-clop",
+    "zh-Hans": "马蹄声",
+    "zh-Hant": "馬蹄聲"
+  },
+  {
+    "index": 84,
+    "en": "Neigh, whinny",
+    "zh-Hans": "马嘶声",
+    "zh-Hant": "馬嘶聲"
+  },
+  {
+    "index": 85,
+    "en": "Cattle, bovinae",
+    "zh-Hans": "牛的声音",
+    "zh-Hant": "牛的聲音"
+  },
+  {
+    "index": 86,
+    "en": "Moo",
+    "zh-Hans": "牛叫声",
+    "zh-Hant": "牛叫聲"
+  },
+  {
+    "index": 87,
+    "en": "Cowbell",
+    "zh-Hans": "牛铃声",
+    "zh-Hant": "牛鈴聲"
+  },
+  {
+    "index": 88,
+    "en": "Pig",
+    "zh-Hans": "猪的声音",
+    "zh-Hant": "豬的聲音"
+  },
+  {
+    "index": 89,
+    "en": "Oink",
+    "zh-Hans": "猪哼叫声",
+    "zh-Hant": "豬哼叫聲"
+  },
+  {
+    "index": 90,
+    "en": "Goat",
+    "zh-Hans": "山羊的声音",
+    "zh-Hant": "山羊的聲音"
+  },
+  {
+    "index": 91,
+    "en": "Bleat",
+    "zh-Hans": "羊咩叫声",
+    "zh-Hant": "羊咩叫聲"
+  },
+  {
+    "index": 92,
+    "en": "Sheep",
+    "zh-Hans": "绵羊的声音",
+    "zh-Hant": "綿羊的聲音"
+  },
+  {
+    "index": 93,
+    "en": "Fowl",
+    "zh-Hans": "家禽声",
+    "zh-Hant": "家禽聲"
+  },
+  {
+    "index": 94,
+    "en": "Chicken, rooster",
+    "zh-Hans": "鸡的声音",
+    "zh-Hant": "雞的聲音"
+  },
+  {
+    "index": 95,
+    "en": "Cluck",
+    "zh-Hans": "鸡咯咯叫声",
+    "zh-Hant": "雞咯咯叫聲"
+  },
+  {
+    "index": 96,
+    "en": "Crowing, cock-a-doodle-doo",
+    "zh-Hans": "公鸡打鸣声",
+    "zh-Hant": "公雞打鳴聲"
+  },
+  {
+    "index": 97,
+    "en": "Turkey",
+    "zh-Hans": "火鸡的声音",
+    "zh-Hant": "火雞的聲音"
+  },
+  {
+    "index": 98,
+    "en": "Gobble",
+    "zh-Hans": "火鸡咯咯叫声",
+    "zh-Hant": "火雞咯咯叫聲"
+  },
+  {
+    "index": 99,
+    "en": "Duck",
+    "zh-Hans": "鸭的声音",
+    "zh-Hant": "鴨的聲音"
+  },
+  {
+    "index": 100,
+    "en": "Quack",
+    "zh-Hans": "鸭叫声",
+    "zh-Hant": "鴨叫聲"
+  },
+  {
+    "index": 101,
+    "en": "Goose",
+    "zh-Hans": "鹅的声音",
+    "zh-Hant": "鵝的聲音"
+  },
+  {
+    "index": 102,
+    "en": "Honk",
+    "zh-Hans": "鹅叫声",
+    "zh-Hant": "鵝叫聲"
+  },
+  {
+    "index": 103,
+    "en": "Wild animals",
+    "zh-Hans": "野生动物声",
+    "zh-Hant": "野生動物聲"
+  },
+  {
+    "index": 104,
+    "en": "Roaring cats (lions, tigers)",
+    "zh-Hans": "狮虎吼叫声",
+    "zh-Hant": "獅虎吼叫聲"
+  },
+  {
+    "index": 105,
+    "en": "Roar",
+    "zh-Hans": "咆哮声",
+    "zh-Hant": "咆哮聲"
+  },
+  {
+    "index": 106,
+    "en": "Bird",
+    "zh-Hans": "鸟的声音",
+    "zh-Hant": "鳥的聲音"
+  },
+  {
+    "index": 107,
+    "en": "Bird vocalization, bird call, bird song",
+    "zh-Hans": "鸟鸣声",
+    "zh-Hant": "鳥鳴聲"
+  },
+  {
+    "index": 108,
+    "en": "Chirp, tweet",
+    "zh-Hans": "啁啾声",
+    "zh-Hant": "啁啾聲"
+  },
+  {
+    "index": 109,
+    "en": "Squawk",
+    "zh-Hans": "鸟尖叫声",
+    "zh-Hant": "鳥尖叫聲"
+  },
+  {
+    "index": 110,
+    "en": "Pigeon, dove",
+    "zh-Hans": "鸽子的声音",
+    "zh-Hant": "鴿子的聲音"
+  },
+  {
+    "index": 111,
+    "en": "Coo",
+    "zh-Hans": "鸽子咕咕声",
+    "zh-Hant": "鴿子咕咕聲"
+  },
+  {
+    "index": 112,
+    "en": "Crow",
+    "zh-Hans": "乌鸦的声音",
+    "zh-Hant": "烏鴉的聲音"
+  },
+  {
+    "index": 113,
+    "en": "Caw",
+    "zh-Hans": "乌鸦叫声",
+    "zh-Hant": "烏鴉叫聲"
+  },
+  {
+    "index": 114,
+    "en": "Owl",
+    "zh-Hans": "猫头鹰的声音",
+    "zh-Hant": "貓頭鷹的聲音"
+  },
+  {
+    "index": 115,
+    "en": "Hoot",
+    "zh-Hans": "猫头鹰咕咕声",
+    "zh-Hant": "貓頭鷹咕咕聲"
+  },
+  {
+    "index": 116,
+    "en": "Bird flight, flapping wings",
+    "zh-Hans": "鸟振翅声",
+    "zh-Hant": "鳥振翅聲"
+  },
+  {
+    "index": 117,
+    "en": "Canidae, dogs, wolves",
+    "zh-Hans": "犬／狼等犬科动物声",
+    "zh-Hant": "犬／狼等犬科動物聲"
+  },
+  {
+    "index": 118,
+    "en": "Rodents, rats, mice",
+    "zh-Hans": "鼠类声",
+    "zh-Hant": "鼠類聲"
+  },
+  {
+    "index": 119,
+    "en": "Mouse",
+    "zh-Hans": "老鼠声",
+    "zh-Hant": "老鼠聲"
+  },
+  {
+    "index": 120,
+    "en": "Patter",
+    "zh-Hans": "细碎脚步声",
+    "zh-Hant": "細碎腳步聲"
+  },
+  {
+    "index": 121,
+    "en": "Insect",
+    "zh-Hans": "虫鸣声",
+    "zh-Hant": "蟲鳴聲"
+  },
+  {
+    "index": 122,
+    "en": "Cricket",
+    "zh-Hans": "蟋蟀声",
+    "zh-Hant": "蟋蟀聲"
+  },
+  {
+    "index": 123,
+    "en": "Mosquito",
+    "zh-Hans": "蚊子声",
+    "zh-Hant": "蚊子聲"
+  },
+  {
+    "index": 124,
+    "en": "Fly, housefly",
+    "zh-Hans": "苍蝇声",
+    "zh-Hant": "蒼蠅聲"
+  },
+  {
+    "index": 125,
+    "en": "Buzz",
+    "zh-Hans": "昆虫嗡嗡声",
+    "zh-Hant": "昆蟲嗡嗡聲"
+  },
+  {
+    "index": 126,
+    "en": "Bee, wasp, etc.",
+    "zh-Hans": "蜜蜂／黄蜂声",
+    "zh-Hant": "蜜蜂／黃蜂聲"
+  },
+  {
+    "index": 127,
+    "en": "Frog",
+    "zh-Hans": "蛙的声音",
+    "zh-Hant": "蛙的聲音"
+  },
+  {
+    "index": 128,
+    "en": "Croak",
+    "zh-Hans": "蛙鸣声",
+    "zh-Hant": "蛙鳴聲"
+  },
+  {
+    "index": 129,
+    "en": "Snake",
+    "zh-Hans": "蛇的声音",
+    "zh-Hant": "蛇的聲音"
+  },
+  {
+    "index": 130,
+    "en": "Rattle",
+    "zh-Hans": "咔啦响声",
+    "zh-Hant": "咔啦響聲"
+  },
+  {
+    "index": 131,
+    "en": "Whale vocalization",
+    "zh-Hans": "鲸鸣声",
+    "zh-Hant": "鯨鳴聲"
+  },
+  {
+    "index": 132,
+    "en": "Music",
+    "zh-Hans": "音乐",
+    "zh-Hant": "音樂"
+  },
+  {
+    "index": 133,
+    "en": "Musical instrument",
+    "zh-Hans": "乐器声",
+    "zh-Hant": "樂器聲"
+  },
+  {
+    "index": 134,
+    "en": "Plucked string instrument",
+    "zh-Hans": "拨弦乐器声",
+    "zh-Hant": "撥絃樂器聲"
+  },
+  {
+    "index": 135,
+    "en": "Guitar",
+    "zh-Hans": "吉他声",
+    "zh-Hant": "吉他聲"
+  },
+  {
+    "index": 136,
+    "en": "Electric guitar",
+    "zh-Hans": "电吉他声",
+    "zh-Hant": "電吉他聲"
+  },
+  {
+    "index": 137,
+    "en": "Bass guitar",
+    "zh-Hans": "贝斯声",
+    "zh-Hant": "貝斯聲"
+  },
+  {
+    "index": 138,
+    "en": "Acoustic guitar",
+    "zh-Hans": "木吉他声",
+    "zh-Hant": "木吉他聲"
+  },
+  {
+    "index": 139,
+    "en": "Steel guitar, slide guitar",
+    "zh-Hans": "钢棒／滑棒吉他声",
+    "zh-Hant": "鋼棒／滑棒吉他聲"
+  },
+  {
+    "index": 140,
+    "en": "Tapping (guitar technique)",
+    "zh-Hans": "吉他点弦声",
+    "zh-Hant": "吉他點絃聲"
+  },
+  {
+    "index": 141,
+    "en": "Strum",
+    "zh-Hans": "扫弦声",
+    "zh-Hant": "掃絃聲"
+  },
+  {
+    "index": 142,
+    "en": "Banjo",
+    "zh-Hans": "班卓琴声",
+    "zh-Hant": "班卓琴聲"
+  },
+  {
+    "index": 143,
+    "en": "Sitar",
+    "zh-Hans": "西塔琴声",
+    "zh-Hant": "西塔琴聲"
+  },
+  {
+    "index": 144,
+    "en": "Mandolin",
+    "zh-Hans": "曼陀林声",
+    "zh-Hant": "曼陀林聲"
+  },
+  {
+    "index": 145,
+    "en": "Zither",
+    "zh-Hans": "齐特琴声",
+    "zh-Hant": "齊特琴聲"
+  },
+  {
+    "index": 146,
+    "en": "Ukulele",
+    "zh-Hans": "尤克里里声",
+    "zh-Hant": "尤克里裏聲"
+  },
+  {
+    "index": 147,
+    "en": "Keyboard (musical)",
+    "zh-Hans": "键盘乐器声",
+    "zh-Hant": "鍵盤樂器聲"
+  },
+  {
+    "index": 148,
+    "en": "Piano",
+    "zh-Hans": "钢琴声",
+    "zh-Hant": "鋼琴聲"
+  },
+  {
+    "index": 149,
+    "en": "Electric piano",
+    "zh-Hans": "电钢琴声",
+    "zh-Hant": "電鋼琴聲"
+  },
+  {
+    "index": 150,
+    "en": "Organ",
+    "zh-Hans": "管风琴声",
+    "zh-Hant": "管風琴聲"
+  },
+  {
+    "index": 151,
+    "en": "Electronic organ",
+    "zh-Hans": "电子风琴声",
+    "zh-Hant": "電子風琴聲"
+  },
+  {
+    "index": 152,
+    "en": "Hammond organ",
+    "zh-Hans": "哈蒙德风琴声",
+    "zh-Hant": "哈蒙德風琴聲"
+  },
+  {
+    "index": 153,
+    "en": "Synthesizer",
+    "zh-Hans": "合成器声",
+    "zh-Hant": "合成器聲"
+  },
+  {
+    "index": 154,
+    "en": "Sampler",
+    "zh-Hans": "采样器声",
+    "zh-Hant": "採樣器聲"
+  },
+  {
+    "index": 155,
+    "en": "Harpsichord",
+    "zh-Hans": "羽管键琴声",
+    "zh-Hant": "羽管鍵琴聲"
+  },
+  {
+    "index": 156,
+    "en": "Percussion",
+    "zh-Hans": "打击乐",
+    "zh-Hant": "打擊樂"
+  },
+  {
+    "index": 157,
+    "en": "Drum kit",
+    "zh-Hans": "架子鼓声",
+    "zh-Hant": "架子鼓聲"
+  },
+  {
+    "index": 158,
+    "en": "Drum machine",
+    "zh-Hans": "鼓机声",
+    "zh-Hant": "鼓機聲"
+  },
+  {
+    "index": 159,
+    "en": "Drum",
+    "zh-Hans": "鼓声",
+    "zh-Hant": "鼓聲"
+  },
+  {
+    "index": 160,
+    "en": "Snare drum",
+    "zh-Hans": "军鼓声",
+    "zh-Hant": "軍鼓聲"
+  },
+  {
+    "index": 161,
+    "en": "Rimshot",
+    "zh-Hans": "鼓边敲击声",
+    "zh-Hant": "鼓邊敲擊聲"
+  },
+  {
+    "index": 162,
+    "en": "Drum roll",
+    "zh-Hans": "滚奏鼓声",
+    "zh-Hant": "滾奏鼓聲"
+  },
+  {
+    "index": 163,
+    "en": "Bass drum",
+    "zh-Hans": "大鼓声",
+    "zh-Hant": "大鼓聲"
+  },
+  {
+    "index": 164,
+    "en": "Timpani",
+    "zh-Hans": "定音鼓声",
+    "zh-Hant": "定音鼓聲"
+  },
+  {
+    "index": 165,
+    "en": "Tabla",
+    "zh-Hans": "塔布拉鼓声",
+    "zh-Hant": "塔布拉鼓聲"
+  },
+  {
+    "index": 166,
+    "en": "Cymbal",
+    "zh-Hans": "钹声",
+    "zh-Hant": "鈸聲"
+  },
+  {
+    "index": 167,
+    "en": "Hi-hat",
+    "zh-Hans": "踩镲声",
+    "zh-Hant": "踩鑔聲"
+  },
+  {
+    "index": 168,
+    "en": "Wood block",
+    "zh-Hans": "木块敲击乐",
+    "zh-Hant": "木塊敲擊樂"
+  },
+  {
+    "index": 169,
+    "en": "Tambourine",
+    "zh-Hans": "铃鼓声",
+    "zh-Hant": "鈴鼓聲"
+  },
+  {
+    "index": 170,
+    "en": "Rattle (instrument)",
+    "zh-Hans": "摇铃乐器声",
+    "zh-Hant": "搖鈴樂器聲"
+  },
+  {
+    "index": 171,
+    "en": "Maraca",
+    "zh-Hans": "沙锤声",
+    "zh-Hant": "沙錘聲"
+  },
+  {
+    "index": 172,
+    "en": "Gong",
+    "zh-Hans": "锣声",
+    "zh-Hant": "鑼聲"
+  },
+  {
+    "index": 173,
+    "en": "Tubular bells",
+    "zh-Hans": "管钟声",
+    "zh-Hant": "管鐘聲"
+  },
+  {
+    "index": 174,
+    "en": "Mallet percussion",
+    "zh-Hans": "槌击乐器声",
+    "zh-Hant": "槌擊樂器聲"
+  },
+  {
+    "index": 175,
+    "en": "Marimba, xylophone",
+    "zh-Hans": "马林巴／木琴声",
+    "zh-Hant": "馬林巴／木琴聲"
+  },
+  {
+    "index": 176,
+    "en": "Glockenspiel",
+    "zh-Hans": "钟琴声",
+    "zh-Hant": "鐘琴聲"
+  },
+  {
+    "index": 177,
+    "en": "Vibraphone",
+    "zh-Hans": "颤音琴声",
+    "zh-Hant": "顫音琴聲"
+  },
+  {
+    "index": 178,
+    "en": "Steelpan",
+    "zh-Hans": "钢鼓声",
+    "zh-Hant": "鋼鼓聲"
+  },
+  {
+    "index": 179,
+    "en": "Orchestra",
+    "zh-Hans": "管弦乐",
+    "zh-Hant": "管絃樂"
+  },
+  {
+    "index": 180,
+    "en": "Brass instrument",
+    "zh-Hans": "铜管乐器声",
+    "zh-Hant": "銅管樂器聲"
+  },
+  {
+    "index": 181,
+    "en": "French horn",
+    "zh-Hans": "圆号声",
+    "zh-Hant": "圓號聲"
+  },
+  {
+    "index": 182,
+    "en": "Trumpet",
+    "zh-Hans": "小号声",
+    "zh-Hant": "小號聲"
+  },
+  {
+    "index": 183,
+    "en": "Trombone",
+    "zh-Hans": "长号声",
+    "zh-Hant": "長號聲"
+  },
+  {
+    "index": 184,
+    "en": "Bowed string instrument",
+    "zh-Hans": "拉弦乐器声",
+    "zh-Hant": "拉絃樂器聲"
+  },
+  {
+    "index": 185,
+    "en": "String section",
+    "zh-Hans": "弦乐合奏",
+    "zh-Hant": "絃樂合奏"
+  },
+  {
+    "index": 186,
+    "en": "Violin, fiddle",
+    "zh-Hans": "小提琴声",
+    "zh-Hant": "小提琴聲"
+  },
+  {
+    "index": 187,
+    "en": "Pizzicato",
+    "zh-Hans": "弦乐拨奏",
+    "zh-Hant": "絃樂撥奏"
+  },
+  {
+    "index": 188,
+    "en": "Cello",
+    "zh-Hans": "大提琴声",
+    "zh-Hant": "大提琴聲"
+  },
+  {
+    "index": 189,
+    "en": "Double bass",
+    "zh-Hans": "低音提琴声",
+    "zh-Hant": "低音提琴聲"
+  },
+  {
+    "index": 190,
+    "en": "Wind instrument, woodwind instrument",
+    "zh-Hans": "管乐／木管乐器声",
+    "zh-Hant": "管樂／木管樂器聲"
+  },
+  {
+    "index": 191,
+    "en": "Flute",
+    "zh-Hans": "长笛声",
+    "zh-Hant": "長笛聲"
+  },
+  {
+    "index": 192,
+    "en": "Saxophone",
+    "zh-Hans": "萨克斯声",
+    "zh-Hant": "薩克斯聲"
+  },
+  {
+    "index": 193,
+    "en": "Clarinet",
+    "zh-Hans": "单簧管声",
+    "zh-Hant": "單簧管聲"
+  },
+  {
+    "index": 194,
+    "en": "Harp",
+    "zh-Hans": "竖琴声",
+    "zh-Hant": "豎琴聲"
+  },
+  {
+    "index": 195,
+    "en": "Bell",
+    "zh-Hans": "钟铃声",
+    "zh-Hant": "鍾鈴聲"
+  },
+  {
+    "index": 196,
+    "en": "Church bell",
+    "zh-Hans": "教堂钟声",
+    "zh-Hant": "教堂鐘聲"
+  },
+  {
+    "index": 197,
+    "en": "Jingle bell",
+    "zh-Hans": "小铃铛声",
+    "zh-Hant": "小鈴鐺聲"
+  },
+  {
+    "index": 198,
+    "en": "Bicycle bell",
+    "zh-Hans": "自行车铃声",
+    "zh-Hant": "自行車鈴聲"
+  },
+  {
+    "index": 199,
+    "en": "Tuning fork",
+    "zh-Hans": "音叉声",
+    "zh-Hant": "音叉聲"
+  },
+  {
+    "index": 200,
+    "en": "Chime",
+    "zh-Hans": "鸣钟声",
+    "zh-Hant": "鳴鐘聲"
+  },
+  {
+    "index": 201,
+    "en": "Wind chime",
+    "zh-Hans": "风铃声",
+    "zh-Hant": "風鈴聲"
+  },
+  {
+    "index": 202,
+    "en": "Change ringing (campanology)",
+    "zh-Hans": "编序鸣钟声",
+    "zh-Hant": "編序鳴鐘聲"
+  },
+  {
+    "index": 203,
+    "en": "Harmonica",
+    "zh-Hans": "口琴声",
+    "zh-Hant": "口琴聲"
+  },
+  {
+    "index": 204,
+    "en": "Accordion",
+    "zh-Hans": "手风琴声",
+    "zh-Hant": "手風琴聲"
+  },
+  {
+    "index": 205,
+    "en": "Bagpipes",
+    "zh-Hans": "风笛声",
+    "zh-Hant": "風笛聲"
+  },
+  {
+    "index": 206,
+    "en": "Didgeridoo",
+    "zh-Hans": "迪吉里杜管声",
+    "zh-Hant": "迪吉里杜管聲"
+  },
+  {
+    "index": 207,
+    "en": "Shofar",
+    "zh-Hans": "羊角号声",
+    "zh-Hant": "羊角號聲"
+  },
+  {
+    "index": 208,
+    "en": "Theremin",
+    "zh-Hans": "特雷门琴声",
+    "zh-Hant": "特雷門琴聲"
+  },
+  {
+    "index": 209,
+    "en": "Singing bowl",
+    "zh-Hans": "颂钵声",
+    "zh-Hant": "頌缽聲"
+  },
+  {
+    "index": 210,
+    "en": "Scratching (performance technique)",
+    "zh-Hans": "唱盘搓碟声",
+    "zh-Hant": "唱盤搓碟聲"
+  },
+  {
+    "index": 211,
+    "en": "Pop music",
+    "zh-Hans": "流行音乐",
+    "zh-Hant": "流行音樂"
+  },
+  {
+    "index": 212,
+    "en": "Hip hop music",
+    "zh-Hans": "嘻哈音乐",
+    "zh-Hant": "嘻哈音樂"
+  },
+  {
+    "index": 213,
+    "en": "Beatboxing",
+    "zh-Hans": "口技节奏",
+    "zh-Hant": "口技節奏"
+  },
+  {
+    "index": 214,
+    "en": "Rock music",
+    "zh-Hans": "摇滚音乐",
+    "zh-Hant": "搖滾音樂"
+  },
+  {
+    "index": 215,
+    "en": "Heavy metal",
+    "zh-Hans": "重金属音乐",
+    "zh-Hant": "重金屬音樂"
+  },
+  {
+    "index": 216,
+    "en": "Punk rock",
+    "zh-Hans": "朋克摇滚",
+    "zh-Hant": "朋克搖滾"
+  },
+  {
+    "index": 217,
+    "en": "Grunge",
+    "zh-Hans": "垃圾摇滚",
+    "zh-Hant": "垃圾搖滾"
+  },
+  {
+    "index": 218,
+    "en": "Progressive rock",
+    "zh-Hans": "前卫摇滚",
+    "zh-Hant": "前衞搖滾"
+  },
+  {
+    "index": 219,
+    "en": "Rock and roll",
+    "zh-Hans": "摇滚乐",
+    "zh-Hant": "搖滾樂"
+  },
+  {
+    "index": 220,
+    "en": "Psychedelic rock",
+    "zh-Hans": "迷幻摇滚",
+    "zh-Hant": "迷幻搖滾"
+  },
+  {
+    "index": 221,
+    "en": "Rhythm and blues",
+    "zh-Hans": "节奏布鲁斯",
+    "zh-Hant": "節奏布魯斯"
+  },
+  {
+    "index": 222,
+    "en": "Soul music",
+    "zh-Hans": "灵魂乐",
+    "zh-Hant": "靈魂樂"
+  },
+  {
+    "index": 223,
+    "en": "Reggae",
+    "zh-Hans": "雷鬼音乐",
+    "zh-Hant": "雷鬼音樂"
+  },
+  {
+    "index": 224,
+    "en": "Country",
+    "zh-Hans": "乡村音乐",
+    "zh-Hant": "鄉村音樂"
+  },
+  {
+    "index": 225,
+    "en": "Swing music",
+    "zh-Hans": "摇摆乐",
+    "zh-Hant": "搖擺樂"
+  },
+  {
+    "index": 226,
+    "en": "Bluegrass",
+    "zh-Hans": "蓝草音乐",
+    "zh-Hant": "藍草音樂"
+  },
+  {
+    "index": 227,
+    "en": "Funk",
+    "zh-Hans": "放克音乐",
+    "zh-Hant": "放克音樂"
+  },
+  {
+    "index": 228,
+    "en": "Folk music",
+    "zh-Hans": "民谣音乐",
+    "zh-Hant": "民謠音樂"
+  },
+  {
+    "index": 229,
+    "en": "Middle Eastern music",
+    "zh-Hans": "中东音乐",
+    "zh-Hant": "中東音樂"
+  },
+  {
+    "index": 230,
+    "en": "Jazz",
+    "zh-Hans": "爵士乐",
+    "zh-Hant": "爵士樂"
+  },
+  {
+    "index": 231,
+    "en": "Disco",
+    "zh-Hans": "迪斯科音乐",
+    "zh-Hant": "迪斯科音樂"
+  },
+  {
+    "index": 232,
+    "en": "Classical music",
+    "zh-Hans": "古典音乐",
+    "zh-Hant": "古典音樂"
+  },
+  {
+    "index": 233,
+    "en": "Opera",
+    "zh-Hans": "歌剧",
+    "zh-Hant": "歌劇"
+  },
+  {
+    "index": 234,
+    "en": "Electronic music",
+    "zh-Hans": "电子音乐",
+    "zh-Hant": "電子音樂"
+  },
+  {
+    "index": 235,
+    "en": "House music",
+    "zh-Hans": "浩室音乐",
+    "zh-Hant": "浩室音樂"
+  },
+  {
+    "index": 236,
+    "en": "Techno",
+    "zh-Hans": "铁克诺音乐",
+    "zh-Hant": "鐵克諾音樂"
+  },
+  {
+    "index": 237,
+    "en": "Dubstep",
+    "zh-Hans": "回响贝斯音乐",
+    "zh-Hant": "迴響貝斯音樂"
+  },
+  {
+    "index": 238,
+    "en": "Drum and bass",
+    "zh-Hans": "鼓打贝斯音乐",
+    "zh-Hant": "鼓打貝斯音樂"
+  },
+  {
+    "index": 239,
+    "en": "Electronica",
+    "zh-Hans": "电子乐",
+    "zh-Hant": "電子樂"
+  },
+  {
+    "index": 240,
+    "en": "Electronic dance music",
+    "zh-Hans": "电子舞曲",
+    "zh-Hant": "電子舞曲"
+  },
+  {
+    "index": 241,
+    "en": "Ambient music",
+    "zh-Hans": "氛围音乐",
+    "zh-Hant": "氛圍音樂"
+  },
+  {
+    "index": 242,
+    "en": "Trance music",
+    "zh-Hans": "出神音乐",
+    "zh-Hant": "出神音樂"
+  },
+  {
+    "index": 243,
+    "en": "Music of Latin America",
+    "zh-Hans": "拉丁美洲音乐",
+    "zh-Hant": "拉丁美洲音樂"
+  },
+  {
+    "index": 244,
+    "en": "Salsa music",
+    "zh-Hans": "萨尔萨音乐",
+    "zh-Hant": "薩爾薩音樂"
+  },
+  {
+    "index": 245,
+    "en": "Flamenco",
+    "zh-Hans": "弗拉门戈音乐",
+    "zh-Hant": "弗拉門戈音樂"
+  },
+  {
+    "index": 246,
+    "en": "Blues",
+    "zh-Hans": "布鲁斯音乐",
+    "zh-Hant": "布魯斯音樂"
+  },
+  {
+    "index": 247,
+    "en": "Music for children",
+    "zh-Hans": "儿童音乐",
+    "zh-Hant": "兒童音樂"
+  },
+  {
+    "index": 248,
+    "en": "New-age music",
+    "zh-Hans": "新世纪音乐",
+    "zh-Hant": "新世紀音樂"
+  },
+  {
+    "index": 249,
+    "en": "Vocal music",
+    "zh-Hans": "声乐",
+    "zh-Hant": "聲樂"
+  },
+  {
+    "index": 250,
+    "en": "A capella",
+    "zh-Hans": "无伴奏合唱",
+    "zh-Hant": "無伴奏合唱"
+  },
+  {
+    "index": 251,
+    "en": "Music of Africa",
+    "zh-Hans": "非洲音乐",
+    "zh-Hant": "非洲音樂"
+  },
+  {
+    "index": 252,
+    "en": "Afrobeat",
+    "zh-Hans": "非洲节奏乐",
+    "zh-Hant": "非洲節奏樂"
+  },
+  {
+    "index": 253,
+    "en": "Christian music",
+    "zh-Hans": "基督教音乐",
+    "zh-Hant": "基督教音樂"
+  },
+  {
+    "index": 254,
+    "en": "Gospel music",
+    "zh-Hans": "福音音乐",
+    "zh-Hant": "福音音樂"
+  },
+  {
+    "index": 255,
+    "en": "Music of Asia",
+    "zh-Hans": "亚洲音乐",
+    "zh-Hant": "亞洲音樂"
+  },
+  {
+    "index": 256,
+    "en": "Carnatic music",
+    "zh-Hans": "卡纳提克音乐",
+    "zh-Hant": "卡納提克音樂"
+  },
+  {
+    "index": 257,
+    "en": "Music of Bollywood",
+    "zh-Hans": "宝莱坞音乐",
+    "zh-Hant": "寶萊塢音樂"
+  },
+  {
+    "index": 258,
+    "en": "Ska",
+    "zh-Hans": "斯卡音乐",
+    "zh-Hant": "斯卡音樂"
+  },
+  {
+    "index": 259,
+    "en": "Traditional music",
+    "zh-Hans": "传统音乐",
+    "zh-Hant": "傳統音樂"
+  },
+  {
+    "index": 260,
+    "en": "Independent music",
+    "zh-Hans": "独立音乐",
+    "zh-Hant": "獨立音樂"
+  },
+  {
+    "index": 261,
+    "en": "Song",
+    "zh-Hans": "歌曲",
+    "zh-Hant": "歌曲"
+  },
+  {
+    "index": 262,
+    "en": "Background music",
+    "zh-Hans": "背景音乐",
+    "zh-Hant": "背景音樂"
+  },
+  {
+    "index": 263,
+    "en": "Theme music",
+    "zh-Hans": "主题音乐",
+    "zh-Hant": "主題音樂"
+  },
+  {
+    "index": 264,
+    "en": "Jingle (music)",
+    "zh-Hans": "广告短曲",
+    "zh-Hant": "廣告短曲"
+  },
+  {
+    "index": 265,
+    "en": "Soundtrack music",
+    "zh-Hans": "配乐",
+    "zh-Hant": "配樂"
+  },
+  {
+    "index": 266,
+    "en": "Lullaby",
+    "zh-Hans": "摇篮曲",
+    "zh-Hant": "搖籃曲"
+  },
+  {
+    "index": 267,
+    "en": "Video game music",
+    "zh-Hans": "电子游戏音乐",
+    "zh-Hant": "電子遊戲音樂"
+  },
+  {
+    "index": 268,
+    "en": "Christmas music",
+    "zh-Hans": "圣诞音乐",
+    "zh-Hant": "聖誕音樂"
+  },
+  {
+    "index": 269,
+    "en": "Dance music",
+    "zh-Hans": "舞曲",
+    "zh-Hant": "舞曲"
+  },
+  {
+    "index": 270,
+    "en": "Wedding music",
+    "zh-Hans": "婚礼音乐",
+    "zh-Hant": "婚禮音樂"
+  },
+  {
+    "index": 271,
+    "en": "Happy music",
+    "zh-Hans": "欢快音乐",
+    "zh-Hant": "歡快音樂"
+  },
+  {
+    "index": 272,
+    "en": "Sad music",
+    "zh-Hans": "悲伤音乐",
+    "zh-Hant": "悲傷音樂"
+  },
+  {
+    "index": 273,
+    "en": "Tender music",
+    "zh-Hans": "温柔音乐",
+    "zh-Hant": "温柔音樂"
+  },
+  {
+    "index": 274,
+    "en": "Exciting music",
+    "zh-Hans": "激昂音乐",
+    "zh-Hant": "激昂音樂"
+  },
+  {
+    "index": 275,
+    "en": "Angry music",
+    "zh-Hans": "愤怒音乐",
+    "zh-Hant": "憤怒音樂"
+  },
+  {
+    "index": 276,
+    "en": "Scary music",
+    "zh-Hans": "恐怖音乐",
+    "zh-Hant": "恐怖音樂"
+  },
+  {
+    "index": 277,
+    "en": "Wind",
+    "zh-Hans": "风声",
+    "zh-Hant": "風聲"
+  },
+  {
+    "index": 278,
+    "en": "Rustling leaves",
+    "zh-Hans": "树叶沙沙声",
+    "zh-Hant": "樹葉沙沙聲"
+  },
+  {
+    "index": 279,
+    "en": "Wind noise (microphone)",
+    "zh-Hans": "麦克风风噪",
+    "zh-Hant": "麥克風風噪"
+  },
+  {
+    "index": 280,
+    "en": "Thunderstorm",
+    "zh-Hans": "雷暴声",
+    "zh-Hant": "雷暴聲"
+  },
+  {
+    "index": 281,
+    "en": "Thunder",
+    "zh-Hans": "雷声",
+    "zh-Hant": "雷聲"
+  },
+  {
+    "index": 282,
+    "en": "Water",
+    "zh-Hans": "水声",
+    "zh-Hant": "水聲"
+  },
+  {
+    "index": 283,
+    "en": "Rain",
+    "zh-Hans": "雨声",
+    "zh-Hant": "雨聲"
+  },
+  {
+    "index": 284,
+    "en": "Raindrop",
+    "zh-Hans": "雨滴声",
+    "zh-Hant": "雨滴聲"
+  },
+  {
+    "index": 285,
+    "en": "Rain on surface",
+    "zh-Hans": "雨打物体声",
+    "zh-Hant": "雨打物體聲"
+  },
+  {
+    "index": 286,
+    "en": "Stream",
+    "zh-Hans": "溪流声",
+    "zh-Hant": "溪流聲"
+  },
+  {
+    "index": 287,
+    "en": "Waterfall",
+    "zh-Hans": "瀑布声",
+    "zh-Hant": "瀑布聲"
+  },
+  {
+    "index": 288,
+    "en": "Ocean",
+    "zh-Hans": "海洋声",
+    "zh-Hant": "海洋聲"
+  },
+  {
+    "index": 289,
+    "en": "Waves, surf",
+    "zh-Hans": "海浪声",
+    "zh-Hant": "海浪聲"
+  },
+  {
+    "index": 290,
+    "en": "Steam",
+    "zh-Hans": "蒸汽声",
+    "zh-Hant": "蒸汽聲"
+  },
+  {
+    "index": 291,
+    "en": "Gurgling",
+    "zh-Hans": "咕噜水声",
+    "zh-Hant": "咕嚕水聲"
+  },
+  {
+    "index": 292,
+    "en": "Fire",
+    "zh-Hans": "燃烧声",
+    "zh-Hant": "燃燒聲"
+  },
+  {
+    "index": 293,
+    "en": "Crackle",
+    "zh-Hans": "噼啪声",
+    "zh-Hant": "噼啪聲"
+  },
+  {
+    "index": 294,
+    "en": "Vehicle",
+    "zh-Hans": "交通工具声",
+    "zh-Hant": "交通工具聲"
+  },
+  {
+    "index": 295,
+    "en": "Boat, Water vehicle",
+    "zh-Hans": "船艇声",
+    "zh-Hant": "船艇聲"
+  },
+  {
+    "index": 296,
+    "en": "Sailboat, sailing ship",
+    "zh-Hans": "帆船声",
+    "zh-Hant": "帆船聲"
+  },
+  {
+    "index": 297,
+    "en": "Rowboat, canoe, kayak",
+    "zh-Hans": "划艇／独木舟声",
+    "zh-Hant": "划艇／獨木舟聲"
+  },
+  {
+    "index": 298,
+    "en": "Motorboat, speedboat",
+    "zh-Hans": "快艇声",
+    "zh-Hant": "快艇聲"
+  },
+  {
+    "index": 299,
+    "en": "Ship",
+    "zh-Hans": "轮船声",
+    "zh-Hant": "輪船聲"
+  },
+  {
+    "index": 300,
+    "en": "Motor vehicle (road)",
+    "zh-Hans": "道路机动车声",
+    "zh-Hant": "道路機動車聲"
+  },
+  {
+    "index": 301,
+    "en": "Car",
+    "zh-Hans": "汽车声",
+    "zh-Hant": "汽車聲"
+  },
+  {
+    "index": 302,
+    "en": "Vehicle horn, car horn, honking",
+    "zh-Hans": "汽车喇叭声",
+    "zh-Hant": "汽車喇叭聲"
+  },
+  {
+    "index": 303,
+    "en": "Toot",
+    "zh-Hans": "短促鸣笛声",
+    "zh-Hant": "短促鳴笛聲"
+  },
+  {
+    "index": 304,
+    "en": "Car alarm",
+    "zh-Hans": "汽车警报声",
+    "zh-Hant": "汽車警報聲"
+  },
+  {
+    "index": 305,
+    "en": "Power windows, electric windows",
+    "zh-Hans": "电动车窗声",
+    "zh-Hant": "電動車窗聲"
+  },
+  {
+    "index": 306,
+    "en": "Skidding",
+    "zh-Hans": "车辆打滑声",
+    "zh-Hant": "車輛打滑聲"
+  },
+  {
+    "index": 307,
+    "en": "Tire squeal",
+    "zh-Hans": "轮胎尖啸声",
+    "zh-Hant": "輪胎尖嘯聲"
+  },
+  {
+    "index": 308,
+    "en": "Car passing by",
+    "zh-Hans": "汽车驶过声",
+    "zh-Hant": "汽車駛過聲"
+  },
+  {
+    "index": 309,
+    "en": "Race car, auto racing",
+    "zh-Hans": "赛车声",
+    "zh-Hant": "賽車聲"
+  },
+  {
+    "index": 310,
+    "en": "Truck",
+    "zh-Hans": "卡车声",
+    "zh-Hant": "卡車聲"
+  },
+  {
+    "index": 311,
+    "en": "Air brake",
+    "zh-Hans": "气刹声",
+    "zh-Hant": "氣剎聲"
+  },
+  {
+    "index": 312,
+    "en": "Air horn, truck horn",
+    "zh-Hans": "卡车气喇叭声",
+    "zh-Hant": "卡車氣喇叭聲"
+  },
+  {
+    "index": 313,
+    "en": "Reversing beeps",
+    "zh-Hans": "倒车提示声",
+    "zh-Hant": "倒車提示聲"
+  },
+  {
+    "index": 314,
+    "en": "Ice cream truck, ice cream van",
+    "zh-Hans": "冰淇淋车声",
+    "zh-Hant": "冰淇淋車聲"
+  },
+  {
+    "index": 315,
+    "en": "Bus",
+    "zh-Hans": "公交车声",
+    "zh-Hant": "公交車聲"
+  },
+  {
+    "index": 316,
+    "en": "Emergency vehicle",
+    "zh-Hans": "应急车辆声",
+    "zh-Hant": "應急車輛聲"
+  },
+  {
+    "index": 317,
+    "en": "Police car (siren)",
+    "zh-Hans": "警车警笛声",
+    "zh-Hant": "警車警笛聲"
+  },
+  {
+    "index": 318,
+    "en": "Ambulance (siren)",
+    "zh-Hans": "救护车警笛声",
+    "zh-Hant": "救護車警笛聲"
+  },
+  {
+    "index": 319,
+    "en": "Fire engine, fire truck (siren)",
+    "zh-Hans": "消防车警笛声",
+    "zh-Hant": "消防車警笛聲"
+  },
+  {
+    "index": 320,
+    "en": "Motorcycle",
+    "zh-Hans": "摩托车声",
+    "zh-Hant": "摩托車聲"
+  },
+  {
+    "index": 321,
+    "en": "Traffic noise, roadway noise",
+    "zh-Hans": "道路交通噪声",
+    "zh-Hant": "道路交通噪聲"
+  },
+  {
+    "index": 322,
+    "en": "Rail transport",
+    "zh-Hans": "轨道交通声",
+    "zh-Hant": "軌道交通聲"
+  },
+  {
+    "index": 323,
+    "en": "Train",
+    "zh-Hans": "火车声",
+    "zh-Hant": "火車聲"
+  },
+  {
+    "index": 324,
+    "en": "Train whistle",
+    "zh-Hans": "火车汽笛声",
+    "zh-Hant": "火車汽笛聲"
+  },
+  {
+    "index": 325,
+    "en": "Train horn",
+    "zh-Hans": "火车喇叭声",
+    "zh-Hant": "火車喇叭聲"
+  },
+  {
+    "index": 326,
+    "en": "Railroad car, train wagon",
+    "zh-Hans": "火车车厢声",
+    "zh-Hant": "火車車廂聲"
+  },
+  {
+    "index": 327,
+    "en": "Train wheels squealing",
+    "zh-Hans": "火车车轮尖啸声",
+    "zh-Hant": "火車車輪尖嘯聲"
+  },
+  {
+    "index": 328,
+    "en": "Subway, metro, underground",
+    "zh-Hans": "地铁声",
+    "zh-Hant": "地鐵聲"
+  },
+  {
+    "index": 329,
+    "en": "Aircraft",
+    "zh-Hans": "飞行器声",
+    "zh-Hant": "飛行器聲"
+  },
+  {
+    "index": 330,
+    "en": "Aircraft engine",
+    "zh-Hans": "飞机发动机声",
+    "zh-Hant": "飛機發動機聲"
+  },
+  {
+    "index": 331,
+    "en": "Jet engine",
+    "zh-Hans": "喷气发动机声",
+    "zh-Hant": "噴氣發動機聲"
+  },
+  {
+    "index": 332,
+    "en": "Propeller, airscrew",
+    "zh-Hans": "螺旋桨声",
+    "zh-Hant": "螺旋槳聲"
+  },
+  {
+    "index": 333,
+    "en": "Helicopter",
+    "zh-Hans": "直升机声",
+    "zh-Hant": "直升機聲"
+  },
+  {
+    "index": 334,
+    "en": "Fixed-wing aircraft, airplane",
+    "zh-Hans": "固定翼飞机声",
+    "zh-Hant": "固定翼飛機聲"
+  },
+  {
+    "index": 335,
+    "en": "Bicycle",
+    "zh-Hans": "自行车声",
+    "zh-Hant": "自行車聲"
+  },
+  {
+    "index": 336,
+    "en": "Skateboard",
+    "zh-Hans": "滑板声",
+    "zh-Hant": "滑板聲"
+  },
+  {
+    "index": 337,
+    "en": "Engine",
+    "zh-Hans": "发动机声",
+    "zh-Hant": "發動機聲"
+  },
+  {
+    "index": 338,
+    "en": "Light engine (high frequency)",
+    "zh-Hans": "小型发动机声",
+    "zh-Hant": "小型發動機聲"
+  },
+  {
+    "index": 339,
+    "en": "Dental drill, dentist's drill",
+    "zh-Hans": "牙钻声",
+    "zh-Hant": "牙鑽聲"
+  },
+  {
+    "index": 340,
+    "en": "Lawn mower",
+    "zh-Hans": "割草机声",
+    "zh-Hant": "割草機聲"
+  },
+  {
+    "index": 341,
+    "en": "Chainsaw",
+    "zh-Hans": "链锯声",
+    "zh-Hant": "鏈鋸聲"
+  },
+  {
+    "index": 342,
+    "en": "Medium engine (mid frequency)",
+    "zh-Hans": "中型发动机声",
+    "zh-Hant": "中型發動機聲"
+  },
+  {
+    "index": 343,
+    "en": "Heavy engine (low frequency)",
+    "zh-Hans": "重型发动机声",
+    "zh-Hant": "重型發動機聲"
+  },
+  {
+    "index": 344,
+    "en": "Engine knocking",
+    "zh-Hans": "发动机爆震声",
+    "zh-Hant": "發動機爆震聲"
+  },
+  {
+    "index": 345,
+    "en": "Engine starting",
+    "zh-Hans": "发动机启动声",
+    "zh-Hant": "發動機啓動聲"
+  },
+  {
+    "index": 346,
+    "en": "Idling",
+    "zh-Hans": "发动机怠速声",
+    "zh-Hant": "發動機怠速聲"
+  },
+  {
+    "index": 347,
+    "en": "Accelerating, revving, vroom",
+    "zh-Hans": "加速轰鸣声",
+    "zh-Hant": "加速轟鳴聲"
+  },
+  {
+    "index": 348,
+    "en": "Door",
+    "zh-Hans": "门的声音",
+    "zh-Hant": "門的聲音"
+  },
+  {
+    "index": 349,
+    "en": "Doorbell",
+    "zh-Hans": "门铃声",
+    "zh-Hant": "門鈴聲"
+  },
+  {
+    "index": 350,
+    "en": "Ding-dong",
+    "zh-Hans": "叮咚声",
+    "zh-Hant": "叮咚聲"
+  },
+  {
+    "index": 351,
+    "en": "Sliding door",
+    "zh-Hans": "滑动门声",
+    "zh-Hant": "滑動門聲"
+  },
+  {
+    "index": 352,
+    "en": "Slam",
+    "zh-Hans": "砰地关合声",
+    "zh-Hant": "砰地關合聲"
+  },
+  {
+    "index": 353,
+    "en": "Knock",
+    "zh-Hans": "敲击声",
+    "zh-Hant": "敲擊聲"
+  },
+  {
+    "index": 354,
+    "en": "Tap",
+    "zh-Hans": "轻敲声",
+    "zh-Hant": "輕敲聲"
+  },
+  {
+    "index": 355,
+    "en": "Squeak",
+    "zh-Hans": "吱吱声",
+    "zh-Hant": "吱吱聲"
+  },
+  {
+    "index": 356,
+    "en": "Cupboard open or close",
+    "zh-Hans": "柜门开关声",
+    "zh-Hant": "櫃門開關聲"
+  },
+  {
+    "index": 357,
+    "en": "Drawer open or close",
+    "zh-Hans": "抽屉开关声",
+    "zh-Hant": "抽屜開關聲"
+  },
+  {
+    "index": 358,
+    "en": "Dishes, pots, and pans",
+    "zh-Hans": "锅碗瓢盆声",
+    "zh-Hant": "鍋碗瓢盆聲"
+  },
+  {
+    "index": 359,
+    "en": "Cutlery, silverware",
+    "zh-Hans": "刀叉餐具声",
+    "zh-Hant": "刀叉餐具聲"
+  },
+  {
+    "index": 360,
+    "en": "Chopping (food)",
+    "zh-Hans": "切菜声",
+    "zh-Hant": "切菜聲"
+  },
+  {
+    "index": 361,
+    "en": "Frying (food)",
+    "zh-Hans": "煎炸声",
+    "zh-Hant": "煎炸聲"
+  },
+  {
+    "index": 362,
+    "en": "Microwave oven",
+    "zh-Hans": "微波炉声",
+    "zh-Hant": "微波爐聲"
+  },
+  {
+    "index": 363,
+    "en": "Blender",
+    "zh-Hans": "搅拌机声",
+    "zh-Hant": "攪拌機聲"
+  },
+  {
+    "index": 364,
+    "en": "Water tap, faucet",
+    "zh-Hans": "水龙头声",
+    "zh-Hant": "水龍頭聲"
+  },
+  {
+    "index": 365,
+    "en": "Sink (filling or washing)",
+    "zh-Hans": "水槽注水／清洗声",
+    "zh-Hant": "水槽注水／清洗聲"
+  },
+  {
+    "index": 366,
+    "en": "Bathtub (filling or washing)",
+    "zh-Hans": "浴缸注水／清洗声",
+    "zh-Hant": "浴缸注水／清洗聲"
+  },
+  {
+    "index": 367,
+    "en": "Hair dryer",
+    "zh-Hans": "吹风机声",
+    "zh-Hant": "吹風機聲"
+  },
+  {
+    "index": 368,
+    "en": "Toilet flush",
+    "zh-Hans": "马桶冲水声",
+    "zh-Hant": "馬桶沖水聲"
+  },
+  {
+    "index": 369,
+    "en": "Toothbrush",
+    "zh-Hans": "刷牙声",
+    "zh-Hant": "刷牙聲"
+  },
+  {
+    "index": 370,
+    "en": "Electric toothbrush",
+    "zh-Hans": "电动牙刷声",
+    "zh-Hant": "電動牙刷聲"
+  },
+  {
+    "index": 371,
+    "en": "Vacuum cleaner",
+    "zh-Hans": "吸尘器声",
+    "zh-Hant": "吸塵器聲"
+  },
+  {
+    "index": 372,
+    "en": "Zipper (clothing)",
+    "zh-Hans": "拉链声",
+    "zh-Hant": "拉鏈聲"
+  },
+  {
+    "index": 373,
+    "en": "Keys jangling",
+    "zh-Hans": "钥匙碰撞声",
+    "zh-Hant": "鑰匙碰撞聲"
+  },
+  {
+    "index": 374,
+    "en": "Coin (dropping)",
+    "zh-Hans": "硬币落地声",
+    "zh-Hant": "硬幣落地聲"
+  },
+  {
+    "index": 375,
+    "en": "Scissors",
+    "zh-Hans": "剪刀声",
+    "zh-Hant": "剪刀聲"
+  },
+  {
+    "index": 376,
+    "en": "Electric shaver, electric razor",
+    "zh-Hans": "电动剃须刀声",
+    "zh-Hant": "電動剃鬚刀聲"
+  },
+  {
+    "index": 377,
+    "en": "Shuffling cards",
+    "zh-Hans": "洗牌声",
+    "zh-Hant": "洗牌聲"
+  },
+  {
+    "index": 378,
+    "en": "Typing",
+    "zh-Hans": "打字声",
+    "zh-Hant": "打字聲"
+  },
+  {
+    "index": 379,
+    "en": "Typewriter",
+    "zh-Hans": "打字机声",
+    "zh-Hant": "打字機聲"
+  },
+  {
+    "index": 380,
+    "en": "Computer keyboard",
+    "zh-Hans": "电脑键盘声",
+    "zh-Hant": "電腦鍵盤聲"
+  },
+  {
+    "index": 381,
+    "en": "Writing",
+    "zh-Hans": "书写声",
+    "zh-Hant": "書寫聲"
+  },
+  {
+    "index": 382,
+    "en": "Alarm",
+    "zh-Hans": "警报声",
+    "zh-Hant": "警報聲"
+  },
+  {
+    "index": 383,
+    "en": "Telephone",
+    "zh-Hans": "电话声",
+    "zh-Hant": "電話聲"
+  },
+  {
+    "index": 384,
+    "en": "Telephone bell ringing",
+    "zh-Hans": "电话铃声",
+    "zh-Hant": "電話鈴聲"
+  },
+  {
+    "index": 385,
+    "en": "Ringtone",
+    "zh-Hans": "铃声",
+    "zh-Hant": "鈴聲"
+  },
+  {
+    "index": 386,
+    "en": "Telephone dialing, DTMF",
+    "zh-Hans": "电话按键拨号声",
+    "zh-Hant": "電話按鍵撥號聲"
+  },
+  {
+    "index": 387,
+    "en": "Dial tone",
+    "zh-Hans": "拨号音",
+    "zh-Hant": "撥號音"
+  },
+  {
+    "index": 388,
+    "en": "Busy signal",
+    "zh-Hans": "电话忙音",
+    "zh-Hant": "電話忙音"
+  },
+  {
+    "index": 389,
+    "en": "Alarm clock",
+    "zh-Hans": "闹钟声",
+    "zh-Hant": "鬧鐘聲"
+  },
+  {
+    "index": 390,
+    "en": "Siren",
+    "zh-Hans": "警笛声",
+    "zh-Hant": "警笛聲"
+  },
+  {
+    "index": 391,
+    "en": "Civil defense siren",
+    "zh-Hans": "民防警报声",
+    "zh-Hant": "民防警報聲"
+  },
+  {
+    "index": 392,
+    "en": "Buzzer",
+    "zh-Hans": "蜂鸣声",
+    "zh-Hant": "蜂鳴聲"
+  },
+  {
+    "index": 393,
+    "en": "Smoke detector, smoke alarm",
+    "zh-Hans": "烟雾报警声",
+    "zh-Hant": "煙霧報警聲"
+  },
+  {
+    "index": 394,
+    "en": "Fire alarm",
+    "zh-Hans": "火警声",
+    "zh-Hant": "火警聲"
+  },
+  {
+    "index": 395,
+    "en": "Foghorn",
+    "zh-Hans": "雾笛声",
+    "zh-Hant": "霧笛聲"
+  },
+  {
+    "index": 396,
+    "en": "Whistle",
+    "zh-Hans": "哨声",
+    "zh-Hant": "哨聲"
+  },
+  {
+    "index": 397,
+    "en": "Steam whistle",
+    "zh-Hans": "蒸汽哨声",
+    "zh-Hant": "蒸汽哨聲"
+  },
+  {
+    "index": 398,
+    "en": "Mechanisms",
+    "zh-Hans": "机械运作声",
+    "zh-Hant": "機械運作聲"
+  },
+  {
+    "index": 399,
+    "en": "Ratchet, pawl",
+    "zh-Hans": "棘轮声",
+    "zh-Hant": "棘輪聲"
+  },
+  {
+    "index": 400,
+    "en": "Clock",
+    "zh-Hans": "钟表声",
+    "zh-Hant": "鐘錶聲"
+  },
+  {
+    "index": 401,
+    "en": "Tick",
+    "zh-Hans": "滴答声",
+    "zh-Hant": "滴答聲"
+  },
+  {
+    "index": 402,
+    "en": "Tick-tock",
+    "zh-Hans": "钟表滴答声",
+    "zh-Hant": "鐘錶滴答聲"
+  },
+  {
+    "index": 403,
+    "en": "Gears",
+    "zh-Hans": "齿轮声",
+    "zh-Hant": "齒輪聲"
+  },
+  {
+    "index": 404,
+    "en": "Pulleys",
+    "zh-Hans": "滑轮声",
+    "zh-Hant": "滑輪聲"
+  },
+  {
+    "index": 405,
+    "en": "Sewing machine",
+    "zh-Hans": "缝纫机声",
+    "zh-Hant": "縫紉機聲"
+  },
+  {
+    "index": 406,
+    "en": "Mechanical fan",
+    "zh-Hans": "风扇声",
+    "zh-Hant": "風扇聲"
+  },
+  {
+    "index": 407,
+    "en": "Air conditioning",
+    "zh-Hans": "空调声",
+    "zh-Hant": "空調聲"
+  },
+  {
+    "index": 408,
+    "en": "Cash register",
+    "zh-Hans": "收银机声",
+    "zh-Hant": "收銀機聲"
+  },
+  {
+    "index": 409,
+    "en": "Printer",
+    "zh-Hans": "打印机声",
+    "zh-Hant": "打印機聲"
+  },
+  {
+    "index": 410,
+    "en": "Camera",
+    "zh-Hans": "相机声",
+    "zh-Hant": "相機聲"
+  },
+  {
+    "index": 411,
+    "en": "Single-lens reflex camera",
+    "zh-Hans": "单反相机声",
+    "zh-Hant": "單反相機聲"
+  },
+  {
+    "index": 412,
+    "en": "Tools",
+    "zh-Hans": "工具声",
+    "zh-Hant": "工具聲"
+  },
+  {
+    "index": 413,
+    "en": "Hammer",
+    "zh-Hans": "锤击声",
+    "zh-Hant": "錘擊聲"
+  },
+  {
+    "index": 414,
+    "en": "Jackhammer",
+    "zh-Hans": "风镐声",
+    "zh-Hant": "風鎬聲"
+  },
+  {
+    "index": 415,
+    "en": "Sawing",
+    "zh-Hans": "锯切声",
+    "zh-Hant": "鋸切聲"
+  },
+  {
+    "index": 416,
+    "en": "Filing (rasp)",
+    "zh-Hans": "锉磨声",
+    "zh-Hant": "銼磨聲"
+  },
+  {
+    "index": 417,
+    "en": "Sanding",
+    "zh-Hans": "砂磨声",
+    "zh-Hant": "砂磨聲"
+  },
+  {
+    "index": 418,
+    "en": "Power tool",
+    "zh-Hans": "电动工具声",
+    "zh-Hant": "電動工具聲"
+  },
+  {
+    "index": 419,
+    "en": "Drill",
+    "zh-Hans": "电钻声",
+    "zh-Hant": "電鑽聲"
+  },
+  {
+    "index": 420,
+    "en": "Explosion",
+    "zh-Hans": "爆炸声",
+    "zh-Hant": "爆炸聲"
+  },
+  {
+    "index": 421,
+    "en": "Gunshot, gunfire",
+    "zh-Hans": "枪声",
+    "zh-Hant": "槍聲"
+  },
+  {
+    "index": 422,
+    "en": "Machine gun",
+    "zh-Hans": "机枪声",
+    "zh-Hant": "機槍聲"
+  },
+  {
+    "index": 423,
+    "en": "Fusillade",
+    "zh-Hans": "密集枪声",
+    "zh-Hant": "密集槍聲"
+  },
+  {
+    "index": 424,
+    "en": "Artillery fire",
+    "zh-Hans": "炮火声",
+    "zh-Hant": "炮火聲"
+  },
+  {
+    "index": 425,
+    "en": "Cap gun",
+    "zh-Hans": "火药玩具枪声",
+    "zh-Hant": "火藥玩具槍聲"
+  },
+  {
+    "index": 426,
+    "en": "Fireworks",
+    "zh-Hans": "烟花声",
+    "zh-Hant": "煙花聲"
+  },
+  {
+    "index": 427,
+    "en": "Firecracker",
+    "zh-Hans": "鞭炮声",
+    "zh-Hant": "鞭炮聲"
+  },
+  {
+    "index": 428,
+    "en": "Burst, pop",
+    "zh-Hans": "爆裂声",
+    "zh-Hant": "爆裂聲"
+  },
+  {
+    "index": 429,
+    "en": "Eruption",
+    "zh-Hans": "喷发声",
+    "zh-Hant": "噴發聲"
+  },
+  {
+    "index": 430,
+    "en": "Boom",
+    "zh-Hans": "轰响声",
+    "zh-Hant": "轟響聲"
+  },
+  {
+    "index": 431,
+    "en": "Wood",
+    "zh-Hans": "木材声",
+    "zh-Hant": "木材聲"
+  },
+  {
+    "index": 432,
+    "en": "Chop",
+    "zh-Hans": "劈砍声",
+    "zh-Hant": "劈砍聲"
+  },
+  {
+    "index": 433,
+    "en": "Splinter",
+    "zh-Hans": "木头碎裂声",
+    "zh-Hant": "木頭碎裂聲"
+  },
+  {
+    "index": 434,
+    "en": "Crack",
+    "zh-Hans": "裂响声",
+    "zh-Hant": "裂響聲"
+  },
+  {
+    "index": 435,
+    "en": "Glass",
+    "zh-Hans": "玻璃声",
+    "zh-Hant": "玻璃聲"
+  },
+  {
+    "index": 436,
+    "en": "Chink, clink",
+    "zh-Hans": "清脆碰撞声",
+    "zh-Hant": "清脆碰撞聲"
+  },
+  {
+    "index": 437,
+    "en": "Shatter",
+    "zh-Hans": "玻璃破碎声",
+    "zh-Hant": "玻璃破碎聲"
+  },
+  {
+    "index": 438,
+    "en": "Liquid",
+    "zh-Hans": "液体声",
+    "zh-Hant": "液體聲"
+  },
+  {
+    "index": 439,
+    "en": "Splash, splatter",
+    "zh-Hans": "泼洒／水花声",
+    "zh-Hant": "潑灑／水花聲"
+  },
+  {
+    "index": 440,
+    "en": "Slosh",
+    "zh-Hans": "液体晃荡声",
+    "zh-Hant": "液體晃盪聲"
+  },
+  {
+    "index": 441,
+    "en": "Squish",
+    "zh-Hans": "挤压湿物声",
+    "zh-Hant": "擠壓濕物聲"
+  },
+  {
+    "index": 442,
+    "en": "Drip",
+    "zh-Hans": "滴水声",
+    "zh-Hant": "滴水聲"
+  },
+  {
+    "index": 443,
+    "en": "Pour",
+    "zh-Hans": "倒水声",
+    "zh-Hant": "倒水聲"
+  },
+  {
+    "index": 444,
+    "en": "Trickle, dribble",
+    "zh-Hans": "涓流声",
+    "zh-Hant": "涓流聲"
+  },
+  {
+    "index": 445,
+    "en": "Gush",
+    "zh-Hans": "水流喷涌声",
+    "zh-Hant": "水流噴湧聲"
+  },
+  {
+    "index": 446,
+    "en": "Fill (with liquid)",
+    "zh-Hans": "注水声",
+    "zh-Hant": "注水聲"
+  },
+  {
+    "index": 447,
+    "en": "Spray",
+    "zh-Hans": "喷洒声",
+    "zh-Hant": "噴灑聲"
+  },
+  {
+    "index": 448,
+    "en": "Pump (liquid)",
+    "zh-Hans": "抽水声",
+    "zh-Hant": "抽水聲"
+  },
+  {
+    "index": 449,
+    "en": "Stir",
+    "zh-Hans": "搅拌声",
+    "zh-Hant": "攪拌聲"
+  },
+  {
+    "index": 450,
+    "en": "Boiling",
+    "zh-Hans": "沸腾声",
+    "zh-Hant": "沸騰聲"
+  },
+  {
+    "index": 451,
+    "en": "Sonar",
+    "zh-Hans": "声呐声",
+    "zh-Hant": "聲吶聲"
+  },
+  {
+    "index": 452,
+    "en": "Arrow",
+    "zh-Hans": "箭矢声",
+    "zh-Hant": "箭矢聲"
+  },
+  {
+    "index": 453,
+    "en": "Whoosh, swoosh, swish",
+    "zh-Hans": "呼啸掠过声",
+    "zh-Hant": "呼嘯掠過聲"
+  },
+  {
+    "index": 454,
+    "en": "Thump, thud",
+    "zh-Hans": "沉闷撞击声",
+    "zh-Hant": "沉悶撞擊聲"
+  },
+  {
+    "index": 455,
+    "en": "Thunk",
+    "zh-Hans": "咚的一声",
+    "zh-Hant": "咚的一聲"
+  },
+  {
+    "index": 456,
+    "en": "Electronic tuner",
+    "zh-Hans": "电子调音器声",
+    "zh-Hant": "電子調音器聲"
+  },
+  {
+    "index": 457,
+    "en": "Effects unit",
+    "zh-Hans": "音效器声",
+    "zh-Hant": "音效器聲"
+  },
+  {
+    "index": 458,
+    "en": "Chorus effect",
+    "zh-Hans": "合唱音效",
+    "zh-Hant": "合唱音效"
+  },
+  {
+    "index": 459,
+    "en": "Basketball bounce",
+    "zh-Hans": "篮球弹跳声",
+    "zh-Hant": "籃球彈跳聲"
+  },
+  {
+    "index": 460,
+    "en": "Bang",
+    "zh-Hans": "砰响声",
+    "zh-Hant": "砰響聲"
+  },
+  {
+    "index": 461,
+    "en": "Slap, smack",
+    "zh-Hans": "拍击声",
+    "zh-Hant": "拍擊聲"
+  },
+  {
+    "index": 462,
+    "en": "Whack, thwack",
+    "zh-Hans": "猛击声",
+    "zh-Hant": "猛擊聲"
+  },
+  {
+    "index": 463,
+    "en": "Smash, crash",
+    "zh-Hans": "碰撞／砸碎声",
+    "zh-Hant": "碰撞／砸碎聲"
+  },
+  {
+    "index": 464,
+    "en": "Breaking",
+    "zh-Hans": "断裂声",
+    "zh-Hant": "斷裂聲"
+  },
+  {
+    "index": 465,
+    "en": "Bouncing",
+    "zh-Hans": "弹跳声",
+    "zh-Hant": "彈跳聲"
+  },
+  {
+    "index": 466,
+    "en": "Whip",
+    "zh-Hans": "鞭响声",
+    "zh-Hant": "鞭響聲"
+  },
+  {
+    "index": 467,
+    "en": "Flap",
+    "zh-Hans": "拍动声",
+    "zh-Hant": "拍動聲"
+  },
+  {
+    "index": 468,
+    "en": "Scratch",
+    "zh-Hans": "抓挠声",
+    "zh-Hant": "抓撓聲"
+  },
+  {
+    "index": 469,
+    "en": "Scrape",
+    "zh-Hans": "刮擦声",
+    "zh-Hant": "刮擦聲"
+  },
+  {
+    "index": 470,
+    "en": "Rub",
+    "zh-Hans": "摩擦声",
+    "zh-Hant": "摩擦聲"
+  },
+  {
+    "index": 471,
+    "en": "Roll",
+    "zh-Hans": "滚动声",
+    "zh-Hant": "滾動聲"
+  },
+  {
+    "index": 472,
+    "en": "Crushing",
+    "zh-Hans": "压碎声",
+    "zh-Hant": "壓碎聲"
+  },
+  {
+    "index": 473,
+    "en": "Crumpling, crinkling",
+    "zh-Hans": "揉皱声",
+    "zh-Hant": "揉皺聲"
+  },
+  {
+    "index": 474,
+    "en": "Tearing",
+    "zh-Hans": "撕裂声",
+    "zh-Hant": "撕裂聲"
+  },
+  {
+    "index": 475,
+    "en": "Beep, bleep",
+    "zh-Hans": "哔声",
+    "zh-Hant": "嗶聲"
+  },
+  {
+    "index": 476,
+    "en": "Ping",
+    "zh-Hans": "清亮提示音",
+    "zh-Hant": "清亮提示音"
+  },
+  {
+    "index": 477,
+    "en": "Ding",
+    "zh-Hans": "叮声",
+    "zh-Hant": "叮聲"
+  },
+  {
+    "index": 478,
+    "en": "Clang",
+    "zh-Hans": "金属哐啷声",
+    "zh-Hant": "金屬哐啷聲"
+  },
+  {
+    "index": 479,
+    "en": "Squeal",
+    "zh-Hans": "尖锐啸声",
+    "zh-Hant": "尖鋭嘯聲"
+  },
+  {
+    "index": 480,
+    "en": "Creak",
+    "zh-Hans": "嘎吱声",
+    "zh-Hant": "嘎吱聲"
+  },
+  {
+    "index": 481,
+    "en": "Rustle",
+    "zh-Hans": "沙沙声",
+    "zh-Hant": "沙沙聲"
+  },
+  {
+    "index": 482,
+    "en": "Whir",
+    "zh-Hans": "高速转动嗡声",
+    "zh-Hant": "高速轉動嗡聲"
+  },
+  {
+    "index": 483,
+    "en": "Clatter",
+    "zh-Hans": "哐当声",
+    "zh-Hant": "哐當聲"
+  },
+  {
+    "index": 484,
+    "en": "Sizzle",
+    "zh-Hans": "滋滋声",
+    "zh-Hant": "滋滋聲"
+  },
+  {
+    "index": 485,
+    "en": "Clicking",
+    "zh-Hans": "咔哒声",
+    "zh-Hant": "咔噠聲"
+  },
+  {
+    "index": 486,
+    "en": "Clickety-clack",
+    "zh-Hans": "连续咔嗒声",
+    "zh-Hant": "連續咔嗒聲"
+  },
+  {
+    "index": 487,
+    "en": "Rumble",
+    "zh-Hans": "隆隆声",
+    "zh-Hant": "隆隆聲"
+  },
+  {
+    "index": 488,
+    "en": "Plop",
+    "zh-Hans": "扑通声",
+    "zh-Hant": "撲通聲"
+  },
+  {
+    "index": 489,
+    "en": "Jingle, tinkle",
+    "zh-Hans": "叮当声",
+    "zh-Hant": "叮噹聲"
+  },
+  {
+    "index": 490,
+    "en": "Hum",
+    "zh-Hans": "低沉嗡声",
+    "zh-Hant": "低沉嗡聲"
+  },
+  {
+    "index": 491,
+    "en": "Zing",
+    "zh-Hans": "咻声",
+    "zh-Hant": "咻聲"
+  },
+  {
+    "index": 492,
+    "en": "Boing",
+    "zh-Hans": "弹簧弹响声",
+    "zh-Hant": "彈簧彈響聲"
+  },
+  {
+    "index": 493,
+    "en": "Crunch",
+    "zh-Hans": "嘎嘣声",
+    "zh-Hant": "嘎嘣聲"
+  },
+  {
+    "index": 494,
+    "en": "Silence",
+    "zh-Hans": "安静",
+    "zh-Hant": "安靜"
+  },
+  {
+    "index": 495,
+    "en": "Sine wave",
+    "zh-Hans": "正弦波音",
+    "zh-Hant": "正弦波音"
+  },
+  {
+    "index": 496,
+    "en": "Harmonic",
+    "zh-Hans": "谐波音",
+    "zh-Hant": "諧波音"
+  },
+  {
+    "index": 497,
+    "en": "Chirp tone",
+    "zh-Hans": "扫频音",
+    "zh-Hant": "掃頻音"
+  },
+  {
+    "index": 498,
+    "en": "Sound effect",
+    "zh-Hans": "音效",
+    "zh-Hant": "音效"
+  },
+  {
+    "index": 499,
+    "en": "Pulse",
+    "zh-Hans": "脉冲声",
+    "zh-Hant": "脈衝聲"
+  },
+  {
+    "index": 500,
+    "en": "Inside, small room",
+    "zh-Hans": "小房间环境声",
+    "zh-Hant": "小房間環境聲"
+  },
+  {
+    "index": 501,
+    "en": "Inside, large room or hall",
+    "zh-Hans": "大厅环境声",
+    "zh-Hant": "大廳環境聲"
+  },
+  {
+    "index": 502,
+    "en": "Inside, public space",
+    "zh-Hans": "室内公共场所环境声",
+    "zh-Hant": "室內公共場所環境聲"
+  },
+  {
+    "index": 503,
+    "en": "Outside, urban or manmade",
+    "zh-Hans": "城市户外环境声",
+    "zh-Hant": "城市户外環境聲"
+  },
+  {
+    "index": 504,
+    "en": "Outside, rural or natural",
+    "zh-Hans": "自然户外环境声",
+    "zh-Hant": "自然户外環境聲"
+  },
+  {
+    "index": 505,
+    "en": "Reverberation",
+    "zh-Hans": "混响",
+    "zh-Hant": "混響"
+  },
+  {
+    "index": 506,
+    "en": "Echo",
+    "zh-Hans": "回声",
+    "zh-Hant": "回聲"
+  },
+  {
+    "index": 507,
+    "en": "Noise",
+    "zh-Hans": "噪声",
+    "zh-Hant": "噪聲"
+  },
+  {
+    "index": 508,
+    "en": "Environmental noise",
+    "zh-Hans": "环境噪声",
+    "zh-Hant": "環境噪聲"
+  },
+  {
+    "index": 509,
+    "en": "Static",
+    "zh-Hans": "静电噪声",
+    "zh-Hant": "靜電噪聲"
+  },
+  {
+    "index": 510,
+    "en": "Mains hum",
+    "zh-Hans": "电源交流嗡声",
+    "zh-Hant": "電源交流嗡聲"
+  },
+  {
+    "index": 511,
+    "en": "Distortion",
+    "zh-Hans": "失真音",
+    "zh-Hant": "失真音"
+  },
+  {
+    "index": 512,
+    "en": "Sidetone",
+    "zh-Hans": "侧音",
+    "zh-Hant": "側音"
+  },
+  {
+    "index": 513,
+    "en": "Cacophony",
+    "zh-Hans": "嘈杂声",
+    "zh-Hant": "嘈雜聲"
+  },
+  {
+    "index": 514,
+    "en": "White noise",
+    "zh-Hans": "白噪声",
+    "zh-Hant": "白噪聲"
+  },
+  {
+    "index": 515,
+    "en": "Pink noise",
+    "zh-Hans": "粉红噪声",
+    "zh-Hant": "粉紅噪聲"
+  },
+  {
+    "index": 516,
+    "en": "Throbbing",
+    "zh-Hans": "搏动声",
+    "zh-Hant": "搏動聲"
+  },
+  {
+    "index": 517,
+    "en": "Vibration",
+    "zh-Hans": "振动声",
+    "zh-Hant": "振動聲"
+  },
+  {
+    "index": 518,
+    "en": "Television",
+    "zh-Hans": "电视声",
+    "zh-Hant": "電視聲"
+  },
+  {
+    "index": 519,
+    "en": "Radio",
+    "zh-Hans": "收音机声",
+    "zh-Hant": "收音機聲"
+  },
+  {
+    "index": 520,
+    "en": "Field recording",
+    "zh-Hans": "现场录音环境声",
+    "zh-Hant": "現場錄音環境聲"
+  }
+]

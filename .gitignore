@@ -1,0 +1,17 @@
+.gradle/
+.tools/
+.idea/
+local.properties
+**/build/
+dist/
+*.iml
+*.jks
+*.keystore
+.kotlin/
+**/.runtime/
+desktop/receiver/runtime/
+desktop/receiver/downloads/
+.env
+.env.*
+*.log
+*.pem

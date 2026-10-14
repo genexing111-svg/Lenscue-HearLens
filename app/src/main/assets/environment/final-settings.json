@@ -1,0 +1,243 @@
+{
+  "schema_version": 1,
+  "release_id": "environment-sound-2026-10-03-final-knock",
+  "release_date": "2026-10-03",
+  "timezone": "Asia/Hong_Kong",
+  "model": {
+    "name": "YAMNet (MediaPipe TFLite audio classifier)",
+    "file": "models/yamnet.tflite",
+    "sha256": "4d8b4a53282dc83ef04e3e7dbc4fbc98082e34e44ed798e16c3a0cdd4c584faf",
+    "bytes": 4126810,
+    "source_url": "https://storage.googleapis.com/mediapipe-models/audio_classifier/yamnet/float32/latest/yamnet.tflite",
+    "retrained": false,
+    "external_input_shape": [
+      15600
+    ],
+    "external_input_dtype": "float32",
+    "external_output_shape": [
+      1,
+      521
+    ],
+    "external_output_dtype": "float32",
+    "internal_types_include": [
+      "float32",
+      "int8",
+      "int32",
+      "complex64"
+    ],
+    "num_classes": 521,
+    "embedded_audio_frontend": true
+  },
+  "runtime": {
+    "reference_platform": "Web",
+    "reference_package": "@mediapipe/tasks-audio",
+    "reference_package_version": "1.0.1",
+    "delegate": "CPU",
+    "max_results": 8,
+    "score_threshold": null,
+    "category_allowlist": [],
+    "category_denylist": [],
+    "running_mode_semantics": "Independent fixed-length audio clips; persistent classifier, external sliding windows",
+    "result_selection": "classificationResults[0].classifications[0].categories"
+  },
+  "audio": {
+    "target_sample_rate_hz": 16000,
+    "channels": 1,
+    "input_format": "normalized linear PCM float32",
+    "pcm16_to_float_divisor": 32768,
+    "channel_selection": "request mono; take first channel if multiple remain",
+    "echo_cancellation": false,
+    "noise_suppression": false,
+    "automatic_gain_control": false,
+    "resampler": "stateful area-weighted sample averaging; reference AudioFramer",
+    "window_samples": 15600,
+    "window_ms": 975,
+    "hop_samples": 7680,
+    "hop_ms": 480,
+    "overlap_samples": 7920,
+    "first_result_audio_end_ms": 975,
+    "pad_partial_window": false,
+    "normalize_each_window": false,
+    "rms": "sqrt(sum(v_i*v_i)/15600), from resampled float32 window",
+    "peak": "max(abs(v_i)); reported, NOT used by final event filter",
+    "end_ms": "cumulative resampled sample count / 16; relative audio timeline, not wall clock"
+  },
+  "scheduling": {
+    "one_classifier_in_flight": true,
+    "pending_windows": "replace pending with newest; do not queue unboundedly",
+    "new_session": "reset EventFilter and audio framer; ignore late results from older generations",
+    "streak_reset_gap_ms": 800,
+    "streak_reset_comparator": "strict greater-than",
+    "queue_discard_preserves_audio_end_ms": true
+  },
+  "policy": {
+    "ordinary": {
+      "provisional_score_gte": 0.25,
+      "immediate_confirmation_score_gte": 0.7,
+      "confirmation_consecutive_selected_windows": 2
+    },
+    "sensitive_knock": {
+      "indices": [
+        353,
+        354
+      ],
+      "names": [
+        "Knock",
+        "Tap"
+      ],
+      "provisional_score_gte": 0.12,
+      "immediate_confirmation_score_gte": 0.45,
+      "confirmation_consecutive_selected_windows": 2,
+      "extra_amplitude_or_peak_gate": false,
+      "background_precedence": "If a qualifying knock exists and lead is BACKGROUND, select strongest eligible non-background foreground (may be stronger speech)",
+      "candidate_retention": "If qualifying highest-scored Knock/Tap is outside first 3 visible, use first 2 visible plus that knock; keep raw scores"
+    },
+    "cautious": {
+      "indices": [
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        129,
+        130
+      ],
+      "names": [
+        "Insect",
+        "Cricket",
+        "Mosquito",
+        "Fly, housefly",
+        "Buzz",
+        "Bee, wasp, etc.",
+        "Snake",
+        "Rattle"
+      ],
+      "score_gte": 0.7,
+      "consecutive_qualifying_windows": 3,
+      "rms_condition": "rms > max(0.0015, learnedNoiseFloor * 2.5)",
+      "hidden_until_confirmed": true,
+      "permanent_denylist": false
+    },
+    "background_indices": [
+      67,
+      68,
+      81,
+      103,
+      494,
+      500,
+      501,
+      502,
+      503,
+      504,
+      505,
+      506,
+      507,
+      508,
+      509,
+      510,
+      511,
+      512,
+      513,
+      514,
+      515,
+      520
+    ],
+    "background_is_denylist": false,
+    "silence_index": 494,
+    "noise_floor": {
+      "initial": 0.0025,
+      "min_rms_constant": 0.0015,
+      "sample_clamp_min": 0.00075,
+      "sample_clamp_max": 0.025,
+      "history_size": 40,
+      "percentile_index": "floor((n-1)*0.2)",
+      "first_updates_direct": 4,
+      "later_ema_old_weight": 0.9,
+      "later_ema_target_weight": 0.1,
+      "learn_condition": "no non-cautious, non-background candidate meets its per-class minimum AND NOT(any cautious score >= 0.70 AND rms >= 0.03)",
+      "learning_before_gating": true,
+      "no_startup_calibration_wait": true
+    },
+    "quiet_fallback": "Only after no eligible ordinary/knock event and no qualifying cautious candidate: rms <= max(0.0015, floor*1.8)",
+    "sort": "stable descending score; preserve incoming order for exact ties",
+    "raw_model_scores_modified": false,
+    "max_display_candidates": 3,
+    "decision_kinds": [
+      "event",
+      "possible",
+      "confirming",
+      "quiet",
+      "uncertain"
+    ]
+  },
+  "localization": {
+    "languages": [
+      "zh-Hans",
+      "zh-Hant",
+      "en"
+    ],
+    "labels": "data/labels.json",
+    "ui_strings": "data/ui-strings.json",
+    "class_identity": "integer model index, never translated name",
+    "traditional_generation": {
+      "package": "opencc-js",
+      "version": "1.4.2",
+      "from": "cn",
+      "to": "hk"
+    },
+    "language_switch_resets_inference": false
+  },
+  "interface": {
+    "module": "core/event-filter.mjs",
+    "input_fields": [
+      "categories",
+      "rms",
+      "peak",
+      "endMs"
+    ],
+    "output_fields": [
+      "kind",
+      "event",
+      "candidates",
+      "noiseFloor",
+      "calibrationWindows"
+    ],
+    "directions_produced": false,
+    "diarization": false,
+    "speech_transcription": false,
+    "translation_of_spoken_content": false
+  },
+  "reference_ui_only": {
+    "server_host": "127.0.0.1",
+    "server_port": 8766,
+    "port_override_environment": "PORT",
+    "session_limit_ms": 600000,
+    "audio_saved": false,
+    "audio_uploaded": false
+  },
+  "fixture_only_public_speech": {
+    "file": "fixtures/public-reference-speech.wav",
+    "source_url": "https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-ASR-Repo/asr_zh.wav",
+    "purpose": "YAMNet Speech-class smoke test only; no ASR model or API included",
+    "sample_rate_hz": 16000,
+    "channels": 1,
+    "encoding": "PCM16 WAV",
+    "test_slice_start_sample": 8000,
+    "test_slice_samples": 15600,
+    "observed_reference_top": {
+      "index": 0,
+      "name": "Speech",
+      "score": 0.95703125
+    },
+    "silence_test": {
+      "samples": 15600,
+      "fill": 0,
+      "observed_top": {
+        "index": 494,
+        "name": "Silence",
+        "score": 0.80078125
+      }
+    }
+  }
+}
